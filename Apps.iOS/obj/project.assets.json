@@ -3357,11 +3357,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/Apps.iOS.csproj",
+      "projectUniqueName": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/Apps.iOS.csproj",
       "projectName": "Apps.iOS",
-      "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/Apps.iOS.csproj",
+      "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/Apps.iOS.csproj",
       "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
-      "outputPath": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/",
+      "outputPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -3376,8 +3376,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/Apps.csproj": {
-              "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/Apps.csproj"
+            "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj": {
+              "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj"
             }
           }
         }

@@ -1752,11 +1752,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/Apps.csproj",
+      "projectUniqueName": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj",
       "projectName": "Apps",
-      "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/Apps.csproj",
+      "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj",
       "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
-      "outputPath": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/",
+      "outputPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ricardocoelho/.config/NuGet/NuGet.Config"

@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{EF374397-DA94-483C-A1E8-22FC1CA0C2C7}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.00CBC7B9-FAD0-4DB3-96D2-8EC401699981" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Apps" expanded="True">
+            <Node name="Apps.iOS" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Apps.Android PreferredExecutionTarget="Android.my_device" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.Apps.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.00CBC7B9-FAD0-4DB3-96D2-8EC401699981" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

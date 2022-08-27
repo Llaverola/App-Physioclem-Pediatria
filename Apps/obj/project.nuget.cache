@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8gC4DjXBiMSumxFYOQwcqpf8wbdj21bQTjxlA95C+Gr8niYzXBqElL0Ug8pUEUI2B2OD1gFCave9ytpKpjINsw==",
+  "dgSpecHash": "QYAaxe7XYEDcpKoKp3XXev7JcXBrw6gdqAwp4M2hpr+O+/kK2bM2DD1UluOYy18wM23bGbOQBioUEUfh1Bf8dg==",
   "success": true,
-  "projectFilePath": "/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/Apps.csproj",
+  "projectFilePath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj",
   "expectedPackageFiles": [
     "/Users/ricardocoelho/.nuget/packages/acr.userdialogs/7.1.0.446/acr.userdialogs.7.1.0.446.nupkg.sha512",
     "/Users/ricardocoelho/.nuget/packages/anglesharp/0.16.1/anglesharp.0.16.1.nupkg.sha512",
