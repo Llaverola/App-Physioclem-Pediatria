@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:circle_img="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+
+             mc:Ignorable="d"
+             x:Class="MasterDetailPageNavigation.OutrosContactosPage"
+             BackgroundColor="White">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All">
+            <StackLayout HorizontalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="Start">
+                    <Grid HeightRequest="50" Margin="0,10,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                        <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="NotificacoesTapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
+                            <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
+                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                            </Frame>
+                        </Grid>
+                    </Grid>
+                    <StackLayout>
+                        <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Padding="20,0,20,0">
+                    <StackLayout>
+                        <ImageButton Source="voltar" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" Clicked="ImageButton_Clicked"></ImageButton>
+                    </StackLayout>
+                    <Label Padding="0" Margin="0" TextColor="#3DBEE3"  FontSize="48" FontFamily="MyCustomFont_ExtraBold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Outros Contactos"></Label>
+                    <Grid HorizontalOptions="Start" VerticalOptions="Start" Margin="0,20,0,30" ColumnSpacing="10" RowSpacing="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" x:Name="row_1"></RowDefinition>
+                            <RowDefinition Height="30" x:Name="row_2"></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="30" x:Name="row_3"></RowDefinition>
+                            <RowDefinition Height="30" x:Name="row_4"></RowDefinition>
+                            <RowDefinition Height="30" x:Name="row_5"></RowDefinition>
+                            <RowDefinition Height="30" x:Name="row_6"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Row="0" Grid.Column="0" Source="contactar_icon" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="0" Grid.Column="1" FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="email_1_label" Margin="10,0,0,0"></Label>
+
+                        <Image Grid.Row="1" Grid.Column="0" Source="contactar_icon" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="1" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="email_2_label" Margin="10,0,0,0"></Label>
+
+                        <Image Grid.Row="2" Grid.Column="0" Source="contactar_icon" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="2" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Text="andreia.cardoso@physioclem.pt" Margin="10,0,0,0"></Label>
+
+                        <Image Grid.Row="3" Grid.Column="0" Source="contactar_icon" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="3" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Text="joana.gouveia@physioclem.pt" Margin="10,0,0,0"></Label>
+
+                        <Image Grid.Row="4" Grid.Column="0" Source="contactar_icon" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="4" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Text="joana.netto@physioclem.pt" Margin="10,0,0,0"></Label>
+
+                        <Image Grid.Row="5" Grid.Column="0" Source="contactar_icon" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="5" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Text="tania.margaridag@gmail.com" Margin="10,0,0,0"></Label>
+
+
+                        <Image Grid.Row="6" Grid.Column="0" Source="telemovel" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="6" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="telemovel_1_label" Margin="10,0,0,0"></Label>
+
+                        <Image Grid.Row="7" Grid.Column="0" Source="website" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="7" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="website_label" Margin="10,0,0,0">
+                               <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Website_Clicked" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                        <Image Grid.Row="8" Grid.Column="0" Source="facebook" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="8" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="facebook_label" Margin="10,0,0,0">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Facebook_Clicked" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                        <Image Grid.Row="9" Grid.Column="0" Source="instagram" WidthRequest="30" HeightRequest="30"></Image>
+                        <Label Grid.Row="9" Grid.Column="1"  FontFamily="MyCustomFont_Medium" TextColor="#656565" FontSize="13" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="instagram_label" Margin="10,0,0,0">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Instagram_Clicked" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                    </Grid>
+                </StackLayout>
+                <StackLayout Margin="0,30,0,30">
+                    <Label x:Name="Copyright_Label" FontFamily="MyCustomFont_Regular" LineHeight="1.2" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <ActivityIndicator IsRunning="{Binding LoadingActivator}" x:Name="loadingActivator" Color="#AA2179" VerticalOptions="Center"
+                               HorizontalOptions="Center" HeightRequest="80" WidthRequest="80"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" />
+    </AbsoluteLayout>
+
+</ContentPage>

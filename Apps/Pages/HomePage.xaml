@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:circle_img="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="MasterDetailPageNavigation.HomePage"
+             Title="HomePage" 
+             BackgroundColor="White">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <StackLayout VerticalOptions="Start">
+                    <Grid HeightRequest="50" Margin="0,10,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                        <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="NotificacoesTapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
+                            <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
+                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                            </Frame>
+                        </Grid>
+                    </Grid>
+                    <StackLayout>
+                        <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
+                    </StackLayout>
+                </StackLayout>
+                
+                
+                <StackLayout VerticalOptions="Start" Padding="40,0,40,20">
+                    <StackLayout>
+                        <Grid HorizontalOptions="StartAndExpand" Padding="0" ColumnSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="44"></RowDefinition>
+                                <RowDefinition Height="32"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Text="Olá," FontFamily="MyCustomFont_ExtraBold" Padding="0" TextColor="#3DBEE3" FontSize="42" Grid.Row="0" VerticalOptions="Start"></Label>
+                            <Label Padding="0" FontFamily="MyCustomFont_Bold" x:Name="Nome_Label" Margin="0" TextColor="#3DBEE3"  Grid.Row="1" FontSize="26" VerticalTextAlignment="Start" VerticalOptions="Start"></Label>
+                        </Grid>
+                    </StackLayout>
+
+                    <Grid Margin="0,20,0,20" VerticalOptions="Start" ColumnSpacing="10" RowSpacing="10" x:Name="grid_menu">
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="row1"></RowDefinition>
+                            <RowDefinition x:Name="row2"></RowDefinition>
+                            <RowDefinition x:Name="row3"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Grid.Row="0" Grid.Column="0" Source="menu_o_meu_bebe" x:Name="menu_o_meu_bebe_button" Clicked="menu_o_meu_bebe_button_Clicked"  HorizontalOptions="Start" VerticalOptions="Start"></ImageButton>
+                        <ImageButton Grid.Row="0" Grid.Column="1" Source="menu_documentos" x:Name="menu_documentos_button" Clicked="menu_documentos_button_Clicked"   HorizontalOptions="Start" VerticalOptions="Start"></ImageButton>
+                        <ImageButton Grid.Row="1" Grid.Column="0" Source="menu_chat" x:Name="menu_chat_button" Clicked="menu_chat_button_Clicked" HorizontalOptions="Start" VerticalOptions="Start"></ImageButton>
+                        <ImageButton Grid.Row="1" Grid.Column="1" Source="menu_videos" x:Name="menu_videos_button" Clicked="menu_videos_button_Clicked" HorizontalOptions="Start" VerticalOptions="Start"></ImageButton>
+                        <ImageButton Grid.Row="2" Grid.Column="0" Source="menu_definicoes" x:Name="menu_definicoes_button" Clicked="menu_definicoes_button_Clicked" HorizontalOptions="Start" VerticalOptions="Start"></ImageButton>
+                        <ImageButton Grid.Row="2" Grid.Column="1" Source="menu_outros_contactos" x:Name="menu_outros_contactos_button" Clicked="menu_outros_contactos_button_Clicked" HorizontalOptions="Start" VerticalOptions="Start"></ImageButton>
+                    </Grid>
+
+                    <ImageButton Source="ajuda" HorizontalOptions="StartAndExpand" x:Name="ajuda_button" Clicked="ajuda_button_Clicked"></ImageButton>
+                    <StackLayout Margin="0,30,0,20">
+                        <Label Text="Últimos artigos" FontFamily="MyCustomFont_Bold" TextColor="#3DBEE3" FontSize="26" VerticalTextAlignment="Start" VerticalOptions="Start"></Label>
+                    </StackLayout>
+
+                    <Grid HorizontalOptions="Start" VerticalOptions="Center" RowSpacing="20" ColumnSpacing="20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="row_new_1"/>
+                            <RowDefinition x:Name="row_new_2"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Frame xct:ShadowEffect.Color="#656565" CornerRadius="10" xct:ShadowEffect.Radius="10" Grid.Row="0" Grid.Column="0" x:Name="noticia_1" Padding="0" IsClippedToBounds="True">
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Padding="0">
+                                        <Image HorizontalOptions="StartAndExpand" x:Name="new_1_img"></Image>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label TextColor="#3DBEE3" FontSize="9" FontFamily="MyCustomFont_Bold"  x:Name="new_1_titulo"></Label>
+                                        <Label FontSize="8" TextColor="#7D7D7D" VerticalOptions="Start" VerticalTextAlignment="Start" LineHeight="1.2" x:Name="new_1_sumario" FontFamily="MyCustomFont_Medium"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="End" Margin="0,0,0,0">
+                                        <Label FontSize="8" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold" Text="> Ler mais" VerticalOptions="End" VerticalTextAlignment="End"></Label>
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="0"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame xct:ShadowEffect.Color="#656565" CornerRadius="10" xct:ShadowEffect.Radius="10" Grid.Row="0" Grid.Column="1" x:Name="noticia_2" Padding="0" IsClippedToBounds="True">
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Padding="0">
+                                        <Image HorizontalOptions="StartAndExpand" x:Name="new_2_img"></Image>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label TextColor="#3DBEE3" FontSize="9" FontFamily="MyCustomFont_Bold"  x:Name="new_2_titulo"></Label>
+                                        <Label FontSize="8" TextColor="#7D7D7D" VerticalOptions="Start" VerticalTextAlignment="Start" LineHeight="1.2" x:Name="new_2_sumario" FontFamily="MyCustomFont_Medium"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="End" Margin="0,0,0,0">
+                                        <Label FontSize="8" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold" Text="> Ler mais" VerticalOptions="End" VerticalTextAlignment="End"></Label>
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="1"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame xct:ShadowEffect.Color="#656565" CornerRadius="10" xct:ShadowEffect.Radius="10" Grid.Row="0" Grid.Column="2" x:Name="noticia_3" Padding="0" IsClippedToBounds="True">
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Padding="0">
+                                        <Image HorizontalOptions="StartAndExpand" x:Name="new_3_img"></Image>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label TextColor="#3DBEE3" FontSize="9" FontFamily="MyCustomFont_Bold"  x:Name="new_3_titulo"></Label>
+                                        <Label FontSize="8" TextColor="#7D7D7D" VerticalOptions="Start" VerticalTextAlignment="Start" LineHeight="1.2" x:Name="new_3_sumario" FontFamily="MyCustomFont_Medium"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="End" Margin="0,0,0,0">
+                                        <Label FontSize="8" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold" Text="> Ler mais" VerticalOptions="End" VerticalTextAlignment="End"></Label>
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="2"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame xct:ShadowEffect.Color="#656565" CornerRadius="10" xct:ShadowEffect.Radius="10" Grid.Row="1" Grid.Column="0" x:Name="noticia_4" Padding="0" IsClippedToBounds="True">
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Padding="0">
+                                        <Image HorizontalOptions="StartAndExpand" x:Name="new_4_img"></Image>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label TextColor="#3DBEE3" FontSize="9" FontFamily="MyCustomFont_Bold"  x:Name="new_4_titulo"></Label>
+                                        <Label FontSize="8" TextColor="#7D7D7D" VerticalOptions="Start" VerticalTextAlignment="Start" LineHeight="1.2" x:Name="new_4_sumario" FontFamily="MyCustomFont_Medium"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="End" Margin="0,0,0,0">
+                                        <Label FontSize="8" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold" Text="> Ler mais" VerticalOptions="End" VerticalTextAlignment="End"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="3"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame xct:ShadowEffect.Color="#656565" CornerRadius="10" xct:ShadowEffect.Radius="10" Grid.Row="1" Grid.Column="1" x:Name="noticia_5" Padding="0" IsClippedToBounds="True">
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Padding="0">
+                                        <Image HorizontalOptions="StartAndExpand" x:Name="new_5_img"></Image>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label TextColor="#3DBEE3" FontSize="9" FontFamily="MyCustomFont_Bold"  x:Name="new_5_titulo"></Label>
+                                        <Label FontSize="8" TextColor="#7D7D7D" VerticalOptions="Start" VerticalTextAlignment="Start" LineHeight="1.2" x:Name="new_5_sumario" FontFamily="MyCustomFont_Medium"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="End" Margin="0,0,0,0">
+                                        <Label FontSize="8" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold" Text="> Ler mais" VerticalOptions="End" VerticalTextAlignment="End"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="4"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame xct:ShadowEffect.Color="#656565" CornerRadius="10" xct:ShadowEffect.Radius="10" Grid.Row="1" Grid.Column="2" x:Name="noticia_6" Padding="0" IsClippedToBounds="True">
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Padding="5">
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Padding="0">
+                                        <Image HorizontalOptions="StartAndExpand" x:Name="new_6_img"></Image>
+                                    </Frame>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
+                                        <Label TextColor="#3DBEE3" FontSize="9" FontFamily="MyCustomFont_Bold"  x:Name="new_6_titulo"></Label>
+                                        <Label FontSize="8" TextColor="#7D7D7D" VerticalOptions="Start" VerticalTextAlignment="Start" LineHeight="1.2" x:Name="new_6_sumario" FontFamily="MyCustomFont_Medium"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="End" Margin="0,0,0,0">
+                                        <Label FontSize="8" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold" Text="> Ler mais" VerticalOptions="End" VerticalTextAlignment="End"></Label>
+                                    </StackLayout>
+
+                                </StackLayout>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="5"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Frame>
+
+                    </Grid>
+                </StackLayout>
+                <StackLayout Margin="0,30,0,30">
+                    <Label x:Name="Copyright_Label" FontFamily="MyCustomFont_Regular" LineHeight="1.2" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        <ActivityIndicator IsRunning="False" IsVisible="False" x:Name="LoadingActivator" Color="#AA2179" VerticalOptions="Center"
+                               HorizontalOptions="Center" HeightRequest="80" WidthRequest="80"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" />
+    </AbsoluteLayout>
+
+</ContentPage>

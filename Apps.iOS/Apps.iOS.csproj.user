@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SelectedDevice>Remote Device</SelectedDevice>
+    <DefaultDevice>iPhone SE %283rd generation%29 iOS 15.5</DefaultDevice>
+    <ProjectView>ProjectFiles</ProjectView>
+    <DeveloperId>
+    </DeveloperId>
+    <DevelopmentTeamId>
+    </DevelopmentTeamId>
+    <HasIOSDesignerOverlayBeenDismissed>True</HasIOSDesignerOverlayBeenDismissed>
+    <ActiveDebugProfile>Remote Device</ActiveDebugProfile>
+    <SelectedPlatformGroup>RemoteDevice</SelectedPlatformGroup>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_CodesignBundle Include="Apps.iOS.app">
+      <CodesignSigningKey>A16168C95B3815707E358F3CF305CA1E1776F873</CodesignSigningKey>
+      <CodesignEntitlements>/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/Entitlements.xcent</CodesignEntitlements>
+      <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
+      <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
+      <RequireCodeSigning>true</RequireCodeSigning>
+      <CodesignExtraArgs></CodesignExtraArgs>
+      <CodesignResourceRules></CodesignResourceRules>
+      <CodesignDisableTimestamp>false</CodesignDisableTimestamp>
+      <CodesignKeychain></CodesignKeychain>
+      <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
+      <SourceProjectPath>/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS</SourceProjectPath>
+    </_CodesignBundle>
+  </ItemGroup>
+</Project>

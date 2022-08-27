@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:circle_img="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:custom_picker="clr-namespace:CurvedPicker"
+             mc:Ignorable="d"
+             x:Class="MasterDetailPageNavigation.ConsultasPage"
+             BackgroundColor="White">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All">
+            <StackLayout HorizontalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="Start">
+                    <Grid HeightRequest="50" Margin="0,10,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                        <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="NotificacoesTapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
+                            <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
+                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                            </Frame>
+                        </Grid>
+                    </Grid>
+                    <StackLayout>
+                        <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="Start" Padding="20,0,20,5">
+                    <StackLayout Margin="0">
+                        <ImageButton Source="voltar" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" Clicked="ImageButton_Clicked"></ImageButton>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Margin="0,5,0,20" Spacing="0" Opacity="1" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+                        <StackLayout>
+                            <Label x:Name="PageTitle_Label" LineHeight="0.9" Padding="0" CharacterSpacing="0.5" TextColor="#3DBEE3" FontSize="48" Grid.Row="0" FontFamily="MyCustomFont_ExtraBold"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="0" WidthRequest="150">
+                            <Frame CornerRadius="16" Padding="10, 0, 10, 0" IsClippedToBounds="True" BackgroundColor="#3DBEE3" WidthRequest="220"  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" HeightRequest="35">
+                                <Grid ColumnSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="188"></ColumnDefinition>
+                                        <ColumnDefinition Width="12"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <custom_picker:CustomPicker 
+                                        Grid.Column="0"
+                                            x:Name="Bebes_Picker" SelectedIndexChanged="Bebes_Picker_SelectedIndexChanged"
+                                            Title="Selecionar Bebé"  
+                                        FontFamily="MyCustomFont_Medium"
+                                            VerticalTextAlignment="Start"
+                                            FontSize="13" 
+                                            WidthRequest="200"
+                                            HorizontalTextAlignment="Start"
+                                            TextColor="White" 
+                                            TitleColor="White"
+                                            BackgroundColor="#3DBEE3"/>
+
+                                    <Label Grid.Column="1" FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf107;" HorizontalOptions="Center" VerticalOptions="Center"  TextColor="White" FontSize="12"></Label>
+                                </Grid>
+
+                            </Frame>
+                        </StackLayout>
+                        <Grid Margin="0,15,0,30" RowSpacing="20" ColumnSpacing="10" x:Name="grid_consultas"></Grid>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Margin="0,30,0,30">
+                    <Label x:Name="Copyright_Label" FontFamily="MyCustomFont_Regular" LineHeight="1.2" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        <ActivityIndicator IsRunning="{Binding LoadingActivator}" x:Name="loadingActivator" Color="#AA2179" VerticalOptions="Center"
+                               HorizontalOptions="Center" HeightRequest="80" WidthRequest="80"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" />
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:circle_img="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="MasterDetailPageNavigation.ChatsPage"
+             Title="MINHAS CONVERSAS">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All">
+            <StackLayout HorizontalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="Start">
+                    <Grid HeightRequest="50" Margin="0,10,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                        <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="NotificacoesTapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
+                            <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
+                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                            </Frame>
+                        </Grid>
+                    </Grid>
+                    <StackLayout>
+                        <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Padding="20,0,20,5">
+                    <StackLayout Margin="0">
+                        <ImageButton Source="voltar" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" Clicked="ImageButton_Clicked"></ImageButton>
+                    </StackLayout>
+                    <Label Padding="0" Text="Chat" Margin="0" TextColor="#3DBEE3" FontFamily="MyCustomFont_ExtraBold" HorizontalOptions="FillAndExpand" FontSize="48" VerticalTextAlignment="Start" VerticalOptions="Start"></Label>
+                    <StackLayout >
+                        <Label Text="Envie uma mensagem e a nossa equipa irá responder assim que for possivel." TextColor="#656565" FontSize="16" FontFamily="MyCustomFont_Bold"></Label>
+                    </StackLayout>
+                  
+                    <StackLayout HorizontalOptions="FillAndExpand" Margin="0, 0,0,20">
+
+                        <StackLayout VerticalOptions="Start"  x:Name="div_Recentes" IsVisible="False" Margin="0,10,0,0">
+                            <StackLayout Margin="0">
+                                <Label HorizontalOptions="Start" Margin="0" FontSize="16" VerticalOptions="Center" Text="Recentes" FontFamily="MyCustomFont_Bold" TextColor="#3DBEE3" HorizontalTextAlignment="Start"></Label>
+                            </StackLayout>
+                            <ListView x:Name="ListViewItems_recentes" HasUnevenRows="True" Footer="" ItemSelected="ListViewItems_recentes_ItemSelected" SeparatorVisibility="None" VerticalOptions="Start" VerticalScrollBarVisibility="Never">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Grid ColumnSpacing="10" RowSpacing="10" Margin="0,10,0,10">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="60"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="60"></ColumnDefinition>
+                                                    <ColumnDefinition></ColumnDefinition>
+                                                    <ColumnDefinition Width="35"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+
+                                                <circle_img:CircleImage Grid.Row="0" Grid.Column="0" HeightRequest="60" WidthRequest="60" Source="{Binding foto_fisio_source}"></circle_img:CircleImage>
+                                                
+                                                <StackLayout Grid.Row="0" Grid.Column="1" HeightRequest="60">
+                                                    <Grid VerticalOptions="Center">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="20"></RowDefinition>
+                                                            <RowDefinition></RowDefinition>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition></ColumnDefinition>
+                                                            <ColumnDefinition Width="5"></ColumnDefinition>
+                                                            <ColumnDefinition Width="70"></ColumnDefinition>
+                                                            <ColumnDefinition Width="5"></ColumnDefinition>
+                                                            <ColumnDefinition Width="40"></ColumnDefinition>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Grid.Row="0" Grid.Column="0" Margin="0,3,0,0" VerticalOptions="Start" HorizontalOptions="Start" Text="{Binding fisio}" FontSize="13" FontFamily="MyCustomFont_Bold" TextColor="#3DBEE3"></Label>
+                                                        <Label Grid.Row="0" Margin="0,5,0,0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="4" FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf111;" TextColor="#3DBEE3"></Label>
+                                                        <Label Grid.Row="0" Margin="0,5,0,0" Grid.Column="2" VerticalOptions="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" FontFamily="MyCustomFont_Bold" FontSize="10" Text="{Binding ultima_mensagem_data}" TextColor="#3DBEE3"></Label>
+                                                        <Label Grid.Row="0" Margin="0,5,0,0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" FontSize="4" FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf111;" TextColor="#3DBEE3"></Label>
+                                                        <Label Grid.Row="0" Margin="0,5,0,0" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="MyCustomFont_Bold" FontSize="10" Text="{Binding ultima_mensagem_hora}" TextColor="#3DBEE3"></Label>
+                                                        <Label Grid.Row="1" FontFamily="MyCustomFont_Medium" Grid.ColumnSpan="5" VerticalOptions="Start" HorizontalOptions="Start" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" Text="{Binding ultima_mensagem_texto}"></Label>
+                                                    </Grid>
+                                                </StackLayout>
+                                                
+                                                <Image  Grid.Row="0" Grid.Column="2" Source="arrow_right" WidthRequest="35" HeightRequest="35" HorizontalOptions="End" VerticalOptions="Center"></Image>
+                                            </Grid>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+
+                        <StackLayout VerticalOptions="Start">
+                            <StackLayout Margin="0,30,0,00">
+                                <Label HorizontalOptions="Start" Margin="0" FontSize="16" VerticalOptions="Center" Text="Falar com" FontFamily="MyCustomFont_Bold" TextColor="#3DBEE3" HorizontalTextAlignment="Start" x:Name="falar_com_label"></Label>
+                            </StackLayout>
+                            <ListView x:Name="ListViewItems_fisioterapeutas" HasUnevenRows="True" Footer="" ItemSelected="ListViewItems_fisioterapeutas_ItemSelected" SeparatorVisibility="None" VerticalOptions="Start"  VerticalScrollBarVisibility="Never">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Grid ColumnSpacing="10" RowSpacing="10" VerticalOptions="Center" Margin="0,10,0,10">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="60"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="60"></ColumnDefinition>
+                                                    <ColumnDefinition></ColumnDefinition>
+                                                    <ColumnDefinition Width="35"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+
+                                                <circle_img:CircleImage Grid.Row="0" Grid.Column="0" HeightRequest="60" WidthRequest="60" Source="{Binding foto_url_source}"></circle_img:CircleImage>
+                                                <StackLayout Grid.Row="0" Grid.Column="1">
+                                                    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="20"></RowDefinition>
+                                                            <RowDefinition></RowDefinition>
+                                                        </Grid.RowDefinitions>
+                                                        <Label Grid.Row="0" VerticalOptions="Start" HorizontalOptions="Start" Text="{Binding nome}" FontSize="20" FontFamily="MyCustomFont_Bold" TextColor="#3DBEE3"></Label>
+                                                        <Label Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Text="{Binding especialidade}" FontSize="14"  TextColor="#3DBEE3" FontFamily="MyCustomFont_Medium"></Label>
+                                                    </Grid>
+                                                </StackLayout>
+                                                <Image  Grid.Row="0" Grid.Column="2" Source="arrow_right" WidthRequest="35" HeightRequest="35" HorizontalOptions="End" VerticalOptions="Center"></Image>
+                                            </Grid>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Margin="0,30,0,30">
+                    <Label x:Name="Copyright_Label" FontFamily="MyCustomFont_Regular" LineHeight="1.2" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        <ActivityIndicator IsRunning="{Binding LoadingActivator}" x:Name="loadingActivator" Color="#AA2179" VerticalOptions="Center"
+                               HorizontalOptions="Center" HeightRequest="80" WidthRequest="80"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" />
+    </AbsoluteLayout>
+
+</ContentPage>

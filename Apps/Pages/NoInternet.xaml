@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Apps.Pages.NoInternet">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary"
+                     Text="Menu Principal"
+                     Priority="0" 
+                     IconImageSource="logo_branco.png"/>
+        <ToolbarItem Order="Primary"
+                     Text="Alerta!"
+                     Priority="1"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Padding="30" Margin="40">
+            <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image HorizontalOptions="Center"  
+                       Grid.Row="0" 
+                       Grid.Column="0"   
+                       WidthRequest="300" 
+                       Aspect="AspectFill" 
+                       Source="NEMUM_logo.png"/>
+
+                <Label Text="&#xf00d;" 
+                   Grid.Row="1" 
+                   Grid.Column="0"  
+                   FontFamily="{StaticResource FontAwesomeSolid}"
+                   FontSize="60"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="CenterAndExpand" TextColor ="#202020"/>
+
+                <Label Text="De momento, não se encontra ligado à internet. Por favor, ligue-se a uma rede disponivel e aguarde pois será redirecionado de novo para a página de Login!!!" 
+                   Grid.Row="2" 
+                   Grid.Column="0"  
+                   FontSize="Small" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="CenterAndExpand"  
+                   TextColor ="#202020"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,134 @@
+E:/Azure/Mobile/AD Comunicação/Apps/bin/Release/netstandard2.0/Apps.deps.json
+E:/Azure/Mobile/AD Comunicação/Apps/bin/Release/netstandard2.0/Apps.dll
+E:/Azure/Mobile/AD Comunicação/Apps/bin/Release/netstandard2.0/ref/Apps.dll
+E:/Azure/Mobile/AD Comunicação/Apps/bin/Release/netstandard2.0/Apps.pdb
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Apps.GeneratedMSBuildEditorConfig.editorconfig
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/App.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/MainPage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/FavoritosPage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/HomePage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/LoginPage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/MasterDetailPage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/NoInternet.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/NotificacoesPage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/PasswordRecoverPage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/Registo.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Pages/SubCategoriasByCategoriaIdPage.xaml.g.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfoInputs.cache
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfo.cs
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Apps.csproj.CoreCompileInputs.cache
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/XamlC.stamp
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Apps.dll
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/ref/Apps.dll
+E:/Azure/Mobile/AD Comunicação/Apps/obj/Release/netstandard2.0/Apps.pdb
+E:/Azure/Mobile/ADC/Apps/bin/Release/netstandard2.0/Apps.deps.json
+E:/Azure/Mobile/ADC/Apps/bin/Release/netstandard2.0/Apps.dll
+E:/Azure/Mobile/ADC/Apps/bin/Release/netstandard2.0/ref/Apps.dll
+E:/Azure/Mobile/ADC/Apps/bin/Release/netstandard2.0/Apps.pdb
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Apps.GeneratedMSBuildEditorConfig.editorconfig
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/App.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/MainPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/ChangeNotificacoesPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/ChangePasswordPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/ChatPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/ChatsPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/ConsultaPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/ConsultasPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/ContactarPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/DefinicoesPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/DocsPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/HomePage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/LoginPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/MasterDetailPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/NoInternet.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/NoticiaPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/NotificacaoPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/NotificacoesPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/OMeuBebePage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/OutrosContactosPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/PasswordRecoverPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/PerfilPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/Registo.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/VideoPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Pages/VideosPage.xaml.g.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfoInputs.cache
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfo.cs
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Apps.csproj.CoreCompileInputs.cache
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/XamlC.stamp
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Apps.dll
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/ref/Apps.dll
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Apps.pdb
+E:/Azure/Mobile/ADC/Apps/obj/Release/netstandard2.0/Apps.csproj.AssemblyReference.cache
+E:/Azure/Mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.deps.json
+E:/Azure/Mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.dll
+E:/Azure/Mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.pdb
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.csproj.AssemblyReference.cache
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.GeneratedMSBuildEditorConfig.editorconfig
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/App.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/MainPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChangeNotificacoesPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChangePasswordPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChatPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChatsPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ConsultaPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ConsultasPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ContactarPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/DefinicoesPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/DocsPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/HomePage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/LoginPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/MasterDetailPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NoInternet.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NoticiaPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NotificacaoPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NotificacoesPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/OMeuBebePage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/OutrosContactosPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/PasswordRecoverPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/PerfilPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/VideoPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/VideosPage.xaml.g.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfoInputs.cache
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfo.cs
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.csproj.CoreCompileInputs.cache
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/XamlC.stamp
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.dll
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/refint/Apps.dll
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.pdb
+E:/Azure/Mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/ref/Apps.dll
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.deps.json
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.dll
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/ref/Apps.dll
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/App.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/MainPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChangeNotificacoesPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChangePasswordPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChatPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ChatsPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ConsultaPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ConsultasPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/ContactarPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/DefinicoesPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/DocsPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/HomePage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/LoginPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/MasterDetailPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NoInternet.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NoticiaPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NotificacaoPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/NotificacoesPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/OMeuBebePage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/OutrosContactosPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/PasswordRecoverPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/PerfilPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/VideoPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Pages/VideosPage.xaml.g.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfoInputs.cache
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.AssemblyInfo.cs
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.csproj.CoreCompileInputs.cache
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/XamlC.stamp
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.dll
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/ref/Apps.dll
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/obj/Release/netstandard2.0/Apps.csproj.AssemblyReference.cache

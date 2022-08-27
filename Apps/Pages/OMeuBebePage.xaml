@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:circle_img="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:custom_picker="clr-namespace:CurvedPicker"
+             mc:Ignorable="d"
+             x:Class="MasterDetailPageNavigation.OMeuBebePage"
+             BackgroundColor="White">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All">
+            <StackLayout HorizontalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="Start">
+                    <Grid HeightRequest="50" Margin="0,10,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                        <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                                <ColumnDefinition Width="26"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="NotificacoesTapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
+                            <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
+                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                            </Frame>
+                        </Grid>
+                    </Grid>
+                    <StackLayout>
+                        <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Padding="20,0,20,5">
+                    <StackLayout Margin="0">
+                        <ImageButton Source="voltar" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" x:Name="voltar_button" Clicked="voltar_button_Clicked"></ImageButton>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Margin="0,5,0,20" Spacing="0" Opacity="1" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
+                        <StackLayout>
+                            <Label x:Name="PageTitle_Label" LineHeight="0.9" Padding="0" TextColor="#3DBEE3" FontSize="48" Grid.Row="0" FontFamily="MyCustomFont_ExtraBold"></Label>
+                        </StackLayout>
+                        <StackLayout Margin="0" WidthRequest="150">
+
+                            <Frame CornerRadius="16" Padding="10, 0, 10, 0" IsClippedToBounds="True" BackgroundColor="#3DBEE3" WidthRequest="220"  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" HeightRequest="35">
+                                <Grid ColumnSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="188"></ColumnDefinition>
+                                        <ColumnDefinition Width="12"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <custom_picker:CustomPicker 
+                                        Grid.Column="0"
+                                            x:Name="Bebes_Picker" SelectedIndexChanged="Bebes_Picker_SelectedIndexChanged"
+                                            Title="Selecionar Bebé" FontFamily="MyCustomFont_Medium"
+                                            VerticalTextAlignment="Start"
+                                            FontSize="13" 
+                                            WidthRequest="200"
+                                            HorizontalTextAlignment="Start"
+                                            TextColor="White" 
+                                            TitleColor="White"
+                                            BackgroundColor="#3DBEE3"/>
+
+                                    <Label Grid.Column="1" FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf107;" HorizontalOptions="Center" VerticalOptions="Center"  TextColor="White" FontSize="12"></Label>
+                                </Grid>
+                               
+                            </Frame>
+                           
+                            
+                        </StackLayout>
+
+                        <StackLayout Margin="0,20,0,0" x:Name="All_Data_Div" IsVisible="False">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="130"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+
+                                <Frame CornerRadius="65" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" x:Name="Bebe_Img_Frame" WidthRequest="130" HeightRequest="130" Padding="0" BackgroundColor="#E6E6E6">
+                                    <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="130" WidthRequest="130" x:Name="Bebe_Img"></Image>
+                                </Frame>
+                                <Frame CornerRadius="65" IsClippedToBounds="True" BackgroundColor="#E6E6E6" Grid.Row="0" Grid.Column="0" x:Name="No_Foto_Bebe_Frame" IsVisible="False"  WidthRequest="130" HeightRequest="130" Padding="0">
+                                    <Label HorizontalOptions="Center" Margin="0" FontSize="18" FontFamily="MyCustomFont_Bold" Text="FOTO" VerticalOptions="Center" TextColor="#3DBEE3"></Label>
+                                </Frame>
+
+                                <Grid Grid.Row="0" Grid.Column="1" Margin="20,0,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="17"></RowDefinition>
+                                        <RowDefinition Height="15"></RowDefinition>
+                                        <RowDefinition Height="17"></RowDefinition>
+                                        <RowDefinition Height="15"></RowDefinition>
+                                        <RowDefinition Height="17"></RowDefinition>
+                                        <RowDefinition Height="15"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <Label Grid.Row="0" FontSize="16" FontFamily="MyCustomFont_Bold" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Nome"></Label>
+
+                                    <Label Grid.Row="1" FontSize="13" FontFamily="MyCustomFont_Medium" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#656565" x:Name="Bebe_Nome_Label"></Label>
+
+                                    <Label Grid.Row="2" FontSize="16" FontFamily="MyCustomFont_Bold" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Data de Nascimento"></Label>
+
+                                    <Label Grid.Row="3" FontSize="13" FontFamily="MyCustomFont_Medium" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#656565"  x:Name="Bebe_Data_Nascimento_Label"></Label>
+
+                                    <Label Grid.Row="4" FontSize="16" FontFamily="MyCustomFont_Bold" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Enc. de Educação"></Label>
+
+                                    <Label Grid.Row="5" FontSize="13" FontFamily="MyCustomFont_Medium" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#656565"  x:Name="Bebe_Enc_Educacao_Label"></Label>
+                                </Grid>
+                            </Grid>
+
+
+                            <Grid Margin="0,30,0,0" ColumnSpacing="20">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+
+                                <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Column="0" HeightRequest="375" BackgroundColor="#F5F5F5" Padding="10">
+                                    <Grid RowSpacing="15">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"></RowDefinition>
+                                            <RowDefinition Height="302"></RowDefinition>
+                                            <RowDefinition Height="30"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Label FontSize="16" Grid.Row="0" FontFamily="MyCustomFont_Bold" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Consultas"></Label>
+                                        <Label FontFamily="MyCustomFont_Medium" Grid.Row="1" VerticalTextAlignment="Start" VerticalOptions="Start" Margin="0" x:Name="Consultas_No_Data_Label" FontSize="11" TextColor="#656565" Text="Sem consultas marcadas." IsVisible="False"></Label>
+                                        <ListView Margin="0" x:Name="ListView_Consultas" Grid.Row="1" HasUnevenRows="True" Footer="" ItemSelected="ListView_Consultas_ItemSelected">
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <ViewCell>
+                                                        <Grid Margin="0,5,0,10">
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition></RowDefinition>
+                                                            </Grid.RowDefinitions>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition></ColumnDefinition>
+                                                                <ColumnDefinition Width="18"></ColumnDefinition>
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <StackLayout Grid.Row="0" Grid.Column="0">
+                                                                <StackLayout Padding="0" Margin="0">
+                                                                    <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#656565" FontFamily="MyCustomFont_Bold" FontSize="14" Text="{Binding nome}" />
+                                                                </StackLayout>
+                                                                <Grid Margin="0" HorizontalOptions="Start" RowSpacing="5">
+                                                                    <Grid.RowDefinitions>
+                                                                        <RowDefinition Height="12"></RowDefinition>
+                                                                        <RowDefinition Height="12"></RowDefinition>
+                                                                    </Grid.RowDefinitions>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition></ColumnDefinition>
+                                                                        <ColumnDefinition></ColumnDefinition>
+                                                                    </Grid.ColumnDefinitions>
+
+                                                                    <Grid Grid.Row="0" Grid.Column="0">
+                                                                        <Grid.RowDefinitions>
+                                                                            <RowDefinition></RowDefinition>
+                                                                        </Grid.RowDefinitions>
+                                                                        <Grid.ColumnDefinitions>
+                                                                            <ColumnDefinition Width="10"></ColumnDefinition>
+                                                                            <ColumnDefinition></ColumnDefinition>
+                                                                        </Grid.ColumnDefinitions>
+                                                                        <Image Grid.Column="0" Source="calendario" WidthRequest="10" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                                                                        <Label Grid.Column="1" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontFamily="MyCustomFont_Medium" Text="{Binding data}" FontSize="9" Margin="0,0,0,0"></Label>
+                                                                    </Grid>
+
+
+                                                                    <Grid  Grid.Row="0" Grid.Column="1">
+                                                                        <Grid.RowDefinitions>
+                                                                            <RowDefinition></RowDefinition>
+                                                                        </Grid.RowDefinitions>
+                                                                        <Grid.ColumnDefinitions>
+                                                                            <ColumnDefinition Width="10"></ColumnDefinition>
+                                                                            <ColumnDefinition></ColumnDefinition>
+                                                                        </Grid.ColumnDefinitions>
+                                                                        <Image Grid.Column="0" Source="relogio" WidthRequest="10" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                                                                        <Label Grid.Column="1" FontFamily="MyCustomFont_Medium" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Text="{Binding hora}" FontSize="9" Margin="0,0,0,0"></Label>
+                                                                    </Grid>
+
+                                                                    <Grid Grid.Row="1" Grid.ColumnSpan="2">
+                                                                        <Grid.RowDefinitions>
+                                                                            <RowDefinition></RowDefinition>
+                                                                        </Grid.RowDefinitions>
+                                                                        <Grid.ColumnDefinitions>
+                                                                            <ColumnDefinition Width="10"></ColumnDefinition>
+                                                                            <ColumnDefinition></ColumnDefinition>
+                                                                        </Grid.ColumnDefinitions>
+                                                                        <Image Grid.Column="0" Source="pin" WidthRequest="10" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+                                                                        <Label FontFamily="MyCustomFont_Medium" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Text="{Binding local}" FontSize="9" Margin="0,0,0,0"></Label>
+                                                                    </Grid>
+
+                                                                </Grid>
+                                                            </StackLayout>
+                                                            <Image Grid.Row="0" Grid.Column="1" Source="arrow_right" WidthRequest="18" HeightRequest="18" VerticalOptions="Center" HorizontalOptions="End" Margin="0"></Image>
+                                                        </Grid>
+                                                    </ViewCell>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+                                        <Label Grid.Row="2" HorizontalOptions="Start" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="Ver_Todas_Consultas_Label">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="10" TextColor="#3DBEE3"></Span>
+                                                    <Span Text=" Ver todas" FontSize="10" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold"></Span>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                            <Label.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="Ver_Todas_Consultas_Tapped" />
+                                            </Label.GestureRecognizers>
+                                        </Label>
+                                    </Grid>
+                                </Frame>
+
+                                <Grid RowSpacing="15" Grid.Row="0" Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="190"></RowDefinition>
+                                        <RowDefinition Height="190"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="0" VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5" Padding="10">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="30"></RowDefinition>
+                                                <RowDefinition Height="115"></RowDefinition>
+                                                <RowDefinition Height="30"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Label FontSize="16" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Notificações" FontFamily="MyCustomFont_Bold"></Label>
+                                            <Label Grid.Row="1" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" Margin="0" x:Name="Notificacoes_No_Data_Label" FontSize="11" TextColor="#656565" Text="Sem notificacoes." IsVisible="False"></Label>
+
+                                            <Grid x:Name="grid_notificacoes" Grid.Row="1">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"></RowDefinition>
+                                                    <RowDefinition Height="30"></RowDefinition>
+                                                    <RowDefinition Height="30"></RowDefinition>
+                                                </Grid.RowDefinitions>
+
+                                                <Frame Grid.Row="0" CornerRadius="15" HeightRequest="30" Padding="5,0,5,5" IsClippedToBounds="True" BackgroundColor="#3DBEE3" x:Name="not_1_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_1_button">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="&#xf0f3;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
+                                                                <Span Text=" "></Span>
+                                                                <Span x:Name="not_1_button_text" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="White" ></Span>
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
+                                                    </Label>
+                                                </Frame>
+
+                                                <Frame Grid.Row="1" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="not_2_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_2_button">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="&#xf0f3;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
+                                                                <Span Text=" "></Span>
+                                                                <Span x:Name="not_2_button_text" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="White" ></Span>
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
+
+                                                    </Label>
+                                                </Frame>
+
+
+                                                <Frame Grid.Row="2" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="not_3_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_3_button">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="&#xf0f3;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
+                                                                <Span Text=" "></Span>
+                                                                <Span x:Name="not_3_button_text" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="White" ></Span>
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
+
+                                                    </Label>
+                                                </Frame>
+                                            </Grid>
+                                            
+                                           
+                                            <Label Grid.Row="2" x:Name="Ver_Todos_Notificacoes_Label" HorizontalOptions="Start" VerticalTextAlignment="Start" VerticalOptions="Start">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="10" TextColor="#3DBEE3"></Span>
+                                                        <Span Text=" Ver todas" FontSize="10" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold"></Span>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="Ver_Todas_Notificacoes_Tapped" />
+                                                </Label.GestureRecognizers>
+                                            </Label>
+                                        </Grid>
+                                      
+                                    </Frame>
+
+                                    <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5" Padding="10">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="30"></RowDefinition>
+                                                <RowDefinition Height="115"></RowDefinition>
+                                                <RowDefinition Height="30"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Label FontSize="16" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Documentos" FontFamily="MyCustomFont_Bold"></Label>
+                                            <Label Grid.Row="1" VerticalTextAlignment="Start" VerticalOptions="Start" Margin="0" x:Name="Documentos_No_Data_Label" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="#656565" Text="Sem documentos." IsVisible="False"></Label>
+                                            <Grid x:Name="grid_documentos" Grid.Row="1">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"></RowDefinition>
+                                                    <RowDefinition Height="30"></RowDefinition>
+                                                    <RowDefinition Height="30"></RowDefinition>
+                                                </Grid.RowDefinitions>
+
+                                                <Frame Grid.Row="0" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="doc_1_frame">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_1_button">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
+                                                                <Span Text=" "></Span>
+                                                                <Span x:Name="doc_1_button_text" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="White" ></Span>
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
+                                                    </Label>
+                                                </Frame>
+
+                                                <Frame Grid.Row="1" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="doc_2_frame">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_2_button">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
+                                                                <Span Text=" "></Span>
+                                                                <Span x:Name="doc_2_button_text" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="White" ></Span>
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
+                                                    </Label>
+                                                </Frame>
+
+                                                <Frame Grid.Row="2" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="doc_3_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_3_button">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
+                                                                <Span Text=" "></Span>
+                                                                <Span x:Name="doc_3_button_text" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="White" ></Span>
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
+
+                                                    </Label>
+                                                </Frame>
+                                            </Grid>
+                                            <Label Grid.Row="2" HorizontalOptions="Start" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="Ver_Todos_Documentos_Label">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="10" TextColor="#3DBEE3"></Span>
+                                                        <Span Text=" Ver todos" FontSize="10" TextColor="#3DBEE3" FontFamily="MyCustomFont_Bold"></Span>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="Ver_Todos_Documento_Tapped" />
+                                                </Label.GestureRecognizers>
+                                            </Label>
+                                        </Grid>
+
+                                    </Frame>
+
+                                </Grid>
+                                
+                                
+                            </Grid>
+
+
+                            <StackLayout Margin="0,30,0,0">
+                                <Label Text="Historial de Consultas" LineHeight="0.9" Padding="0" TextColor="#3DBEE3" FontSize="24" Grid.Row="0" FontFamily="MyCustomFont_Bold"></Label>
+                            </StackLayout>
+                            <Grid Margin="0,15,0,30" RowSpacing="10" ColumnSpacing="10" x:Name="grid_consultas_historial"></Grid>
+                            
+                        </StackLayout>
+                        
+                    </StackLayout>
+
+
+                </StackLayout>
+                <StackLayout Margin="0,30,0,30">
+                    <Label x:Name="Copyright_Label" FontFamily="MyCustomFont_Regular" LineHeight="1.2" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        <ActivityIndicator IsRunning="{Binding LoadingActivator}" x:Name="loadingActivator" Color="#AA2179" VerticalOptions="Center"
+                               HorizontalOptions="Center" HeightRequest="80" WidthRequest="80"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" />
+    </AbsoluteLayout>
+
+</ContentPage>
