@@ -374,7 +374,7 @@ namespace MasterDetailPageNavigation
                 Person_Img.GestureRecognizers.Add(GoToDefinicoes);
                 Iniciais_Frame.GestureRecognizers.Add(GoToDefinicoes);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }

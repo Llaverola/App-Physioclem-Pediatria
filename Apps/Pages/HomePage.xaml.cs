@@ -232,7 +232,7 @@ namespace MasterDetailPageNavigation
                 await Task.Delay(2000);
                 Hide();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Hide();
             }

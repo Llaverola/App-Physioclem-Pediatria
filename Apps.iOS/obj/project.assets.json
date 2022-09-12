@@ -57,18 +57,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.FacebookClient/2.2.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.iOS": "5.12.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        }
-      },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
@@ -78,20 +66,6 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "Stripe.net/37.27.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Configuration.ConfigurationManager": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -99,18 +73,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {}
-        }
-      },
-      "System.Configuration.ConfigurationManager/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Permissions": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -142,51 +104,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Security.AccessControl/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Principal.Windows": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Security.Permissions/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.AccessControl": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.Permissions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {}
-        }
-      },
-      "System.Security.Principal.Windows/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.Text.Encoding.CodePages/5.0.0": {
@@ -325,92 +242,6 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0",
-          "Xamarin.Facebook.LoginKit.iOS": "5.12.0",
-          "Xamarin.Facebook.MarketingKit.iOS": "5.11.1",
-          "Xamarin.Facebook.PlacesKit.iOS": "5.12.0",
-          "Xamarin.Facebook.ShareKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll",
-          "Xamarin.iOS"
-        ]
-      },
-      "Xamarin.Facebook.LoginKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.MarketingKit.iOS/5.11.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.PlacesKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.ShareKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
-        }
-      },
       "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "compile": {
@@ -553,8 +384,7 @@
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.FacebookClient": "2.2.1",
-          "Stripe.net": "37.27.0",
+          "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -628,18 +458,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.FacebookClient/2.2.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.iOS": "5.12.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        }
-      },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
@@ -649,20 +467,6 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "Stripe.net/37.27.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Configuration.ConfigurationManager": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -670,18 +474,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {}
-        }
-      },
-      "System.Configuration.ConfigurationManager/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Permissions": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -713,39 +505,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Security.AccessControl/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Principal.Windows": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll": {}
-        }
-      },
-      "System.Security.Permissions/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.AccessControl": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.Permissions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {}
-        }
-      },
-      "System.Security.Principal.Windows/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll": {}
         }
       },
       "System.Text.Encoding.CodePages/5.0.0": {
@@ -878,92 +637,6 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0",
-          "Xamarin.Facebook.LoginKit.iOS": "5.12.0",
-          "Xamarin.Facebook.MarketingKit.iOS": "5.11.1",
-          "Xamarin.Facebook.PlacesKit.iOS": "5.12.0",
-          "Xamarin.Facebook.ShareKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll",
-          "Xamarin.iOS"
-        ]
-      },
-      "Xamarin.Facebook.LoginKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.MarketingKit.iOS/5.11.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.PlacesKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.ShareKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
-        }
-      },
       "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "compile": {
@@ -1106,8 +779,7 @@
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.FacebookClient": "2.2.1",
-          "Stripe.net": "37.27.0",
+          "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -1181,18 +853,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.FacebookClient/2.2.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.iOS": "5.12.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        }
-      },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
@@ -1202,20 +862,6 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "Stripe.net/37.27.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Configuration.ConfigurationManager": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1223,18 +869,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {}
-        }
-      },
-      "System.Configuration.ConfigurationManager/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Permissions": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -1266,39 +900,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Security.AccessControl/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Principal.Windows": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
-        }
-      },
-      "System.Security.Permissions/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.AccessControl": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.Permissions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {}
-        }
-      },
-      "System.Security.Principal.Windows/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
         }
       },
       "System.Text.Encoding.CodePages/5.0.0": {
@@ -1429,92 +1030,6 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
-        }
-      },
-      "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0",
-          "Xamarin.Facebook.LoginKit.iOS": "5.12.0",
-          "Xamarin.Facebook.MarketingKit.iOS": "5.11.1",
-          "Xamarin.Facebook.PlacesKit.iOS": "5.12.0",
-          "Xamarin.Facebook.ShareKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll",
-          "Xamarin.iOS"
-        ]
-      },
-      "Xamarin.Facebook.LoginKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.MarketingKit.iOS/5.11.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.PlacesKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.ShareKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
         }
       },
       "Xamarin.Forms/5.0.0.2515": {
@@ -1659,8 +1174,7 @@
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.FacebookClient": "2.2.1",
-          "Stripe.net": "37.27.0",
+          "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -1734,18 +1248,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.FacebookClient/2.2.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.iOS": "5.12.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FacebookClient.dll": {}
-        }
-      },
       "Plugin.Permissions/3.0.0.12": {
         "type": "package",
         "compile": {
@@ -1755,20 +1257,6 @@
           "lib/xamarinios10/Plugin.Permissions.dll": {}
         }
       },
-      "Stripe.net/37.27.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Configuration.ConfigurationManager": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Stripe.net.dll": {}
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1776,18 +1264,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {}
-        }
-      },
-      "System.Configuration.ConfigurationManager/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Permissions": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -1819,39 +1295,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Security.AccessControl/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Principal.Windows": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
-        }
-      },
-      "System.Security.Permissions/4.5.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.AccessControl": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.Permissions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {}
-        }
-      },
-      "System.Security.Principal.Windows/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
         }
       },
       "System.Text.Encoding.CodePages/5.0.0": {
@@ -1982,92 +1425,6 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
-        }
-      },
-      "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.CoreKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0",
-          "Xamarin.Facebook.LoginKit.iOS": "5.12.0",
-          "Xamarin.Facebook.MarketingKit.iOS": "5.11.1",
-          "Xamarin.Facebook.PlacesKit.iOS": "5.12.0",
-          "Xamarin.Facebook.ShareKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll",
-          "Xamarin.iOS"
-        ]
-      },
-      "Xamarin.Facebook.LoginKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.LoginKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.MarketingKit.iOS/5.11.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.MarketingKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.PlacesKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.PlacesKit.dll": {}
-        }
-      },
-      "Xamarin.Facebook.ShareKit.iOS/5.12.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Facebook.CoreKit.iOS": "5.12.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Facebook.ShareKit.dll": {}
         }
       },
       "Xamarin.Forms/5.0.0.2515": {
@@ -2212,8 +1569,7 @@
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.FacebookClient": "2.2.1",
-          "Stripe.net": "37.27.0",
+          "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.Media": "4.0.1.5",
@@ -2357,25 +1713,6 @@
         "packageIcon.png"
       ]
     },
-    "Plugin.FacebookClient/2.2.1": {
-      "sha512": "OR3mhx8WrNzFkeoPQghpbNC2lR0lpAApWvtm3HB8s5JQVh00bHRoXXLoWklxMeVzjCqyx3qWHEjRdVzbwayrKg==",
-      "type": "package",
-      "path": "plugin.facebookclient/2.2.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid90/Plugin.FacebookClient.dll",
-        "lib/monoandroid90/Plugin.FacebookClient.xml",
-        "lib/netstandard1.0/Plugin.FacebookClient.dll",
-        "lib/netstandard1.0/Plugin.FacebookClient.xml",
-        "lib/netstandard2.0/Plugin.FacebookClient.dll",
-        "lib/netstandard2.0/Plugin.FacebookClient.xml",
-        "lib/xamarinios10/Plugin.FacebookClient.dll",
-        "lib/xamarinios10/Plugin.FacebookClient.xml",
-        "plugin.facebookclient.2.2.1.nupkg.sha512",
-        "plugin.facebookclient.nuspec"
-      ]
-    },
     "Plugin.Permissions/3.0.0.12": {
       "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
       "type": "package",
@@ -2397,26 +1734,6 @@
         "plugin.permissions.3.0.0.12.nupkg.sha512",
         "plugin.permissions.nuspec",
         "readme.txt"
-      ]
-    },
-    "Stripe.net/37.27.0": {
-      "sha512": "Peo5RNsrk/HQXmuXTIpA5UnE/E2jqnVwUgUIUehNITQIAz0Ll3ODa5g1iFYWhv5G8zItzZ/XhMBdiw1mq3AthQ==",
-      "type": "package",
-      "path": "stripe.net/37.27.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Stripe.net.dll",
-        "lib/net45/Stripe.net.pdb",
-        "lib/net45/Stripe.net.xml",
-        "lib/net461/Stripe.net.dll",
-        "lib/net461/Stripe.net.pdb",
-        "lib/net461/Stripe.net.xml",
-        "lib/netstandard2.0/Stripe.net.dll",
-        "lib/netstandard2.0/Stripe.net.pdb",
-        "lib/netstandard2.0/Stripe.net.xml",
-        "stripe.net.37.27.0.nupkg.sha512",
-        "stripe.net.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -2446,27 +1763,6 @@
         "ref/uap10.0.16299/_._",
         "system.buffers.4.5.1.nupkg.sha512",
         "system.buffers.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Configuration.ConfigurationManager/4.5.0": {
-      "sha512": "UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
-      "type": "package",
-      "path": "system.configuration.configurationmanager/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Configuration.ConfigurationManager.dll",
-        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "ref/net461/System.Configuration.ConfigurationManager.dll",
-        "ref/net461/System.Configuration.ConfigurationManager.xml",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.4.5.0.nupkg.sha512",
-        "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2564,112 +1860,6 @@
         "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Security.AccessControl/4.5.0": {
-      "sha512": "vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
-      "type": "package",
-      "path": "system.security.accesscontrol/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net46/System.Security.AccessControl.dll",
-        "lib/net461/System.Security.AccessControl.dll",
-        "lib/netstandard1.3/System.Security.AccessControl.dll",
-        "lib/netstandard2.0/System.Security.AccessControl.dll",
-        "lib/uap10.0.16299/_._",
-        "ref/net46/System.Security.AccessControl.dll",
-        "ref/net461/System.Security.AccessControl.dll",
-        "ref/net461/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/System.Security.AccessControl.dll",
-        "ref/netstandard1.3/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
-        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
-        "ref/netstandard2.0/System.Security.AccessControl.dll",
-        "ref/netstandard2.0/System.Security.AccessControl.xml",
-        "ref/uap10.0.16299/_._",
-        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
-        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
-        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
-        "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.accesscontrol.4.5.0.nupkg.sha512",
-        "system.security.accesscontrol.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Security.Permissions/4.5.0": {
-      "sha512": "9gdyuARhUR7H+p5CjyUB/zPk7/Xut3wUSP8NJQB6iZr8L3XUXTMdoLeVAg9N4rqF8oIpE7MpdqHdDHQ7XgJe0g==",
-      "type": "package",
-      "path": "system.security.permissions/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Security.Permissions.dll",
-        "lib/netstandard2.0/System.Security.Permissions.dll",
-        "ref/net461/System.Security.Permissions.dll",
-        "ref/net461/System.Security.Permissions.xml",
-        "ref/netstandard2.0/System.Security.Permissions.dll",
-        "ref/netstandard2.0/System.Security.Permissions.xml",
-        "system.security.permissions.4.5.0.nupkg.sha512",
-        "system.security.permissions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Security.Principal.Windows/4.5.0": {
-      "sha512": "U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
-      "type": "package",
-      "path": "system.security.principal.windows/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net46/System.Security.Principal.Windows.dll",
-        "lib/net461/System.Security.Principal.Windows.dll",
-        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
-        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
-        "lib/uap10.0.16299/_._",
-        "ref/net46/System.Security.Principal.Windows.dll",
-        "ref/net461/System.Security.Principal.Windows.dll",
-        "ref/net461/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
-        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
-        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
-        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
-        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
-        "ref/uap10.0.16299/_._",
-        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
-        "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.principal.windows.4.5.0.nupkg.sha512",
-        "system.security.principal.windows.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Text.Encoding.CodePages/5.0.0": {
@@ -3020,83 +2210,6 @@
         "readme.txt",
         "xamarin.essentials.1.7.3.nupkg.sha512",
         "xamarin.essentials.nuspec"
-      ]
-    },
-    "Xamarin.Facebook.CoreKit.iOS/5.12.0": {
-      "sha512": "LT8OjXPC1cC9ISz/pI2CAhYT864SmGgPdORQOIdoscCAUezZRXLBzVGsK7QCqOcd5GIQEJ/z1J+mwEyIqwCg0w==",
-      "type": "package",
-      "path": "xamarin.facebook.corekit.ios/5.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
-        "lib/xamarinios10/Facebook.CoreKit.dll",
-        "xamarin.facebook.corekit.ios.5.12.0.nupkg.sha512",
-        "xamarin.facebook.corekit.ios.nuspec"
-      ]
-    },
-    "Xamarin.Facebook.iOS/5.12.0": {
-      "sha512": "gMzbW9o3t+R1R7e85H4XtlFhNfVhxbeHwCwQNGIY5HXyD18WHYuRmwhqYTp5FDRl2A6z3JJFAH2tYqA9RmY69w==",
-      "type": "package",
-      "path": "xamarin.facebook.ios/5.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
-        "xamarin.facebook.ios.5.12.0.nupkg.sha512",
-        "xamarin.facebook.ios.nuspec"
-      ]
-    },
-    "Xamarin.Facebook.LoginKit.iOS/5.12.0": {
-      "sha512": "b5ckNeoBRTsqmG4HB3TIcmDQMGhMnd4RsqqK1EyGH6J/6U22rycembpoNjitXhOEbfDm9tZCLan+gnaZi7+vag==",
-      "type": "package",
-      "path": "xamarin.facebook.loginkit.ios/5.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
-        "lib/xamarinios10/Facebook.LoginKit.dll",
-        "xamarin.facebook.loginkit.ios.5.12.0.nupkg.sha512",
-        "xamarin.facebook.loginkit.ios.nuspec"
-      ]
-    },
-    "Xamarin.Facebook.MarketingKit.iOS/5.11.1": {
-      "sha512": "1D3lde7943vIyju/82pN0/rWhX2tkcbTwpL+cHANcQZzYkd657KOyEDZ+2GmzeIEzCOC4Sq9XB3s/45Mfe2yrg==",
-      "type": "package",
-      "path": "xamarin.facebook.marketingkit.ios/5.11.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
-        "lib/xamarinios10/Facebook.MarketingKit.dll",
-        "xamarin.facebook.marketingkit.ios.5.11.1.nupkg.sha512",
-        "xamarin.facebook.marketingkit.ios.nuspec"
-      ]
-    },
-    "Xamarin.Facebook.PlacesKit.iOS/5.12.0": {
-      "sha512": "pzv5dhnWbvn0Br5MTPx+/RMIOQmZ/PUlqpq19FmL2AgpPzX2aEVHKrq3RdLTq34rxim6ZoFtU6TyXsQva7JaMA==",
-      "type": "package",
-      "path": "xamarin.facebook.placeskit.ios/5.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
-        "lib/xamarinios10/Facebook.PlacesKit.dll",
-        "xamarin.facebook.placeskit.ios.5.12.0.nupkg.sha512",
-        "xamarin.facebook.placeskit.ios.nuspec"
-      ]
-    },
-    "Xamarin.Facebook.ShareKit.iOS/5.12.0": {
-      "sha512": "lbsDM0WZ4HZpXT4v9n4Fe9JJDN4yzdzpnEc+BGaIdAd4xQ/M9M9I4ddqcl1SPicPdM1obkq6wnkfrK4xegDCVQ==",
-      "type": "package",
-      "path": "xamarin.facebook.sharekit.ios/5.12.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICES.txt",
-        "lib/xamarinios10/Facebook.ShareKit.dll",
-        "xamarin.facebook.sharekit.ios.5.12.0.nupkg.sha512",
-        "xamarin.facebook.sharekit.ios.nuspec"
       ]
     },
     "Xamarin.Forms/5.0.0.2515": {

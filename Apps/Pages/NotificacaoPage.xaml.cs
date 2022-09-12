@@ -58,7 +58,7 @@ namespace MasterDetailPageNavigation
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }

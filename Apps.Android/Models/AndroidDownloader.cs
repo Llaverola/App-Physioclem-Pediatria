@@ -23,7 +23,7 @@ public class AndroidDownloader : IDownloader
             string pathToNewFile = Path.Combine(pathToNewFolder, Path.GetFileName(url));
             webClient.DownloadFileAsync(new Uri(url), pathToNewFile);
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             if (OnFileDownloaded != null)
                 OnFileDownloaded.Invoke(this, new DownloadEventArgs(false));
