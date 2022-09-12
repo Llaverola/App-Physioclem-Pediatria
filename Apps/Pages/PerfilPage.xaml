@@ -201,21 +201,18 @@
                                     </Grid.RowDefinitions>
 
                                     <Label Grid.Row="0" FontSize="16" FontFamily="MyCustomFont_Bold" HorizontalOptions="Start" VerticalOptions="Start" Text="Fotografia" TextColor="#3DBEE3"></Label>
-
-                                    <Frame Grid.Row="1"  CornerRadius="16" xct:ShadowEffect.Radius="16" xct:ShadowEffect.Color="#656565" HeightRequest="38" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" IsClippedToBounds="True" Padding="0">
-                                        <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="10,10,10,10">
-                                            <Label FontSize="13" VerticalOptions="FillAndExpand">
-                                                <Label.FormattedText>
-                                                    <FormattedString>
-                                                        <Span Text="&#xf019;" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#656565" ></Span>
-                                                        <Span Text=" Carregar imagem" FontFamily="MyCustomFont_Medium" TextColor="#656565" ></Span>
-                                                    </FormattedString>
-                                                </Label.FormattedText>
-                                                <Label.GestureRecognizers>
-                                                    <TapGestureRecognizer Tapped="Button_Upload_Clicked" />
-                                                </Label.GestureRecognizers>
-                                            </Label>
-                                        </StackLayout>
+                                    <Frame Margin="0,0,5,0" HasShadow="False" Grid.Row="1" CornerRadius="19" BorderColor="#CCCCCC" HeightRequest="38" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" IsClippedToBounds="False" Padding="0">
+                                        <Label BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="15,0,0,0">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="&#xf019;" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#1A1A1A" FontSize="13"></Span>
+                                                    <Span Text=" Carregar imagem" FontFamily="MyCustomFont_Medium" TextColor="#1A1A1A" FontSize="13"></Span>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="Button_Upload_Clicked" />
+                                        </Frame.GestureRecognizers>
                                     </Frame>
                                 </Grid>
 
