@@ -156,9 +156,12 @@ namespace MasterDetailPageNavigation
         {
             List<Consultas_Source> list = new List<Consultas_Source>();
             var data = bebe.consultas.Where(x => x.data >= DateTime.Now).OrderByDescending(x => x.data).ToList();
+            Frame_consultas_no_data.IsVisible = false;
+            Frame_consultas_with_data.IsVisible = false;
+
             if (data.Count > 0)
             {
-                Consultas_No_Data_Label.IsVisible = false;
+                Frame_consultas_with_data.IsVisible = true;
                 var data_list = data.Take(3).ToList();
                 foreach (var c in data_list)
                 {
@@ -173,14 +176,12 @@ namespace MasterDetailPageNavigation
                         hora = hora
                     });
                 }
+                ListView_Consultas.ItemsSource = list;
             }
             else
             {
-                Consultas_No_Data_Label.IsVisible = true;
-                Ver_Todas_Consultas_Label.IsVisible = false;
+                Frame_consultas_no_data.IsVisible = true;
             }
-
-            ListView_Consultas.ItemsSource = list;
         }
 
         private void ConsultasHistorialSet(Bebe bebe)
@@ -188,8 +189,6 @@ namespace MasterDetailPageNavigation
             var data = bebe.consultas.Where(x => x.data < DateTime.Now).OrderByDescending(x => x.data).ToList();
             if (data.Count > 0)
             {
-                Consultas_No_Data_Label.IsVisible = false;
-
                 int linhas = data.Count;
                 for (int i = 0; i < linhas; i++)
                 {
@@ -277,11 +276,6 @@ namespace MasterDetailPageNavigation
                     clickableRow.GestureRecognizers.Add(tapGestureRecognizer);
                     grid_consultas_historial.Children.Add(clickableRow, 0, i);
                 }
-            }
-            else
-            {
-                Consultas_No_Data_Label.IsVisible = true;
-                Ver_Todas_Consultas_Label.IsVisible = false;
             }
         }
 

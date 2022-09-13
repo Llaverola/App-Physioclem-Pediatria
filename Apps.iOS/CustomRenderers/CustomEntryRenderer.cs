@@ -1,5 +1,4 @@
-﻿using CoreGraphics;
-using CurvedEntry;
+﻿using CurvedEntry;
 using CurvedEntry.iOS;
 using System;
 using UIKit;
@@ -16,20 +15,30 @@ namespace CurvedEntry.iOS
         {
             base.OnElementChanged(e);
 
-            if (e.NewElement != null)
+            if (Control != null)
             {
                 var view = (CustomEntry)Element;
+                if (view.ShowBorder)
+                {
+                    Control.LeftView = new UIView(new CoreGraphics.CGRect(0f, 0f, 9f, 20f));
+                    Control.LeftViewMode = UITextFieldViewMode.Always;
+                    Control.KeyboardAppearance = UIKeyboardAppearance.Dark;
+                    Control.ReturnKeyType = UIReturnKeyType.Done;
 
-                Control.LeftView = new UIView(new CGRect(0f, 0f, 9f, 20f));
-                Control.LeftViewMode = UITextFieldViewMode.Always;
+                    if (view.IsCurvedCornersEnabled)
+                    {
+                        // Radius for the curves  
+                        Control.Layer.CornerRadius = Convert.ToSingle(view.CornerRadius);
+                    }
 
-                Control.KeyboardAppearance = UIKeyboardAppearance.Dark;
-                Control.ReturnKeyType = UIReturnKeyType.Done;
+                    // Thickness of the Border Color  
+                    Control.Layer.BorderColor = view.BorderColor.ToCGColor();
 
-                Control.Layer.CornerRadius = Convert.ToSingle(view.CornerRadius);
-                Control.Layer.BorderColor = view.BorderColor.ToCGColor();
-                Control.Layer.BorderWidth = view.BorderWidth;
-                Control.ClipsToBounds = true;
+                    // Thickness of the Border Width  
+                    Control.Layer.BorderWidth = view.BorderWidth;
+
+                    Control.ClipsToBounds = true;
+                }
             }
         }
     }

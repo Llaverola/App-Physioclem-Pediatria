@@ -2,15 +2,17 @@
 using Apps.Models;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
-using Plugin.Permissions;
-using Plugin.Permissions.Abstractions;
 using System;
 using System.Collections.Generic;
+using Plugin.Permissions;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.Permissions.Abstractions;
+using PermissionStatus = Plugin.Permissions.Abstractions.PermissionStatus;
 
 namespace MasterDetailPageNavigation
 {
@@ -64,6 +66,7 @@ namespace MasterDetailPageNavigation
 
         #region Tirar fotos, escolher foto da galeria, gravar video e escolher video
 
+        [Obsolete]
         private async void TirarFoto(object sender, EventArgs e)
         {
             try

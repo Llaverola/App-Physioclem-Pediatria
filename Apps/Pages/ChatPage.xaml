@@ -61,8 +61,8 @@
                         <Grid x:Name="grid_data" HorizontalOptions="StartAndExpand" VerticalOptions="Start" RowSpacing="30"></Grid>
                         <local:CustomEntry
                                             Grid.Row="1" Margin="0,30,0,30"
-                                            x:Name="Msg_Textbox" FontFamily="MyCustomFont_Medium"
-                                            CornerRadius="16" 
+                                            x:Name="Msg_Textbox"
+                            FontFamily="MyCustomFont_Medium"
                                             IsCurvedCornersEnabled="True"  
                                             HorizontalTextAlignment="Start"
                                             VerticalTextAlignment="Start"
@@ -74,7 +74,14 @@
                                             TextColor="#656565"
                                             BackgroundColor="White"
                                             xct:ShadowEffect.Color="#656565" 
-                                            xct:ShadowEffect.Radius="16"/>
+                                            xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1"
+                                            ShowBorder="True">
+                                           <local:CustomEntry.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local:CustomEntry.CornerRadius>
+                                    </local:CustomEntry>
 
                         <Button Clicked="Button_Submit_Clicked" Margin="0,0,0,20" 
                                 x:Name="Button_Submit" 

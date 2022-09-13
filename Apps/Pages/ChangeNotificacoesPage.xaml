@@ -89,7 +89,7 @@
 
                                         <StackLayout Grid.Row="1" Margin="0" WidthRequest="150">
 
-                                            <Frame CornerRadius="16" Padding="10, 0, 10, 0" IsClippedToBounds="True" WidthRequest="220"  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" HeightRequest="35">
+                                            <Frame CornerRadius="16" Padding="10, 10, 10, 10" IsClippedToBounds="True" WidthRequest="220"  VerticalOptions="CenterAndExpand" HorizontalOptions="Start">
                                                 <Grid ColumnSpacing="10">
                                                     <Grid.RowDefinitions>
                                                         <RowDefinition></RowDefinition>

@@ -1,41 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\Apps.Android.csproj": {}
+    "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/Apps.Android.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\Apps.Android.csproj": {
+    "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/Apps.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\Apps.Android.csproj",
+        "projectUniqueName": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/Apps.Android.csproj",
         "projectName": "Apps.Android",
-        "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\Apps.Android.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\obj\\",
+        "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/Apps.Android.csproj",
+        "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
+        "outputPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/ricardocoelho/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "monoandroid11.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
-                "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj"
+              "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj": {
+                "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj"
               }
             }
           }
@@ -56,32 +48,22 @@
         }
       }
     },
-    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
+    "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
+        "projectUniqueName": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj",
         "projectName": "Apps",
-        "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\obj\\",
+        "projectPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/Apps.csproj",
+        "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
+        "outputPath": "/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/ricardocoelho/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -114,6 +96,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "System.Numerics.Vectors": {
               "target": "Package",
               "version": "[4.5.0, )"
@@ -128,7 +114,7 @@
             },
             "Xam.Plugin.Media": {
               "target": "Package",
-              "version": "[4.0.1.5, )"
+              "version": "[5.0.1, )"
             },
             "Xam.Plugins.Forms.ImageCircle": {
               "target": "Package",
@@ -136,19 +122,19 @@
             },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
-              "version": "[1.3.2, )"
+              "version": "[2.0.4, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.5.3.2, )"
+              "version": "[1.7.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2291, )"
+              "version": "[5.0.0.2515, )"
             },
             "YoutubeExplode": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.2.1, )"
             }
           },
           "imports": [
@@ -157,12 +143,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.422/RuntimeIdentifierGraph.json"
         }
       }
     }

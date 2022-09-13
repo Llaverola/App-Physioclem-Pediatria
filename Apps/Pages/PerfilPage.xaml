@@ -91,7 +91,6 @@
                                     <local:CustomEntry Grid.Row="1" 
                                             x:Name="Primeiro_Nome_Textbox" 
                                             FontFamily="MyCustomFont_Medium"
-                                            CornerRadius="16" 
                                             IsCurvedCornersEnabled="True"  
                                             HorizontalTextAlignment="Start"
                                             HorizontalOptions="FillAndExpand"
@@ -100,7 +99,14 @@
                                             TextColor="#656565"
                                             BackgroundColor="White"
                                             xct:ShadowEffect.Color="#656565" 
-                                            xct:ShadowEffect.Radius="16"/>
+                                            xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1"
+                                            ShowBorder="True">
+                                           <local:CustomEntry.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local:CustomEntry.CornerRadius>
+                                    </local:CustomEntry>
                                 </Grid>
 
 
@@ -120,7 +126,6 @@
                                     </Label>
                                     <local:CustomEntry Grid.Row="1" 
                                             x:Name="Ultimo_Nome_Textbox" FontFamily="MyCustomFont_Medium"
-                                            CornerRadius="16" 
                                             IsCurvedCornersEnabled="True"  
                                             HorizontalTextAlignment="Start"
                                             HorizontalOptions="FillAndExpand"
@@ -129,7 +134,15 @@
                                             TextColor="#656565"
                                             BackgroundColor="White"
                                             xct:ShadowEffect.Color="#656565" 
-                                            xct:ShadowEffect.Radius="16"/>
+                                            xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1"
+                                            ShowBorder="True">
+                                           <local:CustomEntry.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local:CustomEntry.CornerRadius>
+                                    </local:CustomEntry>
+
                                 </Grid>
 
 
@@ -150,7 +163,6 @@
 
                                     <local:CustomEntry Grid.Row="1" 
                                             x:Name="Email_Textbox" FontFamily="MyCustomFont_Medium"
-                                            CornerRadius="16" 
                                             IsCurvedCornersEnabled="True"  
                                             HorizontalTextAlignment="Start"
                                             HorizontalOptions="FillAndExpand"
@@ -159,7 +171,14 @@
                                             TextColor="#656565"
                                             BackgroundColor="White"
                                             xct:ShadowEffect.Color="#656565" 
-                                            xct:ShadowEffect.Radius="16"/>
+                                             xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1"
+                                            ShowBorder="True">
+                                           <local:CustomEntry.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local:CustomEntry.CornerRadius>
+                                    </local:CustomEntry>
 
                                 </Grid>
 
@@ -180,7 +199,6 @@
 
                                     <local:CustomEntry Grid.Row="1" 
                                             x:Name="Telemovel_Textbox" FontFamily="MyCustomFont_Medium"
-                                            CornerRadius="16" 
                                             IsCurvedCornersEnabled="True"  
                                             HorizontalTextAlignment="Start"
                                             HorizontalOptions="FillAndExpand"
@@ -190,7 +208,14 @@
                                             TextColor="#656565"
                                             BackgroundColor="White"
                                             xct:ShadowEffect.Color="#656565" 
-                                            xct:ShadowEffect.Radius="16"/>
+                                            xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1"
+                                            ShowBorder="True">
+                                           <local:CustomEntry.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local:CustomEntry.CornerRadius>
+                                    </local:CustomEntry>
 
                                 </Grid>
 
@@ -243,7 +268,6 @@
 
                                     <local_editor:CustomEditor Grid.Row="1" 
                                             x:Name="Notas_Textbox" FontFamily="MyCustomFont_Medium"
-                                            CornerRadius="19"
                                             IsCurvedCornersEnabled="True"  
                                             HorizontalOptions="FillAndExpand"
                                             FontSize="13"
@@ -251,7 +275,13 @@
                                             TextColor="#656565"
                                             BackgroundColor="White"
                                             xct:ShadowEffect.Color="#656565" 
-                                            xct:ShadowEffect.Radius="19"/>
+                                            xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1">
+                                           <local_editor:CustomEditor.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local_editor:CustomEditor.CornerRadius>
+                                    </local_editor:CustomEditor>
                                     
                                 </Grid>
 
