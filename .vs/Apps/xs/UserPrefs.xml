@@ -1,23 +1,19 @@
 ﻿<Properties StartupConfiguration="{EF374397-DA94-483C-A1E8-22FC1CA0C2C7}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.00CBC7B9-FAD0-4DB3-96D2-8EC401699981" />
-  <MonoDevelop.Ide.ItemProperties.Apps.Android PreferredExecutionTarget="Android.my_device" />
-  <MonoDevelop.Ide.ItemProperties.Apps.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.00CBC7B9-FAD0-4DB3-96D2-8EC401699981" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apps/Pages/OMeuBebePage.xaml">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Apps/Pages/OMeuBebePage.xaml.cs" Line="279" Column="14" />
-      <File FileName="Apps/Pages/OMeuBebePage.xaml" Line="144" Column="56" />
+      <File FileName="Apps/Pages/PasswordRecoverPage.xaml" Line="56" Column="76" />
+      <File FileName="Apps/Pages/PasswordRecoverPage.xaml.cs" Line="25" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Apps" expanded="True">
-            <Node name="Apps" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="OMeuBebePage.xaml" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="Apps.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -26,8 +22,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.Apps.Android PreferredExecutionTarget="Android.my_device" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Apps.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
 </Properties>

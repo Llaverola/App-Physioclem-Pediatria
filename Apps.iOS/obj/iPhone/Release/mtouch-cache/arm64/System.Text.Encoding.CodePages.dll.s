@@ -372,7 +372,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 254,223,162,32,1,16,214,248,65,254,4,75,205,170,119,73
+	.byte 44,62,57,232,74,39,189,40,129,58,94,140,14,97,29,163
 	.globl _mono_aot_module_System_Text_Encoding_CodePages_info
 	.align 3
 _mono_aot_module_System_Text_Encoding_CodePages_info:

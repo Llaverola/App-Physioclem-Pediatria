@@ -32,10 +32,10 @@
 #import <QuartzCore/QuartzCore.h>
 #import <Contacts/Contacts.h>
 #import <AuthenticationServices/AuthenticationServices.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <EventKit/EventKit.h>
-#import <AssetsLibrary/AssetsLibrary.h>
 
 @class UIApplicationDelegate;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
@@ -273,9 +273,26 @@
 @class Xamarin_Forms_Platform_iOS_WkWebViewRenderer_CustomWebViewNavigationDelegate;
 @class Xamarin_Forms_Platform_iOS_WkWebViewRenderer_CustomWebViewUIDelegate;
 @class ImageCircle_Forms_Plugin_iOS_ImageCircleRenderer;
+@class Plugin_Media_CheckMarkView;
 @class Plugin_Media_MediaPickerController;
 @class Plugin_Media_MediaPickerPopoverDelegate;
+@class Plugin_Media_ELCImagePickerViewController;
 @class Plugin_Media_MediaPickerDelegate;
+@class Plugin_Media_ELCImagePickerViewController_ELCAlbumPickerController;
+@class Plugin_Media_ELCImagePickerViewController_ELCAssetTablePicker_ELCAssetCell;
+@class Plugin_Media_ELCImagePickerViewController_ELCAssetTablePicker;
+@class Xamarin_Essentials_ShareActivityItemSource;
+@class Xamarin_Essentials_AuthManager;
+@class Xamarin_Essentials_SingleLocationListener;
+@class Xamarin_Essentials_Contacts_ContactPickerDelegate;
+@class Xamarin_Essentials_FilePicker_PickerDelegate;
+@class Xamarin_Essentials_MediaPicker_PhotoPickerDelegate;
+@class Xamarin_Essentials_Platform_UIPresentationControllerDelegate;
+@class Xamarin_Essentials_WebAuthenticator_NativeSFSafariViewControllerDelegate;
+@class Xamarin_Essentials_WebAuthenticator_ContextProvider;
+@class Xamarin_Essentials_Permissions_LocationWhenInUse_ManagerDelegate;
+@class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
+@class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
 @class Xamarin_CommunityToolkit_Views_Snackbar_Helpers_NativeRoundedStackView;
 @class Xamarin_CommunityToolkit_iOS_UI_Views_SideMenuViewRenderer;
 @class Xamarin_CommunityToolkit_iOS_Effects_TouchEventsGestureRecognizer;
@@ -297,18 +314,6 @@
 @class Xamarin_CommunityToolkit_UI_Views_DrawingViewRenderer;
 @class Xamarin_CommunityToolkit_UI_Views_PopupRenderer_PopoverDelegate;
 @class Xamarin_CommunityToolkit_UI_Views_PopupRenderer;
-@class Xamarin_Essentials_ShareActivityItemSource;
-@class Xamarin_Essentials_AuthManager;
-@class Xamarin_Essentials_SingleLocationListener;
-@class Xamarin_Essentials_Contacts_ContactPickerDelegate;
-@class Xamarin_Essentials_FilePicker_PickerDelegate;
-@class Xamarin_Essentials_MediaPicker_PhotoPickerDelegate;
-@class Xamarin_Essentials_Platform_UIPresentationControllerDelegate;
-@class Xamarin_Essentials_WebAuthenticator_NativeSFSafariViewControllerDelegate;
-@class Xamarin_Essentials_WebAuthenticator_ContextProvider;
-@class Xamarin_Essentials_Permissions_LocationWhenInUse_ManagerDelegate;
-@class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
-@class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
 @class TTG_TTGSnackbar;
 @class AIDatePickerController;
 @class BigTed_ProgressHUD;
@@ -1569,6 +1574,19 @@
 	-(id) init;
 @end
 
+@interface Plugin_Media_CheckMarkView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) drawRect:(CGRect)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
 @interface Plugin_Media_MediaPickerController : UIImagePickerController {
 }
 	-(void) release;
@@ -1580,6 +1598,53 @@
 	-(NSObject *) delegate;
 	-(void) setDelegate:(NSObject *)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Plugin_Media_ELCImagePickerViewController : UINavigationController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewWillDisappear:(BOOL)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Plugin_Media_ELCImagePickerViewController_ELCAlbumPickerController : UITableViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewDidLoad;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(NSInteger) numberOfSectionsInTableView:(UITableView *)p0;
+	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
+	-(CGFloat) tableView:(UITableView *)p0 heightForRowAtIndexPath:(NSIndexPath *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface OpenTK_Platform_iPhoneOS_iPhoneOSGameView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	+(Class) layerClass;
+	-(void) layoutSubviews;
+	-(void) willMoveToWindow:(UIWindow *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
 @end
 
 @interface Xamarin_CommunityToolkit_iOS_UI_Views_SideMenuViewRenderer : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
@@ -1662,22 +1727,6 @@
 	-(void) viewDidAppear:(BOOL)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
-@end
-
-@interface OpenTK_Platform_iPhoneOS_iPhoneOSGameView : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
-	+(Class) layerClass;
-	-(void) layoutSubviews;
-	-(void) willMoveToWindow:(UIWindow *)p0;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) initWithCoder:(NSCoder *)p0;
-	-(id) initWithFrame:(CGRect)p0;
 @end
 
 @interface TTG_TTGSnackbar : UIView {

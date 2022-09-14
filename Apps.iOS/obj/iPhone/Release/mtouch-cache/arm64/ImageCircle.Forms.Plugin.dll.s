@@ -2922,7 +2922,7 @@ bl _p_61
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 4 72 0
-.word 0xd289f0e0
+.word 0xd28aad80
 .word 0xf2a00020
 bl _p_62
 .word 0xaa0003e1
@@ -3687,7 +3687,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 221,88,126,240,173,127,59,240,109,18,186,20,111,253,68,38
+	.byte 242,188,99,8,191,80,13,147,185,145,115,146,49,99,61,199
 	.globl _mono_aot_module_ImageCircle_Forms_Plugin_info
 	.align 3
 _mono_aot_module_ImageCircle_Forms_Plugin_info:

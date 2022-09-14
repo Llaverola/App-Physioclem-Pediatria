@@ -21,8 +21,10 @@
                             <ColumnDefinition Width="3*"></ColumnDefinition>
                             <ColumnDefinition Width="3*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
-                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0"
+                                     x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50"
+                                     Clicked="LogoImageButton_Clicked"></ImageButton>
                         <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
                             <Grid.RowDefinitions>
                                 <RowDefinition></RowDefinition>
@@ -31,14 +33,16 @@
                                 <ColumnDefinition Width="26"></ColumnDefinition>
                                 <ColumnDefinition Width="26"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button"
+                                   FontFamily="{StaticResource FontAwesomeSolid}">
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="NotificacoesTapped" />
                                 </Label.GestureRecognizers>
                             </Label>
                             <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
                             <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
-                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                       VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
                             </Frame>
                         </Grid>
                     </Grid>
@@ -77,7 +81,8 @@
                                             TitleColor="White"
                                             BackgroundColor="#3DBEE3"/>
 
-                                    <Label Grid.Column="1" FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf107;" HorizontalOptions="Center" VerticalOptions="Center"  TextColor="White" FontSize="12"></Label>
+                                    <Label Grid.Column="1" FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf107;" HorizontalOptions="Center" VerticalOptions="Center"
+                                           TextColor="White" FontSize="12"></Label>
                                 </Grid>
                                
                             </Frame>
@@ -97,10 +102,12 @@
                                 </Grid.ColumnDefinitions>
 
 
-                                <Frame CornerRadius="65" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" x:Name="Bebe_Img_Frame" WidthRequest="130" HeightRequest="130" Padding="0" BackgroundColor="#E6E6E6">
+                                <Frame CornerRadius="65" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" x:Name="Bebe_Img_Frame" WidthRequest="130" HeightRequest="130" Padding="0"
+                                       BackgroundColor="#E6E6E6">
                                     <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="130" WidthRequest="130" x:Name="Bebe_Img"></Image>
                                 </Frame>
-                                <Frame CornerRadius="65" IsClippedToBounds="True" BackgroundColor="#E6E6E6" Grid.Row="0" Grid.Column="0" x:Name="No_Foto_Bebe_Frame" IsVisible="False"  WidthRequest="130" HeightRequest="130" Padding="0">
+                                <Frame CornerRadius="65" IsClippedToBounds="True" BackgroundColor="#E6E6E6" Grid.Row="0" Grid.Column="0" x:Name="No_Foto_Bebe_Frame"
+                                       IsVisible="False"  WidthRequest="130" HeightRequest="130" Padding="0">
                                     <Label HorizontalOptions="Center" Margin="0" FontSize="18" FontFamily="MyCustomFont_Bold" Text="FOTO" VerticalOptions="Center" TextColor="#3DBEE3"></Label>
                                 </Frame>
 
@@ -124,7 +131,7 @@
 
                                     <Label Grid.Row="4" FontSize="16" FontFamily="MyCustomFont_Bold" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Enc. de Educação"></Label>
 
-                                    <Label Grid.Row="5" FontSize="13" FontFamily="MyCustomFont_Medium" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#656565"  x:Name="Bebe_Enc_Educacao_Label"></Label>
+                                    <Label Grid.Row="5" FontSize="13" FontFamily="MyCustomFont_Medium" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#656565" x:Name="Bebe_Enc_Educacao_Label"></Label>
                                 </Grid>
                             </Grid>
 
@@ -183,7 +190,8 @@
 
                                                             <StackLayout Grid.Row="0" Grid.Column="0">
                                                                 <StackLayout Padding="0" Margin="0">
-                                                                    <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#656565" FontFamily="MyCustomFont_Bold" FontSize="14" Text="{Binding nome}" />
+                                                                    <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Start" TextColor="#656565" FontFamily="MyCustomFont_Bold"
+                                                                           FontSize="14" Text="{Binding nome}" />
                                                                 </StackLayout>
                                                                 <Grid Margin="0" HorizontalOptions="Start" RowSpacing="5">
                                                                     <Grid.RowDefinitions>
@@ -204,7 +212,8 @@
                                                                             <ColumnDefinition></ColumnDefinition>
                                                                         </Grid.ColumnDefinitions>
                                                                         <Image Grid.Column="0" Source="calendario" WidthRequest="10" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                                                                        <Label Grid.Column="1" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontFamily="MyCustomFont_Medium" Text="{Binding data}" FontSize="9" Margin="0,0,0,0"></Label>
+                                                                        <Label Grid.Column="1" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontFamily="MyCustomFont_Medium"
+                                                                               Text="{Binding data}" FontSize="9" Margin="0,0,0,0"></Label>
                                                                     </Grid>
 
 
@@ -217,7 +226,8 @@
                                                                             <ColumnDefinition></ColumnDefinition>
                                                                         </Grid.ColumnDefinitions>
                                                                         <Image Grid.Column="0" Source="relogio" WidthRequest="10" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                                                                        <Label Grid.Column="1" FontFamily="MyCustomFont_Medium" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Text="{Binding hora}" FontSize="9" Margin="0,0,0,0"></Label>
+                                                                        <Label Grid.Column="1" FontFamily="MyCustomFont_Medium" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                                                                               Text="{Binding hora}" FontSize="9" Margin="0,0,0,0"></Label>
                                                                     </Grid>
 
                                                                     <Grid Grid.Row="1" Grid.ColumnSpan="2">
@@ -229,7 +239,8 @@
                                                                             <ColumnDefinition></ColumnDefinition>
                                                                         </Grid.ColumnDefinitions>
                                                                         <Image Grid.Column="0" Source="pin" WidthRequest="10" VerticalOptions="Center" HorizontalOptions="Center"></Image>
-                                                                        <Label FontFamily="MyCustomFont_Medium" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Text="{Binding local}" FontSize="9" Margin="0,0,0,0"></Label>
+                                                                        <Label FontFamily="MyCustomFont_Medium" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1"
+                                                                               Text="{Binding local}" FontSize="9" Margin="0,0,0,0"></Label>
                                                                     </Grid>
 
                                                                 </Grid>
@@ -268,7 +279,8 @@
                                                 <RowDefinition Height="30"></RowDefinition>
                                             </Grid.RowDefinitions>
                                             <Label FontSize="16" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Notificações" FontFamily="MyCustomFont_Bold"></Label>
-                                            <Label Grid.Row="1" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" Margin="0" x:Name="Notificacoes_No_Data_Label" FontSize="11" TextColor="#656565" Text="Sem notificacoes." IsVisible="False"></Label>
+                                            <Label Grid.Row="1" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" Margin="0" x:Name="Notificacoes_No_Data_Label"
+                                                   FontSize="11" TextColor="#656565" Text="Sem notificacoes." IsVisible="False"></Label>
 
                                             <Grid x:Name="grid_notificacoes" Grid.Row="1">
                                                 <Grid.RowDefinitions>
@@ -277,8 +289,10 @@
                                                     <RowDefinition Height="30"></RowDefinition>
                                                 </Grid.RowDefinitions>
 
-                                                <Frame Grid.Row="0" CornerRadius="15" HeightRequest="30" Padding="5,0,5,5" IsClippedToBounds="True" BackgroundColor="#3DBEE3" x:Name="not_1_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_1_button">
+                                                <Frame Grid.Row="0" CornerRadius="15" HeightRequest="30" Padding="5,0,5,5" IsClippedToBounds="True" BackgroundColor="#3DBEE3"
+                                                       x:Name="not_1_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand"
+                                                           HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_1_button">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="&#xf0f3;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
@@ -289,8 +303,10 @@
                                                     </Label>
                                                 </Frame>
 
-                                                <Frame Grid.Row="1" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="not_2_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_2_button">
+                                                <Frame Grid.Row="1" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3"
+                                                       x:Name="not_2_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand"
+                                                           HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_2_button">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="&#xf0f3;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
@@ -303,8 +319,10 @@
                                                 </Frame>
 
 
-                                                <Frame Grid.Row="2" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="not_3_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_3_button">
+                                                <Frame Grid.Row="2" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3"
+                                                       x:Name="not_3_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand"
+                                                           HorizontalOptions="FillAndExpand" Margin="0" x:Name="not_3_button">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="&#xf0f3;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
@@ -341,7 +359,8 @@
                                                 <RowDefinition Height="30"></RowDefinition>
                                             </Grid.RowDefinitions>
                                             <Label FontSize="16" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Documentos" FontFamily="MyCustomFont_Bold"></Label>
-                                            <Label Grid.Row="1" VerticalTextAlignment="Start" VerticalOptions="Start" Margin="0" x:Name="Documentos_No_Data_Label" FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="#656565" Text="Sem documentos." IsVisible="False"></Label>
+                                            <Label Grid.Row="1" VerticalTextAlignment="Start" VerticalOptions="Start" Margin="0" x:Name="Documentos_No_Data_Label"
+                                                   FontFamily="MyCustomFont_Medium" FontSize="11" TextColor="#656565" Text="Sem documentos." IsVisible="False"></Label>
                                             <Grid x:Name="grid_documentos" Grid.Row="1">
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="30"></RowDefinition>
@@ -350,7 +369,8 @@
                                                 </Grid.RowDefinitions>
 
                                                 <Frame Grid.Row="0" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="doc_1_frame">
-                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_1_button">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand"
+                                                           HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_1_button">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
@@ -362,7 +382,8 @@
                                                 </Frame>
 
                                                 <Frame Grid.Row="1" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="doc_2_frame">
-                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_2_button">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand"
+                                                           HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_2_button">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
@@ -373,8 +394,10 @@
                                                     </Label>
                                                 </Frame>
 
-                                                <Frame Grid.Row="2" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3" x:Name="doc_3_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_3_button">
+                                                <Frame Grid.Row="2" CornerRadius="15" HeightRequest="30" IsClippedToBounds="True" Padding="5,0,5,5" BackgroundColor="#3DBEE3"
+                                                       x:Name="doc_3_frame" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                                    <Label TextTransform="None" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"
+                                                           VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0" x:Name="doc_3_button">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="&#xf105;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="11" TextColor="White"></Span>
@@ -419,7 +442,8 @@
 
                 </StackLayout>
                 <StackLayout Margin="0,30,0,30">
-                    <Label x:Name="Copyright_Label" FontFamily="MyCustomFont_Regular" LineHeight="1.2" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                    <Label x:Name="Copyright_Label" FontFamily="MyCustomFont_Regular" LineHeight="1.2" FontSize="12" TextColor="#656565" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                           HorizontalOptions="Center" VerticalOptions="Center"></Label>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

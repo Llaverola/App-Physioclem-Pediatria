@@ -10887,7 +10887,7 @@ bl _p_184
 adrp x16, mono_aot_System_ServiceModel_Internals_got@PAGE+0
 add x16, x16, mono_aot_System_ServiceModel_Internals_got@PAGEOFF
 ldr x15, [x16, #1544]
-.word 0x928006f0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
@@ -10898,7 +10898,7 @@ ldr x15, [x16, #1544]
 adrp x16, mono_aot_System_ServiceModel_Internals_got@PAGE+0
 add x16, x16, mono_aot_System_ServiceModel_Internals_got@PAGEOFF
 ldr x15, [x16, #1552]
-.word 0x928006f0
+.word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -18395,7 +18395,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 132,150,118,155,174,80,109,172,30,41,159,227,101,56,93,97
+	.byte 82,145,99,86,29,167,29,104,226,75,95,239,39,64,121,90
 	.globl _mono_aot_module_System_ServiceModel_Internals_info
 	.align 3
 _mono_aot_module_System_ServiceModel_Internals_info:

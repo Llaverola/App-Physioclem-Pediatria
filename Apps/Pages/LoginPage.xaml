@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+              xmlns:local="clr-namespace:CurvedEntry"
              mc:Ignorable="d"
              BackgroundColor="White"
              x:Class="MasterDetailPageNavigation.LoginPage">
@@ -37,17 +39,34 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Text="Username ou Email" TextColor="#656565" FontSize="16" FontFamily="MyCustomFont_Bold" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"></Label>
 
-                                <Entry x:Name="Username" 
-                                   Text="{Binding Username}" 
-                                   PropertyChanging="Username_PropertyChanging" 
-                                   Grid.Column="0" 
-                                   Grid.Row="1" 
-                                   Placeholder="example@gmail.com" 
-                                   HeightRequest="30" HorizontalOptions="FillAndExpand"
-                                   VerticalOptions="FillAndExpand"
-                                   PlaceholderColor="#CCCCCC"  
-                                   FontFamily="MyCustomFont_Regular"
-                                   TextColor="#656565"></Entry>
+                                <local:CustomEntry
+                                            x:Name="Username"
+                                            Grid.Column="0" 
+                                            Grid.Row="1" 
+                                            Placeholder="example@gmail.com" 
+                                            FontFamily="MyCustomFont_Medium"
+                                            IsPassword="True"
+                                            PropertyChanging="Username_PropertyChanging" 
+                                            WidthRequest="200"
+                                            IsCurvedCornersEnabled="True"  
+                                            HorizontalTextAlignment="Start"
+                                            HorizontalOptions="FillAndExpand"
+                                            FontSize="13"
+                                            HeightRequest="38"
+                                            TextColor="#656565"
+                                            BackgroundColor="White"
+                                            xct:ShadowEffect.Color="#656565" 
+                                            xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1"
+                                            Text="{Binding Username}" 
+                                            ShowBorder="True">
+                                           <local:CustomEntry.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local:CustomEntry.CornerRadius>
+                                    </local:CustomEntry>
+
+                            
                                 <ImageButton Source="ic_clear_icon.png" 
                                          BackgroundColor="Transparent" 
                                          VerticalOptions="Center" 
@@ -59,15 +78,35 @@
                                 </ImageButton>
 
                                 <Label Text="Password" TextColor="#656565" FontSize="16" FontFamily="MyCustomFont_Bold" Grid.Row="2" Grid.ColumnSpan="2"></Label>
-                                <Entry x:Name="Password"  
-                                   HeightRequest="30" HorizontalOptions="FillAndExpand"
-                                   VerticalOptions="FillAndExpand" 
-                                   Text="{Binding Password}" 
-                                   Placeholder="*******" Grid.Column="0" Grid.Row="3" FontFamily="MyCustomFont_Regular"
-                               PropertyChanging="Password_PropertyChanging"
-                               IsPassword="True" 
-                               PlaceholderColor="#CCCCCC"
-                               TextColor="#656565"></Entry>
+
+                                  <local:CustomEntry
+                                            x:Name="Password"
+                                            Grid.Column="0" 
+                                            Grid.Row="3" 
+                                            Placeholder="*******" 
+                                            FontFamily="MyCustomFont_Medium"
+                                            IsPassword="True"
+                                            PropertyChanging="Password_PropertyChanging" 
+                                            WidthRequest="200"
+                                            IsCurvedCornersEnabled="True"  
+                                            HorizontalTextAlignment="Start"
+                                            HorizontalOptions="FillAndExpand"
+                                            FontSize="13"
+                                            HeightRequest="38"
+                                            TextColor="#656565"
+                                            BackgroundColor="White"
+                                            xct:ShadowEffect.Color="#656565" 
+                                            xct:ShadowEffect.Radius="19"
+                                            BorderColor="#CCCCCC"
+                                            BorderWidth="1"
+                                            Text="{Binding Password}" 
+                                            ShowBorder="True">
+                                           <local:CustomEntry.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Double" iOS="19" Android="19" />
+                                            </local:CustomEntry.CornerRadius>
+                                    </local:CustomEntry>
+
+                       
 
                                 <ImageButton Source="ic_clear_icon.png" BackgroundColor="Transparent" VerticalOptions="Center" IsVisible="False" x:Name="imgPassword" Grid.Column="1" Grid.Row="3" Clicked="imgPassword_Clicked"></ImageButton>
 

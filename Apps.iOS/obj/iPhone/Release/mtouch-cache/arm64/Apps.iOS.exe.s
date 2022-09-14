@@ -2090,7 +2090,7 @@ Lme_23:
 	.no_dead_strip CurvedEntry_iOS_CustomEntryRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Entry
 CurvedEntry_iOS_CustomEntryRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Entry:
 .loc 1 1 0
-.word 0xa9b17bfd
+.word 0xa9b37bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -2099,9 +2099,8 @@ CurvedEntry_iOS_CustomEntryRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_
 .word 0xaa1903e0
 .word 0xaa1a03e1
 bl _p_84
-.word 0x3940035e
-.word 0xf9400b40
-.word 0xb40012a0
+.word 0xf9406b20
+.word 0xb40013e0
 .word 0xf9403b3a
 .word 0xb400021a
 .word 0xf9400340
@@ -2110,7 +2109,7 @@ bl _p_84
 .word 0xd280013e
 .word 0xeb1e003f
 .word 0x10000011
-.word 0x54001223
+.word 0x54001363
 .word 0xf9400800
 .word 0xf9402000
 
@@ -2119,10 +2118,15 @@ add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x1, [x16, #520]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54001121
+.word 0x54001261
 .word 0xaa1a03f8
+.word 0xaa1a03e0
+.word 0x3940035e
+bl _p_85
+.word 0x53001c00
+.word 0x34001100
 .word 0xf9406b20
-.word 0xf90073a0
+.word 0xf90067a0
 .word 0xd280001e
 .word 0x9e6703d0
 .word 0x1e22c200
@@ -2147,7 +2151,7 @@ ldr x1, [x16, #520]
 .word 0x1e624021
 .word 0x1e624042
 .word 0x1e624063
-bl _p_85
+bl _p_86
 .word 0xf94047a0
 .word 0xf90037a0
 .word 0xf9404ba0
@@ -2161,46 +2165,51 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x0, [x16, #528]
 bl _p_11
-.word 0xf9006fa0
+.word 0xf90063a0
 .word 0xfd4037a0
 .word 0xfd403ba1
 .word 0xfd403fa2
 .word 0xfd4043a3
-bl _p_86
-.word 0xf9406fa1
-.word 0xf94073a2
-.word 0xaa0203e0
-.word 0x3940005e
 bl _p_87
-.word 0xf9406b22
+.word 0xf94063a1
+.word 0xf94067a2
 .word 0xaa0203e0
-.word 0xd2800061
 .word 0x3940005e
 bl _p_88
 .word 0xf9406b22
 .word 0xaa0203e0
-.word 0xd2800021
+.word 0xd2800061
 .word 0x3940005e
 bl _p_89
 .word 0xf9406b22
 .word 0xaa0203e0
-.word 0xd2800121
+.word 0xd2800021
 .word 0x3940005e
 bl _p_90
+.word 0xf9406b22
+.word 0xaa0203e0
+.word 0xd2800121
+.word 0x3940005e
+bl _p_91
+.word 0xaa1803e0
+.word 0x3940031e
+bl _p_92
+.word 0x53001c00
+.word 0x34000260
 .word 0xf9406b21
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_69
-.word 0xf9006ba0
-.word 0xaa1a03e0
-.word 0x3940035e
-bl _p_91
-.word 0xf9406ba1
+.word 0xf90063a0
+.word 0xaa1803e0
+.word 0x3940031e
+bl _p_93
+.word 0xf94063a1
 .word 0x1e624010
 .word 0x1e22c200
 .word 0x1e624010
-.word 0xbd00abb0
-.word 0xbd40abb0
+.word 0xbd00b3b0
+.word 0xbd40b3b0
 .word 0x1e22c200
 .word 0xaa0103e0
 .word 0x3940003e
@@ -2211,9 +2220,9 @@ bl _p_77
 bl _p_69
 .word 0xf90067a0
 .word 0x910123a8
-.word 0xaa1a03e0
-.word 0x3940035e
-bl _p_92
+.word 0xaa1803e0
+.word 0x3940031e
+bl _p_94
 .word 0x9100a3a0
 .word 0xf94027a1
 .word 0xf90017a1
@@ -2234,16 +2243,16 @@ bl _p_80
 .word 0x3940003e
 bl _p_69
 .word 0xf90063a0
-.word 0xaa1a03e0
-.word 0x3940035e
-bl _p_93
+.word 0xaa1803e0
+.word 0x3940031e
+bl _p_95
 .word 0x93407c00
 .word 0xf94063a1
 .word 0x1e620000
 .word 0x9e6703e1
-.word 0xfd005ba1
-.word 0xfd005ba0
-.word 0xfd405ba0
+.word 0xfd0057a1
+.word 0xfd0057a0
+.word 0xfd4057a0
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_70
@@ -2255,7 +2264,7 @@ bl _p_82
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8cd7bfd
 .word 0xd65f03c0
 .word 0xd28019a0
 .word 0xaa1103e1
@@ -2271,7 +2280,7 @@ CurvedEntry_iOS_CustomEntryRenderer__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_94
+bl _p_96
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2336,9 +2345,9 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x0, [x16, #0]
 .word 0xd2800361
-bl _p_95
+bl _p_97
 .word 0xf9400fa1
-bl _p_96
+bl _p_98
 .word 0xaa0003e1
 .word 0xd28029c0
 .word 0xf2a04000
@@ -2418,8 +2427,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
@@ -2496,8 +2505,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffca
@@ -2578,8 +2587,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
@@ -2667,7 +2676,7 @@ System_Nullable_1_System_DateTime_get_Value:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 2 46 0
-bl _p_99
+bl _p_101
 .word 0x17fffff7
 
 Lme_37:
@@ -2751,7 +2760,7 @@ System_Nullable_1_System_DateTime_Equals_object:
 .word 0xf9400ba0
 .word 0x91002000
 .word 0xf9400fa1
-bl _p_100
+bl _p_102
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -2817,7 +2826,7 @@ ldr x0, [x16, #544]
 .word 0x14000004
 .word 0xf9400ba0
 .word 0x91002000
-bl _p_101
+bl _p_103
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2914,7 +2923,7 @@ add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #368]
 .word 0x9100c3a0
 .word 0xf94017a1
-bl _p_102
+bl _p_104
 .word 0xf9401ba0
 .word 0xf9000fa0
 .word 0xf9401fa0
@@ -2996,7 +3005,7 @@ add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #368]
 .word 0x9100c3a0
 .word 0xf94017a1
-bl _p_102
+bl _p_104
 .word 0xf9401ba0
 .word 0xf9000fa0
 .word 0xf9401fa0
@@ -3085,8 +3094,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffca
@@ -3167,8 +3176,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
@@ -3244,7 +3253,7 @@ System_Nullable_1_UIKit_UIUserInterfaceStyle_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 46 0
-bl _p_99
+bl _p_101
 .word 0x17fffffa
 
 Lme_44:
@@ -3333,7 +3342,7 @@ bl _p_14
 .word 0xaa0203e0
 .word 0xf9400fa1
 .word 0x3940005e
-bl _p_103
+bl _p_105
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -3406,7 +3415,7 @@ bl _p_14
 .word 0xf9000820
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_104
+bl _p_106
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3496,7 +3505,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #592]
 .word 0x9100a3a0
-bl _p_105
+bl _p_107
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -3575,7 +3584,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #592]
 .word 0x9100a3a0
-bl _p_105
+bl _p_107
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -3663,7 +3672,7 @@ System_Nullable_1_bool_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 46 0
-bl _p_99
+bl _p_101
 .word 0x17fffffa
 
 Lme_4f:
@@ -3740,7 +3749,7 @@ System_Nullable_1_bool_Equals_object:
 .word 0xf9400ba0
 .word 0x91000400
 .word 0xf9400fa1
-bl _p_106
+bl _p_108
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -3900,7 +3909,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #640]
 .word 0x9100a3a0
-bl _p_107
+bl _p_109
 .word 0x3980a3a0
 .word 0x390063a0
 .word 0x3980a7a0
@@ -3975,7 +3984,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #640]
 .word 0x9100a3a0
-bl _p_107
+bl _p_109
 .word 0x3980a3a0
 .word 0x390063a0
 .word 0x3980a7a0
@@ -4067,8 +4076,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
@@ -4149,8 +4158,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
@@ -4232,8 +4241,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffc5
@@ -4310,8 +4319,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1803e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f8
 .word 0xb5ffff20
 .word 0x17ffffca
@@ -4397,8 +4406,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc2
@@ -4479,8 +4488,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
@@ -4556,7 +4565,7 @@ System_Nullable_1_System_nint_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 46 0
-bl _p_99
+bl _p_101
 .word 0x17fffffa
 
 Lme_68:
@@ -4633,7 +4642,7 @@ System_Nullable_1_System_nint_Equals_object:
 .word 0xf9400ba0
 .word 0x91002000
 .word 0xf9400fa1
-bl _p_108
+bl _p_110
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -4694,7 +4703,7 @@ ldr x0, [x16, #544]
 .word 0x14000004
 .word 0xf9400ba0
 .word 0x91002000
-bl _p_109
+bl _p_111
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -4784,7 +4793,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #672]
 .word 0x9100a3a0
-bl _p_110
+bl _p_112
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -4863,7 +4872,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #672]
 .word 0x9100a3a0
-bl _p_110
+bl _p_112
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -4951,7 +4960,7 @@ System_Nullable_1_int_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 46 0
-bl _p_99
+bl _p_101
 .word 0x17fffffa
 
 Lme_73:
@@ -5028,7 +5037,7 @@ System_Nullable_1_int_Equals_object:
 .word 0xf9400ba0
 .word 0x91001000
 .word 0xf9400fa1
-bl _p_111
+bl _p_113
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -5170,7 +5179,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #704]
 .word 0x9100a3a0
-bl _p_112
+bl _p_114
 .word 0xb9802ba0
 .word 0xb9001ba0
 .word 0xb9802fa0
@@ -5245,7 +5254,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #704]
 .word 0x9100a3a0
-bl _p_112
+bl _p_114
 .word 0xb9802ba0
 .word 0xb9001ba0
 .word 0xb9802fa0
@@ -5337,8 +5346,8 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
-bl _p_98
+bl _p_99
+bl _p_100
 .word 0xaa0003f7
 .word 0xb5ffff20
 .word 0x17ffffc7
@@ -5370,14 +5379,14 @@ add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x0, [x16, #48]
 .word 0xb9400000
 .word 0x34000120
-bl _p_113
+bl _p_115
 .word 0xaa0003f7
 .word 0xb40000c0
 .word 0x910222e0
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
+bl _p_99
 .word 0xf9400320
 .word 0xf9004ba0
 .word 0xf9400720
@@ -5393,7 +5402,7 @@ add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #368]
 .word 0x910123a1
 .word 0xf90037a1
-bl _p_114
+bl _p_116
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -5452,7 +5461,7 @@ add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x15, [x16, #368]
 .word 0x9100e3a1
 .word 0xf90037a1
-bl _p_114
+bl _p_116
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -5471,14 +5480,14 @@ bl _p_114
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-bl _p_113
+bl _p_115
 .word 0xaa0003f7
 .word 0xb4fffba0
 .word 0x910222e0
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1703e0
-bl _p_97
+bl _p_99
 
 Lme_7d:
 .text
@@ -5703,8 +5712,8 @@ unwind_info:
 	.byte 14,48,157,6,158,5,68,13,29,68,154,4,25,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,150,18,68,152
 	.byte 17,153,16,68,154,15,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,14,12,31,0
 	.byte 68,14,144,1,157,18,158,17,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,22,12,31,0
-	.byte 68,14,160,1,157,20,158,19,68,13,29,68,152,18,153,17,68,154,16,22,12,31,0,68,14,240,1,157,30,158,29,68
-	.byte 13,29,68,152,28,153,27,68,154,26,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6
+	.byte 68,14,160,1,157,20,158,19,68,13,29,68,152,18,153,17,68,154,16,22,12,31,0,68,14,208,1,157,26,158,25,68
+	.byte 13,29,68,152,24,153,23,68,154,22,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6
 	.byte 152,5,68,153,4,154,3,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68
 	.byte 154,4,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,16,12,31,0,68,14,80,157,10,158,9,68,13
 	.byte 29,68,154,8,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,16,12,31,0,68,14,32,157,4,158,3
@@ -5721,7 +5730,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 1710
+.word 1719
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_2:
@@ -5729,7 +5738,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 1718
+.word 1727
 	.no_dead_strip plt_UIKit_UIApplication_Main_string___string_string
 plt_UIKit_UIApplication_Main_string___string_string:
 _p_3:
@@ -5737,7 +5746,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 1720
+.word 1729
 	.no_dead_strip plt_UIKit_UIApplication_get_SharedApplication
 plt_UIKit_UIApplication_get_SharedApplication:
 _p_4:
@@ -5745,7 +5754,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 1725
+.word 1734
 	.no_dead_strip plt_UIKit_UIApplication_SetStatusBarHidden_bool_bool
 plt_UIKit_UIApplication_SetStatusBarHidden_bool_bool:
 _p_5:
@@ -5753,7 +5762,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 1730
+.word 1739
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_6:
@@ -5761,7 +5770,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 1735
+.word 1744
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_7:
@@ -5769,7 +5778,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 1738
+.word 1747
 	.no_dead_strip plt_Xamarin_Forms_Forms_Init
 plt_Xamarin_Forms_Forms_Init:
 _p_8:
@@ -5777,7 +5786,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 1740
+.word 1749
 	.no_dead_strip plt_ImageCircle_Forms_Plugin_iOS_ImageCircleRenderer_Init
 plt_ImageCircle_Forms_Plugin_iOS_ImageCircleRenderer_Init:
 _p_9:
@@ -5785,7 +5794,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 1745
+.word 1754
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_get_Current
 plt_UserNotifications_UNUserNotificationCenter_get_Current:
 _p_10:
@@ -5793,7 +5802,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 1750
+.word 1759
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_11:
@@ -5801,7 +5810,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 1755
+.word 1764
 	.no_dead_strip plt_Apps_iOS_Models_iOSNotificationReceiver__ctor
 plt_Apps_iOS_Models_iOSNotificationReceiver__ctor:
 _p_12:
@@ -5809,7 +5818,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 1758
+.word 1767
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_set_Delegate_UserNotifications_IUNUserNotificationCenterDelegate
 plt_UserNotifications_UNUserNotificationCenter_set_Delegate_UserNotifications_IUNUserNotificationCenterDelegate:
 _p_13:
@@ -5817,7 +5826,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 1760
+.word 1769
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_14:
@@ -5825,7 +5834,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 1765
+.word 1774
 	.no_dead_strip plt_Apps_App__ctor
 plt_Apps_App__ctor:
 _p_15:
@@ -5833,7 +5842,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 1773
+.word 1782
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application:
 _p_16:
@@ -5841,7 +5850,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 1778
+.word 1787
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary:
 _p_17:
@@ -5849,7 +5858,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 1783
+.word 1792
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor:
 _p_18:
@@ -5857,7 +5866,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 1788
+.word 1797
 	.no_dead_strip plt_UIKit_UIDevice_get_CurrentDevice
 plt_UIKit_UIDevice_get_CurrentDevice:
 _p_19:
@@ -5865,7 +5874,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 1793
+.word 1802
 	.no_dead_strip plt_UIKit_UIDevice_get_IdentifierForVendor
 plt_UIKit_UIDevice_get_IdentifierForVendor:
 _p_20:
@@ -5873,7 +5882,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 1798
+.word 1807
 	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
 plt_System_Delegate_Combine_System_Delegate_System_Delegate:
 _p_21:
@@ -5881,7 +5890,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 1803
+.word 1812
 	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
 plt_System_Delegate_Remove_System_Delegate_System_Delegate:
 _p_22:
@@ -5889,7 +5898,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 1808
+.word 1817
 	.no_dead_strip plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder
 plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder:
 _p_23:
@@ -5897,7 +5906,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 1813
+.word 1822
 	.no_dead_strip plt_System_IO_Path_Combine_string_string
 plt_System_IO_Path_Combine_string_string:
 _p_24:
@@ -5905,7 +5914,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 1818
+.word 1827
 	.no_dead_strip plt_System_IO_Directory_CreateDirectory_string
 plt_System_IO_Directory_CreateDirectory_string:
 _p_25:
@@ -5913,7 +5922,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 1823
+.word 1832
 	.no_dead_strip plt_System_Net_WebClient__ctor
 plt_System_Net_WebClient__ctor:
 _p_26:
@@ -5921,7 +5930,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 1828
+.word 1837
 	.no_dead_strip plt_System_Net_WebClient_add_DownloadFileCompleted_System_ComponentModel_AsyncCompletedEventHandler
 plt_System_Net_WebClient_add_DownloadFileCompleted_System_ComponentModel_AsyncCompletedEventHandler:
 _p_27:
@@ -5929,7 +5938,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 1833
+.word 1842
 	.no_dead_strip plt_System_IO_Path_GetFileName_string
 plt_System_IO_Path_GetFileName_string:
 _p_28:
@@ -5937,7 +5946,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 1838
+.word 1847
 	.no_dead_strip plt_System_Uri__ctor_string
 plt_System_Uri__ctor_string:
 _p_29:
@@ -5945,7 +5954,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 1843
+.word 1852
 	.no_dead_strip plt_System_Net_WebClient_DownloadFileAsync_System_Uri_string
 plt_System_Net_WebClient_DownloadFileAsync_System_Uri_string:
 _p_30:
@@ -5953,7 +5962,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 1848
+.word 1857
 	.no_dead_strip plt_Apps_iOS_Models_iOSNotificationReceiver_ProcessNotification_UserNotifications_UNNotification
 plt_Apps_iOS_Models_iOSNotificationReceiver_ProcessNotification_UserNotifications_UNNotification:
 _p_31:
@@ -5961,7 +5970,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 1853
+.word 1862
 	.no_dead_strip plt_UserNotifications_UNNotification_get_Request
 plt_UserNotifications_UNNotification_get_Request:
 _p_32:
@@ -5969,7 +5978,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 1855
+.word 1864
 	.no_dead_strip plt_UserNotifications_UNNotificationRequest_get_Content
 plt_UserNotifications_UNNotificationRequest_get_Content:
 _p_33:
@@ -5977,7 +5986,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 1860
+.word 1869
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_Apps_Models_INotificationManager_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_Apps_Models_INotificationManager_Xamarin_Forms_DependencyFetchTarget:
 _p_34:
@@ -5985,7 +5994,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 1865
+.word 1874
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenterDelegate__ctor
 plt_UserNotifications_UNUserNotificationCenterDelegate__ctor:
 _p_35:
@@ -5993,7 +6002,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 1877
+.word 1886
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_RequestAuthorization_UserNotifications_UNAuthorizationOptions_System_Action_2_bool_Foundation_NSError
 plt_UserNotifications_UNUserNotificationCenter_RequestAuthorization_UserNotifications_UNAuthorizationOptions_System_Action_2_bool_Foundation_NSError:
 _p_36:
@@ -6001,7 +6010,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 1882
+.word 1891
 	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent__ctor
 plt_UserNotifications_UNMutableNotificationContent__ctor:
 _p_37:
@@ -6009,7 +6018,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 1887
+.word 1896
 	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Title_string
 plt_UserNotifications_UNMutableNotificationContent_set_Title_string:
 _p_38:
@@ -6017,7 +6026,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 1892
+.word 1901
 	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Subtitle_string
 plt_UserNotifications_UNMutableNotificationContent_set_Subtitle_string:
 _p_39:
@@ -6025,7 +6034,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 1897
+.word 1906
 	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Body_string
 plt_UserNotifications_UNMutableNotificationContent_set_Body_string:
 _p_40:
@@ -6033,7 +6042,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 1902
+.word 1911
 	.no_dead_strip plt_Foundation_NSNumber_op_Implicit_int
 plt_Foundation_NSNumber_op_Implicit_int:
 _p_41:
@@ -6041,7 +6050,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 1907
+.word 1916
 	.no_dead_strip plt_UserNotifications_UNMutableNotificationContent_set_Badge_Foundation_NSNumber
 plt_UserNotifications_UNMutableNotificationContent_set_Badge_Foundation_NSNumber:
 _p_42:
@@ -6049,7 +6058,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 1912
+.word 1921
 	.no_dead_strip plt_System_Nullable_1_System_DateTime_get_Value
 plt_System_Nullable_1_System_DateTime_get_Value:
 _p_43:
@@ -6057,7 +6066,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 1917
+.word 1926
 	.no_dead_strip plt_LocalNotifications_iOS_iOSNotificationManager_GetNSDateComponents_System_DateTime
 plt_LocalNotifications_iOS_iOSNotificationManager_GetNSDateComponents_System_DateTime:
 _p_44:
@@ -6065,7 +6074,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 1928
+.word 1937
 	.no_dead_strip plt_UserNotifications_UNCalendarNotificationTrigger_CreateTrigger_Foundation_NSDateComponents_bool
 plt_UserNotifications_UNCalendarNotificationTrigger_CreateTrigger_Foundation_NSDateComponents_bool:
 _p_45:
@@ -6073,7 +6082,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 1930
+.word 1939
 	.no_dead_strip plt_UserNotifications_UNTimeIntervalNotificationTrigger_CreateTrigger_double_bool
 plt_UserNotifications_UNTimeIntervalNotificationTrigger_CreateTrigger_double_bool:
 _p_46:
@@ -6081,7 +6090,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 1935
+.word 1944
 	.no_dead_strip plt_int_ToString
 plt_int_ToString:
 _p_47:
@@ -6089,7 +6098,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 1940
+.word 1949
 	.no_dead_strip plt_UserNotifications_UNNotificationRequest_FromIdentifier_string_UserNotifications_UNNotificationContent_UserNotifications_UNNotificationTrigger
 plt_UserNotifications_UNNotificationRequest_FromIdentifier_string_UserNotifications_UNNotificationContent_UserNotifications_UNNotificationTrigger:
 _p_48:
@@ -6097,7 +6106,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 1945
+.word 1954
 	.no_dead_strip plt_UserNotifications_UNUserNotificationCenter_AddNotificationRequest_UserNotifications_UNNotificationRequest_System_Action_1_Foundation_NSError
 plt_UserNotifications_UNUserNotificationCenter_AddNotificationRequest_UserNotifications_UNNotificationRequest_System_Action_1_Foundation_NSError:
 _p_49:
@@ -6105,7 +6114,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 1950
+.word 1959
 	.no_dead_strip plt_MasterDetailPageNavigation_NotificacoesPage__ctor
 plt_MasterDetailPageNavigation_NotificacoesPage__ctor:
 _p_50:
@@ -6113,7 +6122,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 1955
+.word 1964
 	.no_dead_strip plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page
 plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page:
 _p_51:
@@ -6121,7 +6130,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 1960
+.word 1969
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_52:
@@ -6129,7 +6138,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 1965
+.word 1974
 	.no_dead_strip plt_Xamarin_Forms_NavigableElement_get_Navigation
 plt_Xamarin_Forms_NavigableElement_get_Navigation:
 _p_53:
@@ -6137,7 +6146,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 1968
+.word 1977
 	.no_dead_strip plt_MasterDetailPageNavigation_NotificacaoPage__ctor_Apps_Models_Notificacao
 plt_MasterDetailPageNavigation_NotificacaoPage__ctor_Apps_Models_Notificacao:
 _p_54:
@@ -6145,7 +6154,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 1973
+.word 1982
 	.no_dead_strip plt_MasterDetailPageNavigation_ChatsPage__ctor
 plt_MasterDetailPageNavigation_ChatsPage__ctor:
 _p_55:
@@ -6153,7 +6162,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 1978
+.word 1987
 	.no_dead_strip plt_MasterDetailPageNavigation_ChatPage__ctor_Apps_Models_Chat_Apps_Models_Fisioterapeuta
 plt_MasterDetailPageNavigation_ChatPage__ctor_Apps_Models_Chat_Apps_Models_Fisioterapeuta:
 _p_56:
@@ -6161,7 +6170,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 1983
+.word 1992
 	.no_dead_strip plt_Foundation_NSDateComponents__ctor
 plt_Foundation_NSDateComponents__ctor:
 _p_57:
@@ -6169,7 +6178,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 1988
+.word 1997
 	.no_dead_strip plt_System_DateTime_get_Month
 plt_System_DateTime_get_Month:
 _p_58:
@@ -6177,7 +6186,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 1993
+.word 2002
 	.no_dead_strip plt_Foundation_NSDateComponents_set_Month_System_nint
 plt_Foundation_NSDateComponents_set_Month_System_nint:
 _p_59:
@@ -6185,7 +6194,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 1998
+.word 2007
 	.no_dead_strip plt_System_DateTime_get_Day
 plt_System_DateTime_get_Day:
 _p_60:
@@ -6193,7 +6202,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 2003
+.word 2012
 	.no_dead_strip plt_Foundation_NSDateComponents_set_Day_System_nint
 plt_Foundation_NSDateComponents_set_Day_System_nint:
 _p_61:
@@ -6201,7 +6210,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 2008
+.word 2017
 	.no_dead_strip plt_System_DateTime_get_Year
 plt_System_DateTime_get_Year:
 _p_62:
@@ -6209,7 +6218,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 2013
+.word 2022
 	.no_dead_strip plt_Foundation_NSDateComponents_set_Year_System_nint
 plt_Foundation_NSDateComponents_set_Year_System_nint:
 _p_63:
@@ -6217,7 +6226,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 2018
+.word 2027
 	.no_dead_strip plt_System_DateTime_get_Hour
 plt_System_DateTime_get_Hour:
 _p_64:
@@ -6225,7 +6234,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 2023
+.word 2032
 	.no_dead_strip plt_Foundation_NSDateComponents_set_Hour_System_nint
 plt_Foundation_NSDateComponents_set_Hour_System_nint:
 _p_65:
@@ -6233,7 +6242,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 2028
+.word 2037
 	.no_dead_strip plt_Foundation_NSDateComponents_set_Minute_System_nint
 plt_Foundation_NSDateComponents_set_Minute_System_nint:
 _p_66:
@@ -6241,7 +6250,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 2033
+.word 2042
 	.no_dead_strip plt_Foundation_NSDateComponents_set_Second_System_nint
 plt_Foundation_NSDateComponents_set_Second_System_nint:
 _p_67:
@@ -6249,7 +6258,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 2038
+.word 2047
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PickerRendererBase_1_UIKit_UITextField_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Picker
 plt_Xamarin_Forms_Platform_iOS_PickerRendererBase_1_UIKit_UITextField_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Picker:
 _p_68:
@@ -6257,7 +6266,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 2043
+.word 2052
 	.no_dead_strip plt_UIKit_UIView_get_Layer
 plt_UIKit_UIView_get_Layer:
 _p_69:
@@ -6265,7 +6274,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 2054
+.word 2063
 	.no_dead_strip plt_CoreAnimation_CALayer_set_BorderWidth_System_nfloat
 plt_CoreAnimation_CALayer_set_BorderWidth_System_nfloat:
 _p_70:
@@ -6273,7 +6282,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 2059
+.word 2068
 	.no_dead_strip plt_UIKit_UITextField_set_BorderStyle_UIKit_UITextBorderStyle
 plt_UIKit_UITextField_set_BorderStyle_UIKit_UITextBorderStyle:
 _p_71:
@@ -6281,7 +6290,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 2064
+.word 2073
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PickerRenderer__ctor
 plt_Xamarin_Forms_Platform_iOS_PickerRenderer__ctor:
 _p_72:
@@ -6289,7 +6298,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 2069
+.word 2078
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_EditorRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Editor
 plt_Xamarin_Forms_Platform_iOS_EditorRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Editor:
 _p_73:
@@ -6297,7 +6306,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 2074
+.word 2083
 	.no_dead_strip plt_UIKit_UITextView_set_KeyboardAppearance_UIKit_UIKeyboardAppearance
 plt_UIKit_UITextView_set_KeyboardAppearance_UIKit_UIKeyboardAppearance:
 _p_74:
@@ -6305,7 +6314,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 2079
+.word 2088
 	.no_dead_strip plt_UIKit_UITextView_set_ReturnKeyType_UIKit_UIReturnKeyType
 plt_UIKit_UITextView_set_ReturnKeyType_UIKit_UIReturnKeyType:
 _p_75:
@@ -6313,7 +6322,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 2084
+.word 2093
 	.no_dead_strip plt_CurvedEditor_CustomEditor_get_CornerRadius
 plt_CurvedEditor_CustomEditor_get_CornerRadius:
 _p_76:
@@ -6321,7 +6330,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 2089
+.word 2098
 	.no_dead_strip plt_CoreAnimation_CALayer_set_CornerRadius_System_nfloat
 plt_CoreAnimation_CALayer_set_CornerRadius_System_nfloat:
 _p_77:
@@ -6329,7 +6338,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 2094
+.word 2103
 	.no_dead_strip plt_CurvedEditor_CustomEditor_get_BorderColor
 plt_CurvedEditor_CustomEditor_get_BorderColor:
 _p_78:
@@ -6337,7 +6346,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 2099
+.word 2108
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ColorExtensions_ToCGColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_Platform_iOS_ColorExtensions_ToCGColor_Xamarin_Forms_Color:
 _p_79:
@@ -6345,7 +6354,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 2104
+.word 2113
 	.no_dead_strip plt_CoreAnimation_CALayer_set_BorderColor_CoreGraphics_CGColor
 plt_CoreAnimation_CALayer_set_BorderColor_CoreGraphics_CGColor:
 _p_80:
@@ -6353,7 +6362,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 2109
+.word 2118
 	.no_dead_strip plt_CurvedEditor_CustomEditor_get_BorderWidth
 plt_CurvedEditor_CustomEditor_get_BorderWidth:
 _p_81:
@@ -6361,7 +6370,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 2114
+.word 2123
 	.no_dead_strip plt_UIKit_UIView_set_ClipsToBounds_bool
 plt_UIKit_UIView_set_ClipsToBounds_bool:
 _p_82:
@@ -6369,7 +6378,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 2119
+.word 2128
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_EditorRenderer__ctor
 plt_Xamarin_Forms_Platform_iOS_EditorRenderer__ctor:
 _p_83:
@@ -6377,7 +6386,7 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 2124
+.word 2133
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_EntryRendererBase_1_UIKit_UITextField_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Entry
 plt_Xamarin_Forms_Platform_iOS_EntryRendererBase_1_UIKit_UITextField_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Entry:
 _p_84:
@@ -6385,251 +6394,267 @@ adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 2129
-	.no_dead_strip plt_CoreGraphics_CGRect__ctor_single_single_single_single
-plt_CoreGraphics_CGRect__ctor_single_single_single_single:
+.word 2138
+	.no_dead_strip plt_CurvedEntry_CustomEntry_get_ShowBorder
+plt_CurvedEntry_CustomEntry_get_ShowBorder:
 _p_85:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 2140
-	.no_dead_strip plt_UIKit_UIView__ctor_CoreGraphics_CGRect
-plt_UIKit_UIView__ctor_CoreGraphics_CGRect:
+.word 2149
+	.no_dead_strip plt_CoreGraphics_CGRect__ctor_single_single_single_single
+plt_CoreGraphics_CGRect__ctor_single_single_single_single:
 _p_86:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 2145
-	.no_dead_strip plt_UIKit_UITextField_set_LeftView_UIKit_UIView
-plt_UIKit_UITextField_set_LeftView_UIKit_UIView:
+.word 2154
+	.no_dead_strip plt_UIKit_UIView__ctor_CoreGraphics_CGRect
+plt_UIKit_UIView__ctor_CoreGraphics_CGRect:
 _p_87:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 2150
-	.no_dead_strip plt_UIKit_UITextField_set_LeftViewMode_UIKit_UITextFieldViewMode
-plt_UIKit_UITextField_set_LeftViewMode_UIKit_UITextFieldViewMode:
+.word 2159
+	.no_dead_strip plt_UIKit_UITextField_set_LeftView_UIKit_UIView
+plt_UIKit_UITextField_set_LeftView_UIKit_UIView:
 _p_88:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 2155
-	.no_dead_strip plt_UIKit_UITextField_set_KeyboardAppearance_UIKit_UIKeyboardAppearance
-plt_UIKit_UITextField_set_KeyboardAppearance_UIKit_UIKeyboardAppearance:
+.word 2164
+	.no_dead_strip plt_UIKit_UITextField_set_LeftViewMode_UIKit_UITextFieldViewMode
+plt_UIKit_UITextField_set_LeftViewMode_UIKit_UITextFieldViewMode:
 _p_89:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 2160
-	.no_dead_strip plt_UIKit_UITextField_set_ReturnKeyType_UIKit_UIReturnKeyType
-plt_UIKit_UITextField_set_ReturnKeyType_UIKit_UIReturnKeyType:
+.word 2169
+	.no_dead_strip plt_UIKit_UITextField_set_KeyboardAppearance_UIKit_UIKeyboardAppearance
+plt_UIKit_UITextField_set_KeyboardAppearance_UIKit_UIKeyboardAppearance:
 _p_90:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 2165
-	.no_dead_strip plt_CurvedEntry_CustomEntry_get_CornerRadius
-plt_CurvedEntry_CustomEntry_get_CornerRadius:
+.word 2174
+	.no_dead_strip plt_UIKit_UITextField_set_ReturnKeyType_UIKit_UIReturnKeyType
+plt_UIKit_UITextField_set_ReturnKeyType_UIKit_UIReturnKeyType:
 _p_91:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 2170
-	.no_dead_strip plt_CurvedEntry_CustomEntry_get_BorderColor
-plt_CurvedEntry_CustomEntry_get_BorderColor:
+.word 2179
+	.no_dead_strip plt_CurvedEntry_CustomEntry_get_IsCurvedCornersEnabled
+plt_CurvedEntry_CustomEntry_get_IsCurvedCornersEnabled:
 _p_92:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 2175
-	.no_dead_strip plt_CurvedEntry_CustomEntry_get_BorderWidth
-plt_CurvedEntry_CustomEntry_get_BorderWidth:
+.word 2184
+	.no_dead_strip plt_CurvedEntry_CustomEntry_get_CornerRadius
+plt_CurvedEntry_CustomEntry_get_CornerRadius:
 _p_93:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 2180
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_EntryRenderer__ctor
-plt_Xamarin_Forms_Platform_iOS_EntryRenderer__ctor:
+.word 2189
+	.no_dead_strip plt_CurvedEntry_CustomEntry_get_BorderColor
+plt_CurvedEntry_CustomEntry_get_BorderColor:
 _p_94:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 2185
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
+.word 2194
+	.no_dead_strip plt_CurvedEntry_CustomEntry_get_BorderWidth
+plt_CurvedEntry_CustomEntry_get_BorderWidth:
 _p_95:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 2190
-	.no_dead_strip plt_string_Format_string_object
-plt_string_Format_string_object:
+.word 2199
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_EntryRenderer__ctor
+plt_Xamarin_Forms_Platform_iOS_EntryRenderer__ctor:
 _p_96:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 2193
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
+.word 2204
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
 _p_97:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 2198
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+.word 2209
+	.no_dead_strip plt_string_Format_string_object
+plt_string_Format_string_object:
 _p_98:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 2200
-	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
-plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
+.word 2212
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
 _p_99:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 2203
-	.no_dead_strip plt_System_DateTime_Equals_object
-plt_System_DateTime_Equals_object:
+.word 2217
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_100:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 2208
-	.no_dead_strip plt_System_DateTime_ToString
-plt_System_DateTime_ToString:
+.word 2219
+	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue
+plt_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue:
 _p_101:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 2213
-	.no_dead_strip plt_System_Nullable_1_System_DateTime__ctor_System_DateTime
-plt_System_Nullable_1_System_DateTime__ctor_System_DateTime:
+.word 2222
+	.no_dead_strip plt_System_DateTime_Equals_object
+plt_System_DateTime_Equals_object:
 _p_102:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 2218
-	.no_dead_strip plt_System_Enum_Equals_object
-plt_System_Enum_Equals_object:
+.word 2227
+	.no_dead_strip plt_System_DateTime_ToString
+plt_System_DateTime_ToString:
 _p_103:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 2235
-	.no_dead_strip plt_System_Enum_ToString
-plt_System_Enum_ToString:
+.word 2232
+	.no_dead_strip plt_System_Nullable_1_System_DateTime__ctor_System_DateTime
+plt_System_Nullable_1_System_DateTime__ctor_System_DateTime:
 _p_104:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 2240
-	.no_dead_strip plt_System_Nullable_1_UIKit_UIUserInterfaceStyle__ctor_UIKit_UIUserInterfaceStyle
-plt_System_Nullable_1_UIKit_UIUserInterfaceStyle__ctor_UIKit_UIUserInterfaceStyle:
+.word 2237
+	.no_dead_strip plt_System_Enum_Equals_object
+plt_System_Enum_Equals_object:
 _p_105:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 2245
-	.no_dead_strip plt_bool_Equals_object
-plt_bool_Equals_object:
+.word 2254
+	.no_dead_strip plt_System_Enum_ToString
+plt_System_Enum_ToString:
 _p_106:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 2260
-	.no_dead_strip plt_System_Nullable_1_bool__ctor_bool
-plt_System_Nullable_1_bool__ctor_bool:
+.word 2259
+	.no_dead_strip plt_System_Nullable_1_UIKit_UIUserInterfaceStyle__ctor_UIKit_UIUserInterfaceStyle
+plt_System_Nullable_1_UIKit_UIUserInterfaceStyle__ctor_UIKit_UIUserInterfaceStyle:
 _p_107:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 2265
-	.no_dead_strip plt_System_nint_Equals_object
-plt_System_nint_Equals_object:
+.word 2264
+	.no_dead_strip plt_bool_Equals_object
+plt_bool_Equals_object:
 _p_108:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 2280
-	.no_dead_strip plt_System_nint_ToString
-plt_System_nint_ToString:
+.word 2279
+	.no_dead_strip plt_System_Nullable_1_bool__ctor_bool
+plt_System_Nullable_1_bool__ctor_bool:
 _p_109:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 2285
-	.no_dead_strip plt_System_Nullable_1_System_nint__ctor_System_nint
-plt_System_Nullable_1_System_nint__ctor_System_nint:
+.word 2284
+	.no_dead_strip plt_System_nint_Equals_object
+plt_System_nint_Equals_object:
 _p_110:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 2290
-	.no_dead_strip plt_int_Equals_object
-plt_int_Equals_object:
+.word 2299
+	.no_dead_strip plt_System_nint_ToString
+plt_System_nint_ToString:
 _p_111:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 2305
-	.no_dead_strip plt_System_Nullable_1_int__ctor_int
-plt_System_Nullable_1_int__ctor_int:
+.word 2304
+	.no_dead_strip plt_System_Nullable_1_System_nint__ctor_System_nint
+plt_System_Nullable_1_System_nint__ctor_System_nint:
 _p_112:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 2310
-	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
-plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
+.word 2309
+	.no_dead_strip plt_int_Equals_object
+plt_int_Equals_object:
 _p_113:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 2325
-	.no_dead_strip plt_System_Nullable_1_System_DateTime_Unbox_object
-plt_System_Nullable_1_System_DateTime_Unbox_object:
+.word 2324
+	.no_dead_strip plt_System_Nullable_1_int__ctor_int
+plt_System_Nullable_1_int__ctor_int:
 _p_114:
 adrp x16, mono_aot_Apps_iOS_got@PAGE+0
 add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 2328
+.word 2329
+	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
+plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
+_p_115:
+adrp x16, mono_aot_Apps_iOS_got@PAGE+0
+add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
+ldr x16, [x16, #1640]
+br x16
+.word 2344
+	.no_dead_strip plt_System_Nullable_1_System_DateTime_Unbox_object
+plt_System_Nullable_1_System_DateTime_Unbox_object:
+_p_116:
+adrp x16, mono_aot_Apps_iOS_got@PAGE+0
+add x16, x16, mono_aot_Apps_iOS_got@PAGEOFF
+ldr x16, [x16, #1648]
+br x16
+.word 2347
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Apps_iOS_got, 1640
+.lcomm mono_aot_Apps_iOS_got, 1656
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -6660,7 +6685,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "EB46E082-F6B8-4959-8413-F6F0C4C51C6D"
+	.asciz "38AD3CC6-8741-47F3-AAA3-74B9E36454D8"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -6747,14 +6772,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 90,1640,115,126,13,98,387000831,0
-	.long 3385,128,8,8,8,9,8388607,0
-	.long 4,25,7024,0,0,3632,2960,2416
+	.long 90,1656,117,126,13,98,387000831,0
+	.long 3404,128,8,8,8,9,8388607,0
+	.long 4,25,7048,0,0,3632,2960,2416
 	.long 0,2720,2920,2584,0,1736,192,3624
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 236,226,62,1,59,243,239,157,79,40,234,41,23,185,2,88
+	.byte 223,32,80,188,10,155,158,36,176,113,64,215,243,130,195,227
 	.globl _mono_aot_module_Apps_iOS_info
 	.align 3
 _mono_aot_module_Apps_iOS_info:
@@ -18384,7 +18409,7 @@ Lfde36_start:
 LDIFF_SYM1932=Lme_24 - CurvedEntry_iOS_CustomEntryRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_Entry
 	.long LDIFF_SYM1932
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,152,28,153,27,68,154,26
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,68,152,24,153,23,68,154,22
 	.align 3
 Lfde36_end:
 

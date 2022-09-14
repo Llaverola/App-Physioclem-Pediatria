@@ -1,157 +1,150 @@
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.exe.config
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.exe
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Acr.UserDialogs.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Acr.UserDialogs.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/AngleSharp.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/BTProgressHUD.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/BTProgressHUD.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Microsoft.Bcl.AsyncInterfaces.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Newtonsoft.Json.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.FacebookClient.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Permissions.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Stripe.net.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Stripe.net.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/System.Configuration.ConfigurationManager.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/System.Runtime.CompilerServices.Unsafe.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/System.Security.Permissions.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/System.Text.Encoding.CodePages.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/System.Text.Encodings.Web.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/System.Text.Json.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.DeviceInfo.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.DeviceInfo.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Geolocator.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Media.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ImageCircle.Forms.Plugin.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.CommunityToolkit.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Essentials.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Essentials.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Facebook.CoreKit.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Facebook.LoginKit.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Facebook.MarketingKit.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Facebook.PlacesKit.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Facebook.ShareKit.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Core.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Core.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Platform.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Platform.iOS.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Platform.iOS.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Xaml.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Xaml.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ar/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ca/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/cs/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/da/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/de/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/el/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/es/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/fi/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/fr/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/he/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/hi/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/hr/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/hu/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/id/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/it/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ja/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ko/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ms/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/nb/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/nl/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/pl/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/pt/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ro/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/ru/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/sk/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/sv/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/th/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/tr/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/uk/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/vi/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/YoutubeExplode.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Apps.dll
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Apps.pdb
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/actool/_PartialAppManifest.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/actool/_BundleResourceWithLogicalName.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/actool/_ProcessedImageAssetsPath.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/ibtool/_BundleResourceWithLogicalName.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/ibtool/_ProcessedInterfaceDefinitionsPath.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/coremlc/_PartialAppManifest.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/coremlc/_BundleResourceWithLogicalName.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/coremlc/_ProcessedCoreMLModelsPath.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/_ProcessedBundleResourcesPath.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/_ProcessedContentPath.items
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ic_clear_icon_white.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/mostrarBranco.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ocultarBranco.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/instagram.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/facebook.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/hidePassword.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/showPassword.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/hamburger.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ic_clear_icon.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/icon_launcher.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/event.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/twitter.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/website.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/shop.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/info2.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/splash.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/site.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/UpEvents.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/logo_for_app.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/error.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/success.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ajuda.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_o_meu_bebe.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_documentos.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_chat.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_videos.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_definicoes.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_outros_emails.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_outros_contactos.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/icon_menu.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/test.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/logo_menu.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/gradient.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/voltar.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/play.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/play30.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/arrow_right.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/perfil_icon.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/alterar_pass_icon.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/notificacoes_icon.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/contactar_icon.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/logout.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/relogio.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/user.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/calendario.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/pin.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/telemovel.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/dot.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/notificacoes.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/back_to_page.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/background_gradient_box.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/bell.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/card.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/contacts.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/empty_star.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/half_star.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/help.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ic_fb.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/Icone_aplicacao.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/info.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menuHamburguer.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/noimage.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/reminders.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/socialmedia.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/star.png
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/optimized/
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.exe.config
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.csproj.CoreCompileInputs.cache
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.csproj.CopyComplete
-/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.exe
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.exe.config
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.exe
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Acr.UserDialogs.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Acr.UserDialogs.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/AngleSharp.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/BTProgressHUD.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/BTProgressHUD.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Newtonsoft.Json.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Permissions.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Permissions.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/System.Runtime.CompilerServices.Unsafe.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/System.Text.Encoding.CodePages.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/System.Text.Encodings.Web.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/System.Text.Json.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.DeviceInfo.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.DeviceInfo.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Geolocator.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Media.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Plugin.Media.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ImageCircle.Forms.Plugin.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.CommunityToolkit.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Essentials.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Essentials.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Core.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Core.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Platform.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Platform.iOS.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Platform.iOS.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Xaml.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Xamarin.Forms.Xaml.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ar/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ca/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/cs/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/da/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/de/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/el/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/es/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/fi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/fr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/he/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/hi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/hr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/hu/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/id/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/it/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ja/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ko/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ms/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/nb/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/nl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/pl/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/pt/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ro/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/ru/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/sk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/sv/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/th/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/tr/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/uk/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/vi/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/YoutubeExplode.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Apps.dll
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Apps.pdb
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/actool/_PartialAppManifest.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/actool/_BundleResourceWithLogicalName.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/actool/_ProcessedImageAssetsPath.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/ibtool/_BundleResourceWithLogicalName.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/ibtool/_ProcessedInterfaceDefinitionsPath.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/coremlc/_PartialAppManifest.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/coremlc/_BundleResourceWithLogicalName.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/_ProcessedBundleResourcesPath.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/_ProcessedContentPath.items
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ic_clear_icon_white.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/mostrarBranco.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ocultarBranco.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/instagram.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/facebook.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/hidePassword.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/showPassword.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/hamburger.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ic_clear_icon.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/icon_launcher.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/event.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/twitter.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/website.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/shop.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/info2.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/splash.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/site.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/UpEvents.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/logo_for_app.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/error.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/success.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ajuda.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_o_meu_bebe.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_documentos.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_chat.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_videos.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_definicoes.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_outros_emails.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menu_outros_contactos.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/icon_menu.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/test.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/logo_menu.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/gradient.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/voltar.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/play.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/play30.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/arrow_right.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/perfil_icon.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/alterar_pass_icon.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/notificacoes_icon.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/contactar_icon.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/logout.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/relogio.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/user.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/calendario.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/pin.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/telemovel.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/dot.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/notificacoes.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/back_to_page.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/background_gradient_box.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/bell.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/card.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/contacts.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/empty_star.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/half_star.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/help.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/ic_fb.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/Icone_aplicacao.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/info.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/menuHamburguer.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/noimage.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/reminders.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/socialmedia.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/star.png
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/optimized/
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.exe.config
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.csproj.CoreCompileInputs.cache
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.csproj.CopyComplete
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.exe
+/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/Apps.iOS.csproj.AssemblyReference.cache

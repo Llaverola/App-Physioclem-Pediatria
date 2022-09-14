@@ -154,7 +154,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 17,7,31,73,190,174,70,50,79,11,149,159,120,55,205,171
+	.byte 238,56,46,6,21,48,158,243,6,157,156,241,53,170,59,124
 	.globl _mono_aot_module_Microsoft_Bcl_AsyncInterfaces_info
 	.align 3
 _mono_aot_module_Microsoft_Bcl_AsyncInterfaces_info:

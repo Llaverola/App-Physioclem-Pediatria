@@ -20152,7 +20152,7 @@ System_Text_Encodings_Web_TextEncoderSettings_AllowCodePoints_System_Collections
 adrp x16, mono_aot_System_Text_Encodings_Web_got@PAGE+0
 add x16, x16, mono_aot_System_Text_Encodings_Web_got@PAGEOFF
 ldr x15, [x16, #1952]
-.word 0x928006f0
+.word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -20696,7 +20696,7 @@ bl _p_81
 adrp x16, mono_aot_System_Text_Encodings_Web_got@PAGE+0
 add x16, x16, mono_aot_System_Text_Encodings_Web_got@PAGEOFF
 ldr x15, [x16, #1952]
-.word 0x928006f0
+.word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -30881,7 +30881,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 61,242,145,139,39,213,18,33,75,40,208,218,11,69,12,149
+	.byte 90,215,93,238,183,199,23,159,113,193,253,28,164,63,38,85
 	.globl _mono_aot_module_System_Text_Encodings_Web_info
 	.align 3
 _mono_aot_module_System_Text_Encodings_Web_info:

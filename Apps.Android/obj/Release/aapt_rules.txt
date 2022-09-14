@@ -1,37 +1,35 @@
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:27
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:27
 -keep class android.app.Application { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:27
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:28
+-keep class android.support.v4.content.FileProvider { <init>(); }
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:27
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:28
--keep class androidx.core.content.FileProvider { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:71
--keep class com.facebook.CampaignTrackingReceiver { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:66
--keep class com.facebook.CurrentAccessTokenExpirationBroadcastReceiver { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:35
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:35
 -keep class com.facebook.CustomTabActivity { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:55
--keep class com.facebook.CustomTabMainActivity { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:34
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:34
 -keep class com.facebook.FacebookActivity { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:65
--keep class com.facebook.internal.FacebookInitProvider { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:32
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:32
 -keep class com.physioclempediatria.apps.MainActivity { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:45
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:53
 -keep class crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:43
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:51
 -keep class crc646957603ea1820544.MediaPickerActivity { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:53
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:50
 -keep class crc6469c5fd779c1cc947.AlarmHandler { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:46
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:43
 -keep class crc646d7759e42796201d.MainActivity { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:47
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:44
 -keep class crc646d7759e42796201d.SplashActivity { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:44
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:52
 -keep class crc64a0e0a82d0db9a07d.ConnectivityBroadcastReceiver { <init>(); }
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:54
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/android/manifest/AndroidManifest.xml:54
 -keep class mono.MonoRuntimeProvider { <init>(); }
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/res/layout/tabbar.xml:1
+-keep class android.support.design.widget.TabLayout { <init>(...); }
+
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/res/layout/toolbar.xml:1
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
 # Referenced at res/layout/abc_alert_dialog_button_bar_material.xml:43
 # Referenced at res/layout/abc_alert_dialog_material.xml:52
 # Referenced at res/layout/abc_alert_dialog_title_material.xml:57
@@ -40,7 +38,7 @@
 # Referenced at res/layout/mtrl_alert_dialog_title.xml:41
 -keep class android.widget.Space { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/1/jl/res/layout/loadingprogress.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/1/jl/res/layout/loadingprogress.xml:1
 -keep class androidhud.ProgressWheel { <init>(...); }
 
 # Referenced at res/layout/abc_select_dialog_material.xml:23
@@ -77,10 +75,6 @@
 # Referenced at res/layout/mtrl_alert_dialog.xml:17
 -keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/69/jl/res/layout/com_facebook_device_auth_dialog_fragment.xml:19
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/69/jl/res/layout/com_facebook_smart_device_dialog_fragment.xml:19
--keep class androidx.appcompat.widget.AppCompatImageView { <init>(...); }
-
 # Referenced at res/layout/abc_alert_dialog_button_bar_material.xml:26
 # Referenced at res/layout/mtrl_alert_dialog_actions.xml:26
 -keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
@@ -106,10 +100,9 @@
 -keep class androidx.appcompat.widget.SwitchCompat { <init>(...); }
 
 # Referenced at res/layout/abc_screen_toolbar.xml:36
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/fallbacktoolbardonotuse.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/rootlayout.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/shellcontent.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/res/layout/toolbar.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/fallbacktoolbardonotuse.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/rootlayout.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/shellcontent.xml:1
 -keep class androidx.appcompat.widget.Toolbar { <init>(...); }
 
 # Referenced at res/layout/abc_screen_simple.xml:25
@@ -118,10 +111,6 @@
 
 # Referenced at res/layout/browser_actions_context_menu_page.xml:17
 -keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(...); }
-
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/69/jl/res/layout/com_facebook_device_auth_dialog_fragment.xml:19
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/69/jl/res/layout/com_facebook_smart_device_dialog_fragment.xml:19
--keep class androidx.cardview.widget.CardView { <init>(...); }
 
 # Referenced at res/layout/material_timepicker_dialog.xml:38
 -keep class androidx.constraintlayout.widget.Barrier { <init>(...); }
@@ -133,8 +122,8 @@
 -keep class androidx.constraintlayout.widget.Guideline { <init>(...); }
 
 # Referenced at res/layout/design_bottom_sheet_dialog.xml:26
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/rootlayout.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/shellcontent.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/rootlayout.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/shellcontent.xml:1
 -keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(...); }
 
 # Referenced at res/layout/abc_alert_dialog_material.xml:41
@@ -155,9 +144,9 @@
 # Referenced at res/layout/preference_recyclerview.xml:18
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/flyoutcontent.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/rootlayout.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/shellcontent.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/flyoutcontent.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/rootlayout.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/shellcontent.xml:1
 -keep class com.google.android.material.appbar.AppBarLayout { <init>(...); }
 
 # Referenced at res/layout/test_toolbar.xml:16
@@ -166,7 +155,7 @@
 # Referenced at res/layout/test_toolbar_surface.xml:16
 -keep class com.google.android.material.appbar.MaterialToolbar { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/bottomtablayout.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/bottomtablayout.xml:1
 -keep class com.google.android.material.bottomnavigation.BottomNavigationView { <init>(...); }
 
 # Referenced at res/layout/material_clock_period_toggle.xml:35
@@ -215,9 +204,8 @@
 # Referenced at res/layout/mtrl_layout_snackbar_include.xml:18
 -keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/fallbacktabbardonotuse.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/rootlayout.xml:1
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/res/layout/tabbar.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/fallbacktabbardonotuse.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/rootlayout.xml:1
 -keep class com.google.android.material.tabs.TabLayout { <init>(...); }
 
 # Referenced at res/layout/mtrl_picker_text_input_date.xml:31
@@ -248,12 +236,12 @@
 # Referenced at res/layout/material_timepicker_dialog.xml:46
 -keep class com.google.android.material.timepicker.TimePickerView { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/65/jl/res/layout/camerafragment.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/61/jl/res/layout/camerafragment.xml:1
 -keep class crc642e1c7a98bdb5c44a.AutoFitTextureView { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/flyoutcontent.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/flyoutcontent.xml:1
 -keep class crc643f46942d9dd1fff9.ShellFlyoutLayout { <init>(...); }
 
-# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.Android/obj/Release/lp/75/jl/res/layout/rootlayout.xml:1
+# Referenced at /Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.Android/obj/Release/lp/63/jl/res/layout/rootlayout.xml:1
 -keep class crc64720bb2db43a66fe9.FormsViewPager { <init>(...); }
 

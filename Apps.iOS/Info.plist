@@ -40,7 +40,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.physioclempediatria.app</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.2</string>
 	<key>CFBundleName</key>
 	<string>Physioclem Pediatria</string>
 	<key>XSAppIconAssets</key>

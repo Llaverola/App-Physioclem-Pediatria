@@ -1,19 +1,19 @@
 --sgen-conc
 /target-framework:Xamarin.iOS,Version=v1.0
 --http-message-handler=NSUrlSessionHandler
-"--cache=/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/mtouch-cache"
-"--root-assembly=/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.exe"
+--cache=/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/mtouch-cache
+--root-assembly=/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.exe
 --sdkroot=/Applications/Xcode.app/Contents/Developer
 --targetver=12.1
-"--dev=/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.app"
+--dev=/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/bin/iPhone/Release/Apps.iOS.app
 --executable=Apps.iOS
 --linksdkonly
 --sdk=15.5
 --aot-options=-O=-float32
 --abi=arm64
-"--symbollist=/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps.iOS/obj/iPhone/Release/mtouch-symbols.list"
+--symbollist=/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/mtouch-symbols.list
 --dsym=no
-"--reference=/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.dll"
+--reference=/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/bin/Release/netstandard2.0/Apps.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Buffers.dll
@@ -114,6 +114,7 @@
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Runtime.Serialization.Json.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Runtime.Serialization.Primitives.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Runtime.Serialization.Xml.dll
+--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.AccessControl.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.Claims.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.Cryptography.Algorithms.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.Cryptography.Cng.dll
@@ -134,6 +135,7 @@
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.Cryptography.RSA.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.Cryptography.X509Certificates.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.Principal.dll
+--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.Principal.Windows.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Security.SecureString.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.ServiceModel.Duplex.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.ServiceModel.Http.dll
@@ -164,30 +166,21 @@
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 --reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
 --reference=/Users/ricardocoelho/.nuget/packages/acr.userdialogs/7.1.0.446/lib/xamarinios10/Acr.UserDialogs.dll
---reference=/Users/ricardocoelho/.nuget/packages/anglesharp/0.16.1/lib/netstandard2.0/AngleSharp.dll
+--reference=/Users/ricardocoelho/.nuget/packages/anglesharp/0.17.0/lib/netstandard2.0/AngleSharp.dll
 --reference=/Users/ricardocoelho/.nuget/packages/btprogresshud/1.3.1/lib/xamarinios10/BTProgressHUD.dll
 --reference=/Users/ricardocoelho/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll
 --reference=/Users/ricardocoelho/.nuget/packages/newtonsoft.json/13.0.1/lib/netstandard2.0/Newtonsoft.Json.dll
---reference=/Users/ricardocoelho/.nuget/packages/plugin.facebookclient/2.2.1/lib/xamarinios10/Plugin.FacebookClient.dll
---reference=/Users/ricardocoelho/.nuget/packages/plugin.permissions/3.0.0.12/lib/xamarinios10/Plugin.Permissions.dll
---reference=/Users/ricardocoelho/.nuget/packages/stripe.net/37.27.0/lib/netstandard2.0/Stripe.net.dll
---reference=/Users/ricardocoelho/.nuget/packages/system.configuration.configurationmanager/4.5.0/lib/netstandard2.0/System.Configuration.ConfigurationManager.dll
+--reference=/Users/ricardocoelho/.nuget/packages/plugin.permissions/6.0.1/lib/xamarinios10/Plugin.Permissions.dll
 --reference=/Users/ricardocoelho/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
---reference=/Users/ricardocoelho/.nuget/packages/system.security.permissions/4.5.0/lib/netstandard2.0/System.Security.Permissions.dll
 --reference=/Users/ricardocoelho/.nuget/packages/system.text.encoding.codepages/5.0.0/runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll
 --reference=/Users/ricardocoelho/.nuget/packages/system.text.encodings.web/6.0.0/lib/netstandard2.0/System.Text.Encodings.Web.dll
---reference=/Users/ricardocoelho/.nuget/packages/system.text.json/6.0.0/lib/netstandard2.0/System.Text.Json.dll
+--reference=/Users/ricardocoelho/.nuget/packages/system.text.json/6.0.5/lib/netstandard2.0/System.Text.Json.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xam.plugin.deviceinfo/4.1.1/lib/xamarinios10/Plugin.DeviceInfo.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xam.plugin.geolocator/4.5.0.6/lib/xamarinios10/Plugin.Geolocator.dll
---reference=/Users/ricardocoelho/.nuget/packages/xam.plugin.media/4.0.1.5/lib/xamarinios10/Plugin.Media.dll
+--reference=/Users/ricardocoelho/.nuget/packages/xam.plugin.media/5.0.1/lib/xamarinios10/Plugin.Media.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xam.plugins.forms.imagecircle/3.0.0.5/lib/xamarinios10/ImageCircle.Forms.Plugin.dll
---reference=/Users/ricardocoelho/.nuget/packages/xamarin.communitytoolkit/1.3.2/lib/xamarinios10/Xamarin.CommunityToolkit.dll
+--reference=/Users/ricardocoelho/.nuget/packages/xamarin.communitytoolkit/2.0.4/lib/xamarinios10/Xamarin.CommunityToolkit.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xamarin.essentials/1.7.3/lib/xamarinios10/Xamarin.Essentials.dll
---reference=/Users/ricardocoelho/.nuget/packages/xamarin.facebook.corekit.ios/5.12.0/lib/xamarinios10/Facebook.CoreKit.dll
---reference=/Users/ricardocoelho/.nuget/packages/xamarin.facebook.loginkit.ios/5.12.0/lib/xamarinios10/Facebook.LoginKit.dll
---reference=/Users/ricardocoelho/.nuget/packages/xamarin.facebook.marketingkit.ios/5.11.1/lib/xamarinios10/Facebook.MarketingKit.dll
---reference=/Users/ricardocoelho/.nuget/packages/xamarin.facebook.placeskit.ios/5.12.0/lib/xamarinios10/Facebook.PlacesKit.dll
---reference=/Users/ricardocoelho/.nuget/packages/xamarin.facebook.sharekit.ios/5.12.0/lib/xamarinios10/Facebook.ShareKit.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
@@ -226,5 +219,5 @@
 --reference=/Users/ricardocoelho/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 --reference=/Users/ricardocoelho/.nuget/packages/xamarin.forms/5.0.0.2515/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
---reference=/Users/ricardocoelho/.nuget/packages/youtubeexplode/6.0.7/lib/netstandard2.1/YoutubeExplode.dll
-"--reference=/Users/ricardocoelho/Desktop/dev_mobile/Physioclem Pediatria/Apps/bin/Release/netstandard2.0/Apps.dll"
+--reference=/Users/ricardocoelho/.nuget/packages/youtubeexplode/6.2.1/lib/netstandard2.1/YoutubeExplode.dll
+--reference=/Users/ricardocoelho/Desktop/dev_mobile/App-Physioclem-Pediatria/Apps/bin/Release/netstandard2.0/Apps.dll

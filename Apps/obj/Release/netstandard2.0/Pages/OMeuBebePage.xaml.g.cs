@@ -62,7 +62,13 @@ namespace MasterDetailPageNavigation {
         private global::Xamarin.Forms.Label Bebe_Enc_Educacao_Label;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Frame Frame_consultas_no_data;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label Consultas_No_Data_Label;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Frame Frame_consultas_with_data;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView ListView_Consultas;
@@ -169,7 +175,9 @@ namespace MasterDetailPageNavigation {
             Bebe_Nome_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Bebe_Nome_Label");
             Bebe_Data_Nascimento_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Bebe_Data_Nascimento_Label");
             Bebe_Enc_Educacao_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Bebe_Enc_Educacao_Label");
+            Frame_consultas_no_data = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "Frame_consultas_no_data");
             Consultas_No_Data_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Consultas_No_Data_Label");
+            Frame_consultas_with_data = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "Frame_consultas_with_data");
             ListView_Consultas = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ListView_Consultas");
             Ver_Todas_Consultas_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Ver_Todas_Consultas_Label");
             Notificacoes_No_Data_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Notificacoes_No_Data_Label");
