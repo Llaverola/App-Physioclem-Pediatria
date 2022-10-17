@@ -45,7 +45,6 @@
                                             Grid.Row="1" 
                                             Placeholder="example@gmail.com" 
                                             FontFamily="MyCustomFont_Medium"
-                                            IsPassword="True"
                                             PropertyChanging="Username_PropertyChanging" 
                                             WidthRequest="200"
                                             IsCurvedCornersEnabled="True"  
