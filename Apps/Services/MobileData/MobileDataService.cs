@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -27,6 +28,10 @@ namespace Apps.Services.NotificacoesData
                 {
                     string content = await response.Content.ReadAsStringAsync();
                     d = JsonConvert.DeserializeObject<DataModel>(content);
+                    if(d.Utilizador.Bebes.Count > 0)
+                    {
+                        d.Utilizador.Bebes.ElementAt(0).selected = true;
+                    }
                 }
             }
             catch (Exception ex)

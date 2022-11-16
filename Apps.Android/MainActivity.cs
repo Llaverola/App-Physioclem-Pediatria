@@ -6,6 +6,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Apps.Models;
+using FFImageLoading.Forms.Platform;
 using ImageCircle.Forms.Plugin.Droid;
 using LocalNotifications.Droid;
 using Plugin.CurrentActivity;
@@ -30,6 +31,8 @@ namespace Apps.Droid
             ImageCircleRenderer.Init();
             //Log.Debug(TAG, "SplashActivity.OnCreate");
             UserDialogs.Init(this);
+            CachedImageRenderer.Init(true);
+            Rg.Plugins.Popup.Popup.Init(this);
             LoadApplication(new App());
             CreateNotificationFromIntent(Intent);
         }

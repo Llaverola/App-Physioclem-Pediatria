@@ -137,6 +137,7 @@ namespace MasterDetailPageNavigation
             App.NavigateTo(false, typeof(HomePage));
         }
 
+        [Obsolete]
         private void voltar_button_Clicked(object sender, EventArgs e)
         {
             if(App.previousPage.GetType() == typeof(NotificacoesPage))

@@ -1,5 +1,9 @@
-﻿using Apps;
+﻿using AngleSharp.Dom;
+using Apps;
 using Apps.Models;
+using Apps.Pages;
+using Apps.ViewModels;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +22,8 @@ namespace MasterDetailPageNavigation
         public ICommand RowTappedCommand { get; private set; }
 
         private List<Notificacao> notificacoes { get; set; }
+
+        [Obsolete]
         public OMeuBebePage()
         {
             InitializeComponent();
@@ -44,8 +50,11 @@ namespace MasterDetailPageNavigation
 
             if (App.DataModel.Utilizador.Bebes.Count > 0)
             {
-                Bebes_Picker.ItemsSource = App.DataModel.Utilizador.Bebes.Select(x => x.nome).OrderBy(x => x).ToList();
+                BebesPickerViewModel bebesPickerViewModel = new BebesPickerViewModel();
+                BindingContext = bebesPickerViewModel;
             }
+
+
             Copyright_Label.Text = "©" + DateTime.Now.Year.ToString() + " Physioclem Pediatria (Fisiolis)\nCriado por AD Comunicação.";
 
             //tap buttons docs
@@ -113,31 +122,365 @@ namespace MasterDetailPageNavigation
             Person_Img.GestureRecognizers.Add(GoToDefinicoes);
             Iniciais_Frame.GestureRecognizers.Add(GoToDefinicoes);
 
-            if (App.Bebe_Selected != null)
+            DadosClinicosTitulo.IsVisible = false;
+            DadosClinicosData.IsVisible = false;
+            if (App.DataModel.Utilizador.Bebes.Count > 0)
             {
-                if (App.Bebe_Selected.id > 0)
+                App.Bebe_Selected = App.DataModel.Utilizador.Bebes.First();
+                Bebe_Get_Dados_Clinicos();
+            }
+        }
+
+        [Obsolete]
+        public void Bebe_Get_Dados_Clinicos()
+        {
+            All_Data_Div.IsVisible = true;
+            if (string.IsNullOrEmpty(App.Bebe_Selected.foto_url))
+            {
+                No_Foto_Bebe_Frame.IsVisible = true;
+                Bebe_Img_Frame.IsVisible = false;
+            }
+            else
+            {
+                No_Foto_Bebe_Frame.IsVisible = false;
+                Bebe_Img_Frame.IsVisible = true;
+                Bebe_Img.Source = ImageSource.FromUri(new Uri(App.Bebe_Selected.foto_url));
+            }
+            Bebe_Nome_Label.Text = App.Bebe_Selected.nome;
+            Bebe_Data_Nascimento_Label.Text = App.Bebe_Selected.data_de_nascimento;
+            Bebe_Enc_Educacao_Label.Text = App.DataModel.Utilizador.Nome;
+            bebe_current = App.Bebe_Selected;
+            ConsultasSet(App.Bebe_Selected);
+            NotificacoesSet();
+            DocumentosSet();
+            ConsultasHistorialSet(App.Bebe_Selected);
+            var consulta = App.Bebe_Selected;
+
+            if (!consulta.mostrar_seccao_gravidez && !consulta.mostrar_seccao_outros_dados && !consulta.mostrar_seccao_av_estrutural)
+            {
+                DadosClinicosTitulo.IsVisible = false;
+                DadosClinicosData.IsVisible = false;
+            }
+            else
+            {
+                DadosClinicosTitulo.IsVisible = true;
+                DadosClinicosData.IsVisible = true;
+
+
+                if (consulta.mostrar_seccao_gravidez)
                 {
-                    Bebes_Picker.SelectedItem = App.Bebe_Selected.nome;
-                    All_Data_Div.IsVisible = true;
-                    if (string.IsNullOrEmpty(App.Bebe_Selected.foto_url))
+                    div_gravidez.IsVisible = true;
+
+                    if (!string.IsNullOrWhiteSpace(consulta.gravidez.problemas))
                     {
-                        No_Foto_Bebe_Frame.IsVisible = true;
-                        Bebe_Img_Frame.IsVisible = false;
+                        gravidez_problemas_label.Text = consulta.gravidez.problemas;
                     }
                     else
                     {
-                        No_Foto_Bebe_Frame.IsVisible = false;
-                        Bebe_Img_Frame.IsVisible = true;
-                        Bebe_Img.Source = ImageSource.FromUri(new Uri(App.Bebe_Selected.foto_url));
+                        gravidez_problemas_titulo.IsVisible = false;
+                        gravidez_problemas_label.IsVisible = false;
+                        Consulta_Gravidez_Row_0.Height = 0;
+                        Consulta_Gravidez_Row_1.Height = 0;
                     }
-                    Bebe_Nome_Label.Text = App.Bebe_Selected.nome;
-                    Bebe_Data_Nascimento_Label.Text = App.Bebe_Selected.data_de_nascimento;
-                    Bebe_Enc_Educacao_Label.Text = App.DataModel.Utilizador.Nome;
-                    bebe_current = App.Bebe_Selected;
-                    ConsultasSet(App.Bebe_Selected);
-                    NotificacoesSet();
-                    DocumentosSet();
-                    ConsultasHistorialSet(App.Bebe_Selected);
+
+                    if (!string.IsNullOrWhiteSpace(consulta.gravidez.semanas))
+                    {
+                        gravidez_semanas_label.Text = consulta.gravidez.semanas;
+                    }
+                    else
+                    {
+                        gravidez_semanas_label.IsVisible = false;
+                        gravidez_semanas_titulo.IsVisible = false;
+                        Consulta_Gravidez_Row_2.Height = 0;
+                        Consulta_Gravidez_Row_3.Height = 0;
+                    }
+
+
+                    gravidez_parto_complicacoes_label.Text = consulta.gravidez.complicacoes_no_parto_sim_nao;
+                    if (consulta.gravidez.complicacoes_no_parto_sim_nao.ToLower().Equals("sim"))
+                    {
+                        gravidez_parto_complicacoes_quais_label.Text = consulta.gravidez.complicacoes_no_parto;
+                    }
+                    else
+                    {
+                        gravidez_parto_complicacoes_quais_label.IsVisible = false;
+                        gravidez_parto_complicacoes_titulo.IsVisible = false;
+                        Consulta_Gravidez_Row_6.Height = 0;
+                        Consulta_Gravidez_Row_7.Height = 0;
+                        Consulta_Gravidez_Row_8.Height = 0;
+                        Consulta_Gravidez_Row_9.Height = 0;
+                    }
+
+
+
+                    if (!string.IsNullOrEmpty(consulta.gravidez.como_decorreu_o_parto))
+                    {
+                        gravidez_parto_label.Text = consulta.gravidez.como_decorreu_o_parto;
+                    }
+                    else
+                    {
+                        gravidez_parto_titulo.IsVisible = false;
+                        gravidez_parto_label.IsVisible = false;
+                        Consulta_Gravidez_Row_4.Height = 0;
+                        Consulta_Gravidez_Row_5.Height = 0;
+                    }
+
+
+                }
+                else
+                {
+                    div_gravidez.IsVisible = false;
+                }
+
+                if (consulta.mostrar_seccao_outros_dados)
+                {
+                    div_outros_dados.IsVisible = true;
+                    //OUTROS DADOS
+
+                    if (!string.IsNullOrEmpty(consulta.outros_dados.indice_de_apgar))
+                    {
+                        outros_dados_apgar_label.Text = consulta.outros_dados.indice_de_apgar;
+                    }
+                    else
+                    {
+                        outros_dados_apgar_titulo.IsVisible = false;
+                        outros_dados_apgar_label.IsVisible = false;
+                        Consulta_Outros_Dados_row_0.Height = 0;
+                        Consulta_Outros_Dados_row_1.Height = 0;
+                    }
+
+
+                    if (!string.IsNullOrEmpty(consulta.outros_dados.avaliacao_auditiva))
+                    {
+                        outros_dados_avaliacao_auditiva_label.Text = consulta.outros_dados.avaliacao_auditiva;
+                    }
+                    else
+                    {
+                        outros_dados_avaliacao_auditiva_titulo.IsVisible = false;
+                        outros_dados_avaliacao_auditiva_label.IsVisible = false;
+                        Consulta_Outros_Dados_row_2.Height = 0;
+                        Consulta_Outros_Dados_row_3.Height = 0;
+                    }
+
+                    //outros_dados_diagnostico_label.Text = "Nada a assinalar";
+                    if (!consulta.outros_dados.diagnostico_medico.Equals("Nada a assinalar"))
+                    {
+                        outros_dados_diagnostico_label.Text = consulta.outros_dados.diagnostico;
+                    }
+                    else
+                    {
+                        outros_dados_diagnostico_titulo.IsVisible = false;
+                        outros_dados_diagnostico_label.IsVisible = false;
+                        Consulta_Outros_Dados_row_4.Height = 0;
+                        Consulta_Outros_Dados_row_5.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.outros_dados.idade_no_primeiro_dia_de_fisio))
+                    {
+                        outros_dados_idade_pri_consulta_label.Text = consulta.outros_dados.idade_no_primeiro_dia_de_fisio;
+                    }
+                    else
+                    {
+                        outros_dados_idade_pri_consulta_titulo.IsVisible = false;
+                        outros_dados_idade_pri_consulta_label.IsVisible = false;
+                        Consulta_Outros_Dados_row_6.Height = 0;
+                        Consulta_Outros_Dados_row_7.Height = 0;
+                    }
+
+
+                    if (!string.IsNullOrEmpty(consulta.outros_dados.se_prematura_idade))
+                    {
+                        outros_dados_permatura_idade_corrigida_label.Text = consulta.outros_dados.se_prematura_idade;
+                    }
+                    else
+                    {
+                        outros_dados_permatura_idade_corrigida_titulo.IsVisible = false;
+                        outros_dados_permatura_idade_corrigida_label.IsVisible = false;
+                        Consulta_Outros_Dados_row_8.Height = 0;
+                        Consulta_Outros_Dados_row_9.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.outros_dados.perimetro_cefalico))
+                    {
+                        outros_dados_perimetro_cefalico_label.Text = consulta.outros_dados.perimetro_cefalico;
+                    }
+                    else
+                    {
+                        outros_dados_perimetro_cefalico_titulo.IsVisible = false;
+                        outros_dados_perimetro_cefalico_label.IsVisible = false;
+                        Consulta_Outros_Dados_row_10.Height = 0;
+                        Consulta_Outros_Dados_row_11.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.outros_dados.indice_craniano))
+                    {
+                        outros_dados_indice_craniano_label.Text = consulta.outros_dados.indice_craniano;
+                    }
+                    else
+                    {
+                        outros_dados_indice_craniano_label.IsVisible = false;
+                        outros_dados_indice_craniano_titulo.IsVisible = false;
+                        Consulta_Outros_Dados_row_12.Height = 0;
+                        Consulta_Outros_Dados_row_13.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.outros_dados.indice_assimetria_aboboda_craniana))
+                    {
+                        outros_dados_indice_aboboda_label.Text = consulta.outros_dados.indice_assimetria_aboboda_craniana;
+                    }
+                    else
+                    {
+                        outros_dados_indice_aboboda_titulo.IsVisible = false;
+                        outros_dados_indice_aboboda_label.IsVisible = false;
+                        Consulta_Outros_Dados_row_14.Height = 0;
+                        Consulta_Outros_Dados_row_15.Height = 0;
+                    }
+                }
+                else
+                {
+                    div_outros_dados.IsVisible = false;
+                }
+
+                if (consulta.mostrar_seccao_av_estrutural)
+                {
+                    div_av_estrutural.IsVisible = true;
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.cranio_fontanelas))
+                    {
+                        av_estrutural_fontanelas_apgar_label.Text = consulta.avaliacao_estrutural.cranio_fontanelas;
+                    }
+                    else
+                    {
+                        av_estrutural_fontanelas_apgar_titulo.IsVisible = false;
+                        av_estrutural_fontanelas_apgar_label.IsVisible = false;
+                        consulta_av_estrutural_row_0.Height = 0;
+                        consulta_av_estrutural_row_1.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.cervical))
+                    {
+                        av_estrutural_cervical_label.Text = consulta.avaliacao_estrutural.cervical;
+                    }
+                    else
+                    {
+                        av_estrutural_cervical_titulo.IsVisible = false;
+                        av_estrutural_cervical_label.IsVisible = false;
+                        consulta_av_estrutural_row_2.Height = 0;
+                        consulta_av_estrutural_row_3.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.dorsal))
+                    {
+                        av_estrutural_dorsal_label.Text = consulta.avaliacao_estrutural.dorsal;
+                    }
+                    else
+                    {
+                        av_estrutural_dorsal_titulo.IsVisible = false;
+                        av_estrutural_dorsal_label.IsVisible = false;
+                        consulta_av_estrutural_row_4.Height = 0;
+                        consulta_av_estrutural_row_5.Height = 0;
+                    }
+
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.diafragma))
+                    {
+                        av_estrutural_diafragma_label.Text = consulta.avaliacao_estrutural.diafragma;
+                    }
+                    else
+                    {
+                        av_estrutural_diafragma_titulo.IsVisible = false;
+                        av_estrutural_diafragma_label.IsVisible = false;
+                        consulta_av_estrutural_row_6.Height = 0;
+                        consulta_av_estrutural_row_7.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.lombar))
+                    {
+                        av_estrutural_lombar_label.Text = consulta.avaliacao_estrutural.lombar;
+                    }
+                    else
+                    {
+                        av_estrutural_lombar_titulo.IsVisible = false;
+                        av_estrutural_lombar_label.IsVisible = false;
+                        consulta_av_estrutural_row_8.Height = 0;
+                        consulta_av_estrutural_row_9.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.bacia))
+                    {
+                        av_estrutural_bacia_label.Text = consulta.avaliacao_estrutural.bacia;
+                    }
+                    else
+                    {
+                        av_estrutural_bacia_titulo.IsVisible = false;
+                        av_estrutural_bacia_label.IsVisible = false;
+                        consulta_av_estrutural_row_10.Height = 0;
+                        consulta_av_estrutural_row_11.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.coxa))
+                    {
+                        av_estrutural_coxa_label.Text = consulta.avaliacao_estrutural.coxa;
+                    }
+                    else
+                    {
+                        av_estrutural_coxa_titulo.IsVisible = false;
+                        av_estrutural_coxa_label.IsVisible = false;
+                        consulta_av_estrutural_row_12.Height = 0;
+                        consulta_av_estrutural_row_13.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.perna))
+                    {
+                        av_estrutural_perna_label.Text = consulta.avaliacao_estrutural.perna;
+                    }
+                    else
+                    {
+                        av_estrutural_perna_titulo.IsVisible = false;
+                        av_estrutural_perna_label.IsVisible = false;
+                        consulta_av_estrutural_row_14.Height = 0;
+                        consulta_av_estrutural_row_15.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.pe))
+                    {
+                        av_estrutural_pe_label.Text = consulta.avaliacao_estrutural.pe;
+                    }
+                    else
+                    {
+                        av_estrutural_pe_titulo.IsVisible = false;
+                        av_estrutural_pe_label.IsVisible = false;
+                        consulta_av_estrutural_row_16.Height = 0;
+                        consulta_av_estrutural_row_17.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.avaliacao_de_reflexos))
+                    {
+                        av_estrutural_reflexos_label.Text = consulta.avaliacao_estrutural.avaliacao_de_reflexos;
+                    }
+                    else
+                    {
+                        av_estrutural_reflexos_titulo.IsVisible = false;
+                        av_estrutural_reflexos_label.IsVisible = false;
+                        consulta_av_estrutural_row_18.Height = 0;
+                        consulta_av_estrutural_row_19.Height = 0;
+                    }
+
+                    if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.avaliacao_do_desenvolvimento))
+                    {
+                        av_estrutural_desenvolvimento_label.Text = consulta.avaliacao_estrutural.avaliacao_do_desenvolvimento;
+                    }
+                    else
+                    {
+                        av_estrutural_desenvolvimento_titulo.IsVisible = false;
+                        av_estrutural_desenvolvimento_label.IsVisible = false;
+                        consulta_av_estrutural_row_20.Height = 0;
+                        consulta_av_estrutural_row_21.Height = 0;
+                    }
+                }
+                else
+                {
+                    div_av_estrutural.IsVisible = false;
                 }
             }
         }
@@ -268,29 +611,29 @@ namespace MasterDetailPageNavigation
 
                     clickableRow.Children.Add(sub_grid);
 
-                    var tapGestureRecognizer = new TapGestureRecognizer();
-                    tapGestureRecognizer.Tapped += (s, e) =>
-                    {
-                        RowTapped(consulta);
-                    };
-                    clickableRow.GestureRecognizers.Add(tapGestureRecognizer);
+                    //var tapGestureRecognizer = new TapGestureRecognizer();
+                    //tapGestureRecognizer.Tapped += (s, e) =>
+                    //{
+                    //    RowTapped(consulta);
+                    //};
+                    //clickableRow.GestureRecognizers.Add(tapGestureRecognizer);
                     grid_consultas_historial.Children.Add(clickableRow, 0, i);
                 }
             }
         }
 
-        private void ListView_Consultas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            Consultas_Source c = (Consultas_Source)e.SelectedItem;
-            if (c != null)
-            {
-                App.ConsultaSelected = bebe_current.consultas.Where(x => x.data >= DateTime.Now).OrderByDescending(x => x.data).ElementAt(c.index);
-                App.previousPage = this;
-                ((ListView)sender).SelectedItem = null;
-                App.MasterDetailPage.Detail = new NavigationPage(new ConsultaPage());
-            }
+        //private void ListView_Consultas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        //{
+        //    Consultas_Source c = (Consultas_Source)e.SelectedItem;
+        //    if (c != null)
+        //    {
+        //        App.ConsultaSelected = bebe_current.consultas.Where(x => x.data >= DateTime.Now).OrderByDescending(x => x.data).ElementAt(c.index);
+        //        App.previousPage = this;
+        //        ((ListView)sender).SelectedItem = null;
+        //        App.MasterDetailPage.Detail = new NavigationPage(new ConsultaPage());
+        //    }
 
-        }
+        //}
         private void Ver_Todas_Consultas_Tapped(object sender, EventArgs e)
         {
             App.previousPage = this;
@@ -525,6 +868,335 @@ namespace MasterDetailPageNavigation
                 NotificacoesSet();
                 DocumentosSet();
                 ConsultasHistorialSet(bebe);
+                var consulta = App.Bebe_Selected;
+
+                if (!consulta.mostrar_seccao_gravidez && !consulta.mostrar_seccao_outros_dados && !consulta.mostrar_seccao_av_estrutural)
+                {
+                    DadosClinicosTitulo.IsVisible = false;
+                    DadosClinicosData.IsVisible = false;
+                }
+                else
+                {
+                    DadosClinicosTitulo.IsVisible = true;
+                    DadosClinicosData.IsVisible = true;
+
+
+                    if (consulta.mostrar_seccao_gravidez)
+                    {
+                        div_gravidez.IsVisible = true;
+
+                        if (!string.IsNullOrWhiteSpace(consulta.gravidez.problemas))
+                        {
+                            gravidez_problemas_label.Text = consulta.gravidez.problemas;
+                        }
+                        else
+                        {
+                            gravidez_problemas_titulo.IsVisible = false;
+                            gravidez_problemas_label.IsVisible = false;
+                            Consulta_Gravidez_Row_0.Height = 0;
+                            Consulta_Gravidez_Row_1.Height = 0;
+                        }
+
+                        if (!string.IsNullOrWhiteSpace(consulta.gravidez.semanas))
+                        {
+                            gravidez_semanas_label.Text = consulta.gravidez.semanas;
+                        }
+                        else
+                        {
+                            gravidez_semanas_label.IsVisible = false;
+                            gravidez_semanas_titulo.IsVisible = false;
+                            Consulta_Gravidez_Row_2.Height = 0;
+                            Consulta_Gravidez_Row_3.Height = 0;
+                        }
+
+
+                        gravidez_parto_complicacoes_label.Text = consulta.gravidez.complicacoes_no_parto_sim_nao;
+                        if (consulta.gravidez.complicacoes_no_parto_sim_nao.ToLower().Equals("sim"))
+                        {
+                            gravidez_parto_complicacoes_quais_label.Text = consulta.gravidez.complicacoes_no_parto;
+                        }
+                        else
+                        {
+                            gravidez_parto_complicacoes_quais_label.IsVisible = false;
+                            gravidez_parto_complicacoes_titulo.IsVisible = false;
+                            Consulta_Gravidez_Row_6.Height = 0;
+                            Consulta_Gravidez_Row_7.Height = 0;
+                            Consulta_Gravidez_Row_8.Height = 0;
+                            Consulta_Gravidez_Row_9.Height = 0;
+                        }
+
+
+
+                        if (!string.IsNullOrEmpty(consulta.gravidez.como_decorreu_o_parto))
+                        {
+                            gravidez_parto_label.Text = consulta.gravidez.como_decorreu_o_parto;
+                        }
+                        else
+                        {
+                            gravidez_parto_titulo.IsVisible = false;
+                            gravidez_parto_label.IsVisible = false;
+                            Consulta_Gravidez_Row_4.Height = 0;
+                            Consulta_Gravidez_Row_5.Height = 0;
+                        }
+
+
+                    }
+                    else
+                    {
+                        div_gravidez.IsVisible = false;
+                    }
+
+                    if (consulta.mostrar_seccao_outros_dados)
+                    {
+                        div_outros_dados.IsVisible = true;
+                        //OUTROS DADOS
+
+                        if (!string.IsNullOrEmpty(consulta.outros_dados.indice_de_apgar))
+                        {
+                            outros_dados_apgar_label.Text = consulta.outros_dados.indice_de_apgar;
+                        }
+                        else
+                        {
+                            outros_dados_apgar_titulo.IsVisible = false;
+                            outros_dados_apgar_label.IsVisible = false;
+                            Consulta_Outros_Dados_row_0.Height = 0;
+                            Consulta_Outros_Dados_row_1.Height = 0;
+                        }
+
+
+                        if (!string.IsNullOrEmpty(consulta.outros_dados.avaliacao_auditiva))
+                        {
+                            outros_dados_avaliacao_auditiva_label.Text = consulta.outros_dados.avaliacao_auditiva;
+                        }
+                        else
+                        {
+                            outros_dados_avaliacao_auditiva_titulo.IsVisible = false;
+                            outros_dados_avaliacao_auditiva_label.IsVisible = false;
+                            Consulta_Outros_Dados_row_2.Height = 0;
+                            Consulta_Outros_Dados_row_3.Height = 0;
+                        }
+
+                        //outros_dados_diagnostico_label.Text = "Nada a assinalar";
+                        if (!consulta.outros_dados.diagnostico_medico.Equals("Nada a assinalar"))
+                        {
+                            outros_dados_diagnostico_label.Text = consulta.outros_dados.diagnostico;
+                        }
+                        else
+                        {
+                            outros_dados_diagnostico_titulo.IsVisible = false;
+                            outros_dados_diagnostico_label.IsVisible = false;
+                            Consulta_Outros_Dados_row_4.Height = 0;
+                            Consulta_Outros_Dados_row_5.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.outros_dados.idade_no_primeiro_dia_de_fisio))
+                        {
+                            outros_dados_idade_pri_consulta_label.Text = consulta.outros_dados.idade_no_primeiro_dia_de_fisio;
+                        }
+                        else
+                        {
+                            outros_dados_idade_pri_consulta_titulo.IsVisible = false;
+                            outros_dados_idade_pri_consulta_label.IsVisible = false;
+                            Consulta_Outros_Dados_row_6.Height = 0;
+                            Consulta_Outros_Dados_row_7.Height = 0;
+                        }
+
+
+                        if (!string.IsNullOrEmpty(consulta.outros_dados.se_prematura_idade))
+                        {
+                            outros_dados_permatura_idade_corrigida_label.Text = consulta.outros_dados.se_prematura_idade;
+                        }
+                        else
+                        {
+                            outros_dados_permatura_idade_corrigida_titulo.IsVisible = false;
+                            outros_dados_permatura_idade_corrigida_label.IsVisible = false;
+                            Consulta_Outros_Dados_row_8.Height = 0;
+                            Consulta_Outros_Dados_row_9.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.outros_dados.perimetro_cefalico))
+                        {
+                            outros_dados_perimetro_cefalico_label.Text = consulta.outros_dados.perimetro_cefalico;
+                        }
+                        else
+                        {
+                            outros_dados_perimetro_cefalico_titulo.IsVisible = false;
+                            outros_dados_perimetro_cefalico_label.IsVisible = false;
+                            Consulta_Outros_Dados_row_10.Height = 0;
+                            Consulta_Outros_Dados_row_11.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.outros_dados.indice_craniano))
+                        {
+                            outros_dados_indice_craniano_label.Text = consulta.outros_dados.indice_craniano;
+                        }
+                        else
+                        {
+                            outros_dados_indice_craniano_label.IsVisible = false;
+                            outros_dados_indice_craniano_titulo.IsVisible = false;
+                            Consulta_Outros_Dados_row_12.Height = 0;
+                            Consulta_Outros_Dados_row_13.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.outros_dados.indice_assimetria_aboboda_craniana))
+                        {
+                            outros_dados_indice_aboboda_label.Text = consulta.outros_dados.indice_assimetria_aboboda_craniana;
+                        }
+                        else
+                        {
+                            outros_dados_indice_aboboda_titulo.IsVisible = false;
+                            outros_dados_indice_aboboda_label.IsVisible = false;
+                            Consulta_Outros_Dados_row_14.Height = 0;
+                            Consulta_Outros_Dados_row_15.Height = 0;
+                        }
+                    }
+                    else
+                    {
+                        div_outros_dados.IsVisible = false;
+                    }
+
+                    if (consulta.mostrar_seccao_av_estrutural)
+                    {
+                        div_av_estrutural.IsVisible = true;
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.cranio_fontanelas))
+                        {
+                            av_estrutural_fontanelas_apgar_label.Text = consulta.avaliacao_estrutural.cranio_fontanelas;
+                        }
+                        else
+                        {
+                            av_estrutural_fontanelas_apgar_titulo.IsVisible = false;
+                            av_estrutural_fontanelas_apgar_label.IsVisible = false;
+                            consulta_av_estrutural_row_0.Height = 0;
+                            consulta_av_estrutural_row_1.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.cervical))
+                        {
+                            av_estrutural_cervical_label.Text = consulta.avaliacao_estrutural.cervical;
+                        }
+                        else
+                        {
+                            av_estrutural_cervical_titulo.IsVisible = false;
+                            av_estrutural_cervical_label.IsVisible = false;
+                            consulta_av_estrutural_row_2.Height = 0;
+                            consulta_av_estrutural_row_3.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.dorsal))
+                        {
+                            av_estrutural_dorsal_label.Text = consulta.avaliacao_estrutural.dorsal;
+                        }
+                        else
+                        {
+                            av_estrutural_dorsal_titulo.IsVisible = false;
+                            av_estrutural_dorsal_label.IsVisible = false;
+                            consulta_av_estrutural_row_4.Height = 0;
+                            consulta_av_estrutural_row_5.Height = 0;
+                        }
+
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.diafragma))
+                        {
+                            av_estrutural_diafragma_label.Text = consulta.avaliacao_estrutural.diafragma;
+                        }
+                        else
+                        {
+                            av_estrutural_diafragma_titulo.IsVisible = false;
+                            av_estrutural_diafragma_label.IsVisible = false;
+                            consulta_av_estrutural_row_6.Height = 0;
+                            consulta_av_estrutural_row_7.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.lombar))
+                        {
+                            av_estrutural_lombar_label.Text = consulta.avaliacao_estrutural.lombar;
+                        }
+                        else
+                        {
+                            av_estrutural_lombar_titulo.IsVisible = false;
+                            av_estrutural_lombar_label.IsVisible = false;
+                            consulta_av_estrutural_row_8.Height = 0;
+                            consulta_av_estrutural_row_9.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.bacia))
+                        {
+                            av_estrutural_bacia_label.Text = consulta.avaliacao_estrutural.bacia;
+                        }
+                        else
+                        {
+                            av_estrutural_bacia_titulo.IsVisible = false;
+                            av_estrutural_bacia_label.IsVisible = false;
+                            consulta_av_estrutural_row_10.Height = 0;
+                            consulta_av_estrutural_row_11.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.coxa))
+                        {
+                            av_estrutural_coxa_label.Text = consulta.avaliacao_estrutural.coxa;
+                        }
+                        else
+                        {
+                            av_estrutural_coxa_titulo.IsVisible = false;
+                            av_estrutural_coxa_label.IsVisible = false;
+                            consulta_av_estrutural_row_12.Height = 0;
+                            consulta_av_estrutural_row_13.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.perna))
+                        {
+                            av_estrutural_perna_label.Text = consulta.avaliacao_estrutural.perna;
+                        }
+                        else
+                        {
+                            av_estrutural_perna_titulo.IsVisible = false;
+                            av_estrutural_perna_label.IsVisible = false;
+                            consulta_av_estrutural_row_14.Height = 0;
+                            consulta_av_estrutural_row_15.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.pe))
+                        {
+                            av_estrutural_pe_label.Text = consulta.avaliacao_estrutural.pe;
+                        }
+                        else
+                        {
+                            av_estrutural_pe_titulo.IsVisible = false;
+                            av_estrutural_pe_label.IsVisible = false;
+                            consulta_av_estrutural_row_16.Height = 0;
+                            consulta_av_estrutural_row_17.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.avaliacao_de_reflexos))
+                        {
+                            av_estrutural_reflexos_label.Text = consulta.avaliacao_estrutural.avaliacao_de_reflexos;
+                        }
+                        else
+                        {
+                            av_estrutural_reflexos_titulo.IsVisible = false;
+                            av_estrutural_reflexos_label.IsVisible = false;
+                            consulta_av_estrutural_row_18.Height = 0;
+                            consulta_av_estrutural_row_19.Height = 0;
+                        }
+
+                        if (!string.IsNullOrEmpty(consulta.avaliacao_estrutural.avaliacao_do_desenvolvimento))
+                        {
+                            av_estrutural_desenvolvimento_label.Text = consulta.avaliacao_estrutural.avaliacao_do_desenvolvimento;
+                        }
+                        else
+                        {
+                            av_estrutural_desenvolvimento_titulo.IsVisible = false;
+                            av_estrutural_desenvolvimento_label.IsVisible = false;
+                            consulta_av_estrutural_row_20.Height = 0;
+                            consulta_av_estrutural_row_21.Height = 0;
+                        }
+                    }
+                    else
+                    {
+                        div_av_estrutural.IsVisible = false;
+                    }
+                }
             }
             else
             {
@@ -537,7 +1209,23 @@ namespace MasterDetailPageNavigation
             App.NavigateTo(false, typeof(HomePage));
         }
 
-
+        private async void btn_media_Clicked(object sender, EventArgs e)
+        {
+            List<string> tokens = new List<string>
+            {
+                "a8f539b9-b66b-4fbc-a2bb-43a1bfb04ed2",
+                "554d0211-00b8-48c6-a7e1-56584b5237c0",
+                "ed9085de-1750-477f-974a-7f732fd7fdf9",
+                "92fb0b7b-e48d-4df4-9034-6d11ae822e7e",
+                "043242a8-7226-46c5-9a0e-952fac1782cf",
+                "58bf33d7-3540-4a17-98ae-20558ffbf3c6",
+                "ba05a292-b7e4-4077-83dc-3f020ac5676f",
+                "ca639b5e-ab66-4e96-9234-987d37bca4ec",
+                "a1728c8b-9600-409e-b3aa-82a580882411",
+                "3226f9bb-cc42-491f-8a83-0454c853e833"
+            };
+            await Launcher.OpenAsync(new Uri("https://physioclempediatria.vertigma.com/consulta-media?i=" + General.Encrypt(App.Bebe_Selected.id.ToString())) + "&t=" + tokens.OrderBy(x => Guid.NewGuid()).First());
+        }
     }
 
     public class Consultas_Source

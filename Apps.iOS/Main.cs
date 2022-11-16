@@ -15,7 +15,7 @@ namespace Apps.iOS
                 UIApplication.Main(args, null, "AppDelegate");
                 UIApplication.SharedApplication.SetStatusBarHidden(true, true);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
             }

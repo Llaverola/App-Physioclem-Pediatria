@@ -43,7 +43,10 @@ namespace MasterDetailPageNavigation
                 TapGestureRecognizer GoToArtigo = new TapGestureRecognizer();
                 GoToArtigo.Tapped += async (s, e) =>
                 {
-                    await Launcher.OpenAsync(new Uri(n.linkDoArtigo));
+                    if (!string.IsNullOrEmpty(n.linkDoArtigo))
+                    {
+                        await Launcher.OpenAsync(new Uri(n.linkDoArtigo));
+                    }
                 };
                 Descricao_Label.GestureRecognizers.Add(GoToArtigo);
 

@@ -49,7 +49,7 @@ namespace MasterDetailPageNavigation
             Ultimo_Nome_Textbox.Text = App.DataModel.Utilizador.Nome.Split(' ')[1].ToString();
             Email_Textbox.Text = App.DataModel.Utilizador.Email;
             Notas_Textbox.Text = App.DataModel.Utilizador.Notas;
-            Telemovel_Textbox.Text = App.DataModel.Utilizador.Notas;
+            Telemovel_Textbox.Text = App.DataModel.Utilizador.Telemovel;
 
             Copyright_Label.Text = "©" + DateTime.Now.Year.ToString() + " Physioclem Pediatria (Fisiolis)\nCriado por AD Comunicação.";
 
@@ -179,6 +179,7 @@ namespace MasterDetailPageNavigation
 
         #region Tirar fotos, escolher foto da galeria, gravar video e escolher video
 
+        [Obsolete]
         private async void Button_Upload_Clicked(object sender, EventArgs e)
         {
             try
@@ -230,6 +231,26 @@ namespace MasterDetailPageNavigation
             catch (Exception ex)
             {
                 await DisplayAlert("Erro", ex.ToString(), "OK");
+            }
+        }
+
+        private async void Button_Escolher_Foto_Clicked(object sender, EventArgs e)
+        {
+            await CrossMedia.Current.Initialize();
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+                await DisplayAlert("Ops", "Galeria de fotos não suportada", "OK");
+                return;
+            }
+            MediaFile file = await CrossMedia.Current.PickPhotoAsync();
+            if (file == null)
+                return;
+            else
+            {
+                Stream stream = file.GetStream();
+                FotoByteArray = General.ReadFully(stream);
+                img_perfil.Source = ImageSource.FromStream(() => General.ByteArrayToStream(FotoByteArray));
+                file.Dispose();
             }
         }
 

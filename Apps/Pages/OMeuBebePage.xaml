@@ -9,51 +9,51 @@
              x:Class="MasterDetailPageNavigation.OMeuBebePage"
              BackgroundColor="White">
     <AbsoluteLayout>
-        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All">
+        <StackLayout VerticalOptions="Start" BackgroundColor="White">
+            <Grid HeightRequest="50" Margin="0,40,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="26"></ColumnDefinition>
+                        <ColumnDefinition Width="26"></ColumnDefinition>
+                        <ColumnDefinition Width="26"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="NotificacoesTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
+                    <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
+                        <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                    </Frame>
+                    <Button FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf104;" TextColor="#3DBEE3" FontSize="26" Grid.Row="0" Grid.Column="2" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" Clicked="voltar_button_Clicked"></Button>
+                </Grid>
+            </Grid>
+            <StackLayout>
+                <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
+            </StackLayout>
+        </StackLayout>
+
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" Margin="0,100,0,0"  AbsoluteLayout.LayoutFlags="All">
             <StackLayout HorizontalOptions="FillAndExpand">
-                <StackLayout VerticalOptions="Start">
-                    <Grid HeightRequest="50" Margin="0,10,0,0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3*"></ColumnDefinition>
-                            <ColumnDefinition Width="3*"></ColumnDefinition>
-                            <ColumnDefinition Width="3*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0"
-                                     x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
-                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50"
-                                     Clicked="LogoImageButton_Clicked"></ImageButton>
-                        <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
-                            <Grid.RowDefinitions>
-                                <RowDefinition></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="26"></ColumnDefinition>
-                                <ColumnDefinition Width="26"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button"
-                                   FontFamily="{StaticResource FontAwesomeSolid}">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="NotificacoesTapped" />
-                                </Label.GestureRecognizers>
-                            </Label>
-                            <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
-                            <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
-                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-                                       VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
-                            </Frame>
-                        </Grid>
-                    </Grid>
-                    <StackLayout>
-                        <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout VerticalOptions="Start" Padding="20,0,20,5">
-                    <StackLayout Margin="0">
+                
+                <StackLayout VerticalOptions="Start" Padding="20,20,20,5">
+                    <!--<StackLayout Margin="0">
                         <ImageButton Source="voltar" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" x:Name="voltar_button" Clicked="voltar_button_Clicked"></ImageButton>
-                    </StackLayout>
+                    </StackLayout>-->
                     <StackLayout Orientation="Vertical" Margin="0,5,0,20" Spacing="0" Opacity="1" HorizontalOptions="Fill" VerticalOptions="StartAndExpand">
                         <StackLayout>
                             <Label x:Name="PageTitle_Label" LineHeight="0.9" Padding="0" TextColor="#3DBEE3" FontSize="48" Grid.Row="0" FontFamily="MyCustomFont_ExtraBold"></Label>
@@ -71,8 +71,12 @@
                                     </Grid.ColumnDefinitions>
                                     <custom_picker:CustomPicker 
                                         Grid.Column="0"
-                                            x:Name="Bebes_Picker" SelectedIndexChanged="Bebes_Picker_SelectedIndexChanged"
-                                            Title="Selecionar Bebé" FontFamily="MyCustomFont_Medium"
+                                            x:Name="Bebes_Picker" 
+                                            SelectedIndex="{Binding SelectedIndex}" 
+                                            ItemsSource="{Binding Items}" 
+                                            SelectedIndexChanged="Bebes_Picker_SelectedIndexChanged"
+                                            Title="{Binding Picker_Title}" 
+                                            FontFamily="MyCustomFont_Medium"
                                             VerticalTextAlignment="Start"
                                             FontSize="13" 
                                             WidthRequest="200"
@@ -84,10 +88,10 @@
                                     <Label Grid.Column="1" FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf107;" HorizontalOptions="Center" VerticalOptions="Center"
                                            TextColor="White" FontSize="12"></Label>
                                 </Grid>
-                               
+
                             </Frame>
-                           
-                            
+
+
                         </StackLayout>
 
                         <StackLayout Margin="0,20,0,0" x:Name="All_Data_Div" IsVisible="False">
@@ -145,7 +149,7 @@
                                     <ColumnDefinition></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
 
-                                 <Frame x:Name="Frame_consultas_no_data" IsVisible="False" CornerRadius="10" IsClippedToBounds="True" Grid.Column="0" HeightRequest="375" BackgroundColor="#F5F5F5" Padding="10">
+                                <Frame x:Name="Frame_consultas_no_data" IsVisible="False" CornerRadius="10" IsClippedToBounds="True" Grid.Column="0" HeightRequest="375" BackgroundColor="#F5F5F5" Padding="10">
 
 
                                     <Grid RowSpacing="5">
@@ -160,7 +164,7 @@
                                                VerticalTextAlignment="Start"
                                                VerticalOptions="Start" Margin="0"
                                                x:Name="Consultas_No_Data_Label" FontSize="11" TextColor="#656565" Text="Sem consultas marcadas."></Label>
-                                     
+
                                     </Grid>
                                 </Frame>
 
@@ -174,8 +178,8 @@
                                             <RowDefinition Height="30"></RowDefinition>
                                         </Grid.RowDefinitions>
                                         <Label FontSize="16" Grid.Row="0" FontFamily="MyCustomFont_Bold" HorizontalOptions="Start" VerticalOptions="Start" TextColor="#3DBEE3" Text="Consultas"></Label>
-                                       
-                                        <ListView BackgroundColor="#F5F5F5" Margin="0" x:Name="ListView_Consultas" Grid.Row="1" HasUnevenRows="True" Footer="" ItemSelected="ListView_Consultas_ItemSelected">
+
+                                        <ListView BackgroundColor="#F5F5F5" Margin="0" x:Name="ListView_Consultas" Grid.Row="1" HasUnevenRows="True" Footer="" IsEnabled="False">
                                             <ListView.ItemTemplate>
                                                 <DataTemplate>
                                                     <ViewCell>
@@ -334,8 +338,8 @@
                                                     </Label>
                                                 </Frame>
                                             </Grid>
-                                            
-                                           
+
+
                                             <Label Grid.Row="2" x:Name="Ver_Todos_Notificacoes_Label" HorizontalOptions="Start" VerticalTextAlignment="Start" VerticalOptions="Start">
                                                 <Label.FormattedText>
                                                     <FormattedString>
@@ -348,7 +352,7 @@
                                                 </Label.GestureRecognizers>
                                             </Label>
                                         </Grid>
-                                      
+
                                     </Frame>
 
                                     <Frame CornerRadius="10" IsClippedToBounds="True" Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="#F5F5F5" Padding="10">
@@ -425,8 +429,8 @@
                                     </Frame>
 
                                 </Grid>
-                                
-                                
+
+
                             </Grid>
 
 
@@ -434,9 +438,185 @@
                                 <Label Text="Historial de Consultas" LineHeight="0.9" Padding="0" TextColor="#3DBEE3" FontSize="24" Grid.Row="0" FontFamily="MyCustomFont_Bold"></Label>
                             </StackLayout>
                             <Grid Margin="0,15,0,30" RowSpacing="10" ColumnSpacing="10" x:Name="grid_consultas_historial"></Grid>
-                            
+
+
+                            <StackLayout Margin="0,30,0,0" x:Name="DadosClinicosTitulo" IsVisible="False">
+                                <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Dados Clínicos"></Label>
+                            </StackLayout>
+                            <StackLayout x:Name="DadosClinicosData" IsVisible="False">
+                                <StackLayout x:Name="div_gravidez" Margin="0,10,0,0" IsVisible="False">
+                                    <StackLayout >
+                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Gravidez"></Label>
+                                    </StackLayout>
+                                    <StackLayout >
+                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Gravidez"></Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Sem nada a assinalar" x:Name="gravidez_label_nada_assinalar" IsVisible="False"></Label>
+                                        <Grid RowSpacing="10" ColumnSpacing="10" x:Name="Consulta_Gravidez_Grid">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="15" x:Name="Consulta_Gravidez_Row_0"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Gravidez_Row_1"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Gravidez_Row_2"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Gravidez_Row_3"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Gravidez_Row_4"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Gravidez_Row_5"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Gravidez_Row_6"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Gravidez_Row_7"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Gravidez_Row_8"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Gravidez_Row_9"></RowDefinition>
+                                            </Grid.RowDefinitions>
+
+                                            <Label Grid.Row="0" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Problemas" x:Name="gravidez_problemas_titulo"></Label>
+                                            <Label Grid.Row="1" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="gravidez_problemas_label"></Label>
+
+                                            <Label Grid.Row="2" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Duração, em semanas, da gravidez" x:Name="gravidez_semanas_titulo"></Label>
+                                            <Label Grid.Row="3" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="gravidez_semanas_label"></Label>
+
+                                            <Label Grid.Row="4" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Como decorreu o parto?" x:Name="gravidez_parto_titulo"></Label>
+                                            <Label Grid.Row="5" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="gravidez_parto_label"></Label>
+
+                                            <Label Grid.Row="6" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Houve complicações no parto?" x:Name="gravidez_parto_complicacoes_titulo"></Label>
+                                            <Label Grid.Row="7" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="gravidez_parto_complicacoes_label"></Label>
+
+                                            <Label Grid.Row="8" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Quais?" x:Name="gravidez_parto_complicacoes_quais_titulo"></Label>
+                                            <Label Grid.Row="9" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="gravidez_parto_complicacoes_quais_label"></Label>
+
+                                        </Grid>
+
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <StackLayout x:Name="div_outros_dados" Margin="0,20,0,0" IsVisible="False">
+                                    <StackLayout>
+                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Outros Dados"></Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical">
+                                        <Grid RowSpacing="10" ColumnSpacing="10" x:Name="Consulta_Outros_Dados_Grid">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_0"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_1"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_2"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_3"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_4"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_5"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_6"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_7"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_8"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_9"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_10"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_11"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_12"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_13"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="Consulta_Outros_Dados_row_14"></RowDefinition>
+                                                <RowDefinition x:Name="Consulta_Outros_Dados_row_15"></RowDefinition>
+                                            </Grid.RowDefinitions>
+
+                                            <Label Grid.Row="0" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Índice de Apgar" x:Name="outros_dados_apgar_titulo"></Label>
+                                            <Label Grid.Row="1" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_apgar_label"></Label>
+
+                                            <Label Grid.Row="2" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Avaliação Auditiva" x:Name="outros_dados_avaliacao_auditiva_titulo"></Label>
+                                            <Label Grid.Row="3" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_avaliacao_auditiva_label"></Label>
+
+                                            <Label Grid.Row="4" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Diagnóstico Médico" x:Name="outros_dados_diagnostico_titulo"></Label>
+                                            <Label Grid.Row="5" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_diagnostico_label"></Label>
+
+                                            <Label Grid.Row="6" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Idade na 1ª consulta de fisioterapia" x:Name="outros_dados_idade_pri_consulta_titulo"></Label>
+                                            <Label Grid.Row="7" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_idade_pri_consulta_label"></Label>
+
+                                            <Label Grid.Row="8" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Se prematura, qual a idade corrigida?" x:Name="outros_dados_permatura_idade_corrigida_titulo"></Label>
+                                            <Label Grid.Row="9" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_permatura_idade_corrigida_label"></Label>
+
+                                            <Label Grid.Row="10" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Perímetro Cefálico" x:Name="outros_dados_perimetro_cefalico_titulo"></Label>
+                                            <Label Grid.Row="11" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_perimetro_cefalico_label"></Label>
+
+                                            <Label Grid.Row="12" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Índice Craniano" x:Name="outros_dados_indice_craniano_titulo"></Label>
+                                            <Label Grid.Row="13" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_indice_craniano_label"></Label>
+
+                                            <Label Grid.Row="14" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Índice de Assimetria da Abóboda Craniana" x:Name="outros_dados_indice_aboboda_titulo"></Label>
+                                            <Label Grid.Row="15" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="outros_dados_indice_aboboda_label"></Label>
+
+                                        </Grid>
+
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <StackLayout x:Name="div_av_estrutural" IsVisible="False">
+                                    <StackLayout Margin="0,20,0, 20">
+                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Avaliação Estrutural"></Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical">
+                                        <Grid RowSpacing="10" ColumnSpacing="10" x:Name="Consulta_Avaliacao_Estrutural_Grid">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_0"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_1"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_2"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_3"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_4"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_5"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_6"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_7"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_8"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_9"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_10"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_11"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_12"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_13"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_14"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_15"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_16"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_17"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_18"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_19"></RowDefinition>
+                                                <RowDefinition Height="15" x:Name="consulta_av_estrutural_row_20"></RowDefinition>
+                                                <RowDefinition x:Name="consulta_av_estrutural_row_21"></RowDefinition>
+                                            </Grid.RowDefinitions>
+
+                                            <Label Grid.Row="0" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Crânio - Fontanelas" x:Name="av_estrutural_fontanelas_apgar_titulo"></Label>
+                                            <Label Grid.Row="1" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_fontanelas_apgar_label"></Label>
+
+                                            <Label Grid.Row="2" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Cervical" x:Name="av_estrutural_cervical_titulo"></Label>
+                                            <Label Grid.Row="3" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_cervical_label"></Label>
+
+                                            <Label Grid.Row="4" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Dorsal" x:Name="av_estrutural_dorsal_titulo"></Label>
+                                            <Label  Grid.Row="5" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_dorsal_label"></Label>
+
+                                            <Label Grid.Row="6" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Diafragma" x:Name="av_estrutural_diafragma_titulo"></Label>
+                                            <Label  Grid.Row="7" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_diafragma_label"></Label>
+
+                                            <Label Grid.Row="8" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Lombar" x:Name="av_estrutural_lombar_titulo"></Label>
+                                            <Label  Grid.Row="9" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_lombar_label"></Label>
+
+                                            <Label Grid.Row="10" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Bacia" x:Name="av_estrutural_bacia_titulo"></Label>
+                                            <Label  Grid.Row="11" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_bacia_label"></Label>
+
+                                            <Label Grid.Row="12" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Coxa" x:Name="av_estrutural_coxa_titulo"></Label>
+                                            <Label  Grid.Row="13" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_coxa_label"></Label>
+
+                                            <Label Grid.Row="14" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Perna" x:Name="av_estrutural_perna_titulo"></Label>
+                                            <Label  Grid.Row="15" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_perna_label"></Label>
+
+                                            <Label Grid.Row="16" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Pé" x:Name="av_estrutural_pe_titulo"></Label>
+                                            <Label  Grid.Row="17" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_pe_label"></Label>
+
+                                            <Label Grid.Row="18" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Avaliação de Reflexos" x:Name="av_estrutural_reflexos_titulo"></Label>
+                                            <Label  Grid.Row="19" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_reflexos_label"></Label>
+
+                                            <Label Grid.Row="20" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13"  FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Avaliação do Desenvolvimento" x:Name="av_estrutural_desenvolvimento_titulo"></Label>
+                                            <Label  Grid.Row="21" HorizontalTextAlignment="Start" Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="av_estrutural_desenvolvimento_label"></Label>
+
+                                        </Grid>
+
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <StackLayout Margin="0,20,0, 20">
+                                    <Button x:Name="btn_media" Clicked="btn_media_Clicked" Text="Imagens e Videos" HorizontalOptions="FillAndExpand" BackgroundColor="#61CFED" Margin="0,20,0,0" TextColor="#ffffff" TextTransform="None" FontFamily="MyCustomFont_Bold" FontSize="22" CornerRadius="20"/>
+                                </StackLayout>
+                            </StackLayout>
                         </StackLayout>
-                        
+
                     </StackLayout>
 
 

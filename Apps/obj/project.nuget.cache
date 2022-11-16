@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kEO7cjQ07h4tQtGdPp/OYe9SDJqUPerHn0f9ikUNRxGP8mDLu5ccYXBRomsHoUg0D+scXGvEUllvxxVUE/gQtA==",
+  "dgSpecHash": "Rfl1mAY5SfE8uTKujhLqSpN2OnNb5Xe2QRkeGX9f6h4xCpbNr36UL0WBjEP4qdPmdbFDAbnUQP64A3o4ITTj8g==",
   "success": true,
-  "projectFilePath": "C:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
+  "projectFilePath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\acr.userdialogs\\7.1.0.446\\acr.userdialogs.7.1.0.446.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\anglesharp\\0.17.0\\anglesharp.0.17.0.nupkg.sha512",
@@ -11,6 +11,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
@@ -27,6 +28,8 @@
     "C:\\Users\\USER\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.4\\xamarin.communitytoolkit.2.0.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\youtubeexplode\\6.2.1\\youtubeexplode.6.2.1.nupkg.sha512"
   ],

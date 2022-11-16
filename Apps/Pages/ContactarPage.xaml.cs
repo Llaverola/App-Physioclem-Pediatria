@@ -1,6 +1,8 @@
 ﻿using Acr.UserDialogs;
 using Apps;
 using Apps.Models;
+using Apps.Pages;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -86,8 +88,8 @@ namespace MasterDetailPageNavigation
 
         #endregion
 
-
-        private void Submit_Button_Clicked(object sender, EventArgs e)
+        [Obsolete]
+        private async void Submit_Button_Clicked(object sender, EventArgs e)
         {
             DivSuccessMsg.IsVisible = false;
             DivErrorMsg.IsVisible = false;
@@ -114,7 +116,9 @@ namespace MasterDetailPageNavigation
             }
             else
             {
-                ShowIndicator();
+                LoadingPopupPage loadingpage = new LoadingPopupPage();
+                await PopupNavigation.PushAsync(loadingpage);
+                await Task.Delay(3000);
                 Task<bool> pResult = Task.Run(() => App.MobileDataManager.PedidoDeContactoPostAsync(new Apps.Models.PedidoDeContactoPostItem()
                 {
                     email = email,
@@ -126,6 +130,8 @@ namespace MasterDetailPageNavigation
                 Primeiro_Nome_Textbox.Text = "";
                 Ultimo_Nome_Textbox.Text = "";
                 Email_Textbox.Text = "";
+                Msg_Textbox.Text = "";
+                await PopupNavigation.RemovePageAsync(loadingpage);
                 if (pResult.Result)
                 {
                     DivSuccessMsg.IsVisible = true;

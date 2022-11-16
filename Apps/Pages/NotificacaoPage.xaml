@@ -8,47 +8,51 @@
              x:Class="MasterDetailPageNavigation.NotificacaoPage"
              BackgroundColor="White">
     <AbsoluteLayout>
-        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All">
+        <StackLayout VerticalOptions="Start" BackgroundColor="White">
+            <Grid HeightRequest="50" Margin="0,40,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
+                <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
+                <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="26"></ColumnDefinition>
+                        <ColumnDefinition Width="26"></ColumnDefinition>
+                        <ColumnDefinition Width="26"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="NotificacoesTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
+                    <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
+                        <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
+                    </Frame>
+                    <Button FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf104;" TextColor="#3DBEE3" FontSize="26" Grid.Row="0" Grid.Column="2" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" Clicked="voltar_button_Clicked"></Button>
+                </Grid>
+            </Grid>
+            <StackLayout>
+                <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
+            </StackLayout>
+        </StackLayout>
+
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" Margin="0,100,0,0"  AbsoluteLayout.LayoutFlags="All">
             <StackLayout HorizontalOptions="FillAndExpand">
-                <StackLayout VerticalOptions="Start">
-                    <Grid HeightRequest="50" Margin="0,10,0,0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3*"></ColumnDefinition>
-                            <ColumnDefinition Width="3*"></ColumnDefinition>
-                            <ColumnDefinition Width="3*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <ImageButton Margin="20,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="icon_menu" HeightRequest="60" BorderWidth="0" x:Name="icon_menu_button" Clicked="icon_menu_button_Clicked"></ImageButton>
-                        <ImageButton HorizontalOptions="Center" BackgroundColor="Transparent" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="logo_menu" HeightRequest="50" Clicked="LogoImageButton_Clicked"></ImageButton>
-                        <Grid  Margin="0,0,20,0" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="2" HeightRequest="26">
-                            <Grid.RowDefinitions>
-                                <RowDefinition></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="26"></ColumnDefinition>
-                                <ColumnDefinition Width="26"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Label Text="&#xf0f3;" TextColor="#3DBEE3" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="icon_menu_notificacoes_button" FontFamily="{StaticResource FontAwesomeSolid}">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="NotificacoesTapped" />
-                                </Label.GestureRecognizers>
-                            </Label>
-                            <circle_img:CircleImage Grid.Row="0" Grid.Column="1" x:Name="Person_Img" HeightRequest="26" WidthRequest="26"></circle_img:CircleImage>
-                            <Frame CornerRadius="13" IsClippedToBounds="True" BackgroundColor="#3DBEE3" Grid.Row="0" Grid.Column="1" x:Name="Iniciais_Frame" IsVisible="False"  Padding="0">
-                                <Label FontFamily="MyCustomFont_Medium" HorizontalOptions="Center" Margin="0" FontSize="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" x:Name="Iniciais_Label" TextColor="White"></Label>
-                            </Frame>
-                        </Grid>
-                    </Grid>
-                    <StackLayout>
-                        <Image Source="gradient" HorizontalOptions="FillAndExpand"></Image>
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout VerticalOptions="Start" Padding="20,0,20,0">
-                    <StackLayout>
+               
+                <StackLayout VerticalOptions="Start" Padding="20,20,20,0">
+                    <!--<StackLayout>
                         <ImageButton Source="voltar" BackgroundColor="Transparent" HeightRequest="13" Padding="0" HorizontalOptions="End" Clicked="voltar_button_Clicked" x:Name="voltar_button"></ImageButton>
-                    </StackLayout>
+                    </StackLayout>-->
                     <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="48" FontFamily="MyCustomFont_ExtraBold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Notificações"></Label>
                     <StackLayout Margin="0,20,0,0">
                         <Label LineHeight="1.2" Padding="0" Margin="0" TextColor="#3DBEE3"  FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" x:Name="Titulo_Label" HorizontalTextAlignment="Start"></Label>

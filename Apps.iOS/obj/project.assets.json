@@ -96,6 +96,25 @@
           }
         }
       },
+      "Rg.Plugins.Popup/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -215,16 +234,29 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xam.Plugin.DeviceInfo/4.1.1": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         },
         "runtime": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         }
       },
@@ -316,6 +348,51 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.11.982",
+          "Xamarin.Forms": "3.3.0.912540"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -482,6 +559,7 @@
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.Permissions": "6.0.1",
+          "Rg.Plugins.Popup": "2.1.0",
           "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
@@ -489,6 +567,7 @@
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.CommunityToolkit": "2.0.4",
           "Xamarin.Essentials": "1.7.3",
+          "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2515",
           "YoutubeExplode": "6.2.1"
         },
@@ -592,6 +671,25 @@
         "runtime": {
           "lib/xamarinios10/Plugin.Permissions.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Rg.Plugins.Popup/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -710,16 +808,29 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xam.Plugin.DeviceInfo/4.1.1": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         },
         "runtime": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         }
       },
@@ -811,6 +922,51 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.11.982",
+          "Xamarin.Forms": "3.3.0.912540"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -977,6 +1133,7 @@
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.Permissions": "6.0.1",
+          "Rg.Plugins.Popup": "2.1.0",
           "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
@@ -984,6 +1141,7 @@
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.CommunityToolkit": "2.0.4",
           "Xamarin.Essentials": "1.7.3",
+          "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2515",
           "YoutubeExplode": "6.2.1"
         },
@@ -1090,6 +1248,25 @@
           }
         }
       },
+      "Rg.Plugins.Popup/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1203,16 +1380,29 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xam.Plugin.DeviceInfo/4.1.1": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         },
         "runtime": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         }
       },
@@ -1304,6 +1494,51 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.11.982",
+          "Xamarin.Forms": "3.3.0.912540"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -1470,6 +1705,7 @@
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.Permissions": "6.0.1",
+          "Rg.Plugins.Popup": "2.1.0",
           "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
@@ -1477,6 +1713,7 @@
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.CommunityToolkit": "2.0.4",
           "Xamarin.Essentials": "1.7.3",
+          "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2515",
           "YoutubeExplode": "6.2.1"
         },
@@ -1583,6 +1820,25 @@
           }
         }
       },
+      "Rg.Plugins.Popup/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Rg.Plugins.Popup.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1696,16 +1952,29 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "WebP.Touch/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/WebP.Touch.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Xam.Plugin.DeviceInfo/4.1.1": {
         "type": "package",
         "compile": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         },
         "runtime": {
           "lib/xamarinios10/Plugin.DeviceInfo.dll": {
-            "related": ".pdb"
+            "related": ".dll.mdb;.pdb"
           }
         }
       },
@@ -1797,6 +2066,51 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "WebP.Touch": "1.0.8"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.11.982",
+          "Xamarin.Forms": "3.3.0.912540"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {
+            "related": ".pdb;.Platform.pdb;.Platform.xml;.xml"
           }
         }
       },
@@ -1963,6 +2277,7 @@
           "Acr.UserDialogs": "7.1.0.446",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.Permissions": "6.0.1",
+          "Rg.Plugins.Popup": "2.1.0",
           "System.Numerics.Vectors": "4.5.0",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
@@ -1970,6 +2285,7 @@
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.CommunityToolkit": "2.0.4",
           "Xamarin.Essentials": "1.7.3",
+          "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2515",
           "YoutubeExplode": "6.2.1"
         },
@@ -1996,6 +2312,7 @@
         "lib/monoandroid10.0/Acr.UserDialogs.pdb",
         "lib/monoandroid10.0/Acr.UserDialogs.xml",
         "lib/monoandroid90/Acr.UserDialogs.dll",
+        "lib/monoandroid90/Acr.UserDialogs.dll.mdb",
         "lib/monoandroid90/Acr.UserDialogs.pdb",
         "lib/monoandroid90/Acr.UserDialogs.xml",
         "lib/netstandard2.0/Acr.UserDialogs.dll",
@@ -2134,6 +2451,51 @@
         "plugin.permissions.6.0.1.nupkg.sha512",
         "plugin.permissions.nuspec",
         "readme.txt"
+      ]
+    },
+    "Rg.Plugins.Popup/2.1.0": {
+      "sha512": "caKjkvimzpUqk4pO/WSFn3uOX43uZNW5rPWCx7eXkOlGG9Br90MTwNVS1nxhtyypB69uUe/0GQPEC3rz+kscbA==",
+      "type": "package",
+      "path": "rg.plugins.popup/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "icon.png",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.dll",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.pdb",
+        "lib/monoandroid10.0/Rg.Plugins.Popup.xml",
+        "lib/net472/Rg.Plugins.Popup.dll",
+        "lib/net472/Rg.Plugins.Popup.pdb",
+        "lib/net472/Rg.Plugins.Popup.xml",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.dll",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.pdb",
+        "lib/netcoreapp3.1/Rg.Plugins.Popup.xml",
+        "lib/netstandard2.0/Rg.Plugins.Popup.dll",
+        "lib/netstandard2.0/Rg.Plugins.Popup.pdb",
+        "lib/netstandard2.0/Rg.Plugins.Popup.xml",
+        "lib/tizen80/Rg.Plugins.Popup.dll",
+        "lib/tizen80/Rg.Plugins.Popup.pdb",
+        "lib/tizen80/Rg.Plugins.Popup.xml",
+        "lib/uap10.0.18362/Rg.Plugins.Popup.dll",
+        "lib/uap10.0.18362/Rg.Plugins.Popup.pdb",
+        "lib/uap10.0.18362/Rg.Plugins.Popup.pri",
+        "lib/uap10.0.18362/Rg.Plugins.Popup.xml",
+        "lib/xamarinios10/Rg.Plugins.Popup.dll",
+        "lib/xamarinios10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinios10/Rg.Plugins.Popup.xml",
+        "lib/xamarinmac20/Rg.Plugins.Popup.dll",
+        "lib/xamarinmac20/Rg.Plugins.Popup.pdb",
+        "lib/xamarinmac20/Rg.Plugins.Popup.xml",
+        "lib/xamarintvos10/Rg.Plugins.Popup.dll",
+        "lib/xamarintvos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarintvos10/Rg.Plugins.Popup.xml",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.dll",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.pdb",
+        "lib/xamarinwatchos10/Rg.Plugins.Popup.xml",
+        "readme.txt",
+        "rg.plugins.popup.2.1.0.nupkg.sha512",
+        "rg.plugins.popup.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -2421,6 +2783,21 @@
         "version.txt"
       ]
     },
+    "WebP.Touch/1.0.8": {
+      "sha512": "dvQaAn+m7cKL6k+evUilgikvrnk2qBm/h2lduAHFYIJFaJNIk9Z8pUI09gImzVKx5leUdvtLEzcLOOZAabspTA==",
+      "type": "package",
+      "path": "webp.touch/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.Mac20/WebP.Mac.dll",
+        "lib/Xamarin.Mac20/WebP.Mac.xml",
+        "lib/Xamarin.iOS10/WebP.Touch.dll",
+        "lib/Xamarin.iOS10/WebP.Touch.xml",
+        "webp.touch.1.0.8.nupkg.sha512",
+        "webp.touch.nuspec"
+      ]
+    },
     "Xam.Plugin.DeviceInfo/4.1.1": {
       "sha512": "tBoWE60pwlUDK9f+X3CeFBVTpU+OuMel8Hfp7bxYnJKiGGQ2I3S+8ZF1lJSxvlQf0o8C/IjGnddUeDqwBmWZfg==",
       "type": "package",
@@ -2443,6 +2820,7 @@
         "lib/uap10.0.16299/Plugin.DeviceInfo.pdb",
         "lib/uap10.0.16299/Plugin.DeviceInfo.pri",
         "lib/xamarinios10/Plugin.DeviceInfo.dll",
+        "lib/xamarinios10/Plugin.DeviceInfo.dll.mdb",
         "lib/xamarinios10/Plugin.DeviceInfo.pdb",
         "lib/xamarinmac20/Plugin.DeviceInfo.dll",
         "lib/xamarinmac20/Plugin.DeviceInfo.pdb",
@@ -2625,6 +3003,116 @@
         "readme.txt",
         "xamarin.essentials.1.7.3.nupkg.sha512",
         "xamarin.essentials.nuspec"
+      ]
+    },
+    "Xamarin.FFImageLoading/2.4.11.982": {
+      "sha512": "M0sNIQgUPs+le6C2TS4RmZQAURnzaRVizRtnZIZ6/1//qGcEAtEXAGt/tBJz6I1zlP6XlMxq8io6b4sjFP5N9Q==",
+      "type": "package",
+      "path": "xamarin.ffimageloading/2.4.11.982",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/FFImageLoading.Platform.dll",
+        "lib/MonoAndroid10/FFImageLoading.Platform.pdb",
+        "lib/MonoAndroid10/FFImageLoading.Platform.xml",
+        "lib/MonoAndroid10/FFImageLoading.dll",
+        "lib/MonoAndroid10/FFImageLoading.pdb",
+        "lib/MonoAndroid10/FFImageLoading.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.Platform.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.xml",
+        "lib/netstandard1.0/FFImageLoading.Platform.dll",
+        "lib/netstandard1.0/FFImageLoading.Platform.xml",
+        "lib/netstandard1.0/FFImageLoading.dll",
+        "lib/netstandard1.0/FFImageLoading.pdb",
+        "lib/netstandard1.0/FFImageLoading.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Platform.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.xml",
+        "lib/tizen40/FFImageLoading.Platform.dll",
+        "lib/tizen40/FFImageLoading.Platform.pdb",
+        "lib/tizen40/FFImageLoading.Platform.xml",
+        "lib/tizen40/FFImageLoading.dll",
+        "lib/tizen40/FFImageLoading.pdb",
+        "lib/tizen40/FFImageLoading.xml",
+        "lib/uap/FFImageLoading.Platform.dll",
+        "lib/uap/FFImageLoading.Platform.pdb",
+        "lib/uap/FFImageLoading.Platform.xml",
+        "lib/uap/FFImageLoading.dll",
+        "lib/uap/FFImageLoading.pdb",
+        "lib/uap/FFImageLoading.xml",
+        "lib/win81/FFImageLoading.Platform.dll",
+        "lib/win81/FFImageLoading.Platform.pdb",
+        "lib/win81/FFImageLoading.Platform.xml",
+        "lib/win81/FFImageLoading.dll",
+        "lib/win81/FFImageLoading.pdb",
+        "lib/win81/FFImageLoading.xml",
+        "lib/wpa81/FFImageLoading.Platform.dll",
+        "lib/wpa81/FFImageLoading.Platform.pdb",
+        "lib/wpa81/FFImageLoading.Platform.xml",
+        "lib/wpa81/FFImageLoading.dll",
+        "lib/wpa81/FFImageLoading.pdb",
+        "lib/wpa81/FFImageLoading.xml",
+        "xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+        "xamarin.ffimageloading.nuspec"
+      ]
+    },
+    "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+      "sha512": "7X4t3J1wJj0/0o8+vd91hzSYlrqEeMFC7Mj+0T8O+fcbRSHo/c+QbWscEQiT4AaKCwyO709xq+7aY2XXbK/H7g==",
+      "type": "package",
+      "path": "xamarin.ffimageloading.forms/2.4.11.982",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Platform.dll",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Platform.pdb",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Platform.xml",
+        "lib/MonoAndroid10/FFImageLoading.Forms.dll",
+        "lib/MonoAndroid10/FFImageLoading.Forms.pdb",
+        "lib/MonoAndroid10/FFImageLoading.Forms.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.Platform.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.Platform.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.Platform.xml",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.dll",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.pdb",
+        "lib/Xamarin.Mac20/FFImageLoading.Forms.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.pdb",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.xml",
+        "lib/netstandard1.0/FFImageLoading.Forms.dll",
+        "lib/netstandard1.0/FFImageLoading.Forms.pdb",
+        "lib/netstandard1.0/FFImageLoading.Forms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Forms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Forms.pdb",
+        "lib/portable-win+net45+wp80+win81+wpa81/FFImageLoading.Forms.xml",
+        "lib/tizen40/FFImageLoading.Forms.Platform.dll",
+        "lib/tizen40/FFImageLoading.Forms.Platform.pdb",
+        "lib/tizen40/FFImageLoading.Forms.Platform.xml",
+        "lib/tizen40/FFImageLoading.Forms.dll",
+        "lib/tizen40/FFImageLoading.Forms.pdb",
+        "lib/tizen40/FFImageLoading.Forms.xml",
+        "lib/uap/FFImageLoading.Forms.Platform.dll",
+        "lib/uap/FFImageLoading.Forms.Platform.pdb",
+        "lib/uap/FFImageLoading.Forms.Platform.xml",
+        "lib/uap/FFImageLoading.Forms.dll",
+        "lib/uap/FFImageLoading.Forms.pdb",
+        "lib/uap/FFImageLoading.Forms.xml",
+        "xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+        "xamarin.ffimageloading.forms.nuspec"
       ]
     },
     "Xamarin.Forms/5.0.0.2515": {
@@ -2887,11 +3375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj",
+      "projectUniqueName": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj",
       "projectName": "Apps.iOS",
-      "projectPath": "C:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj",
+      "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\obj\\",
+      "outputPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2914,8 +3402,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
-              "projectPath": "C:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj"
+            "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
+              "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj"
             }
           }
         }

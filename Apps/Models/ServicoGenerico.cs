@@ -150,6 +150,13 @@ namespace Apps.Models
         public string foto_url { get; set; }
         public string data_de_nascimento { get; set; }
         public List<Consulta> consultas { get; set; }
+        public Consulta_Gravidez gravidez { get; set; }
+        public Consulta_Outros_Dados outros_dados { get; set; }
+        public Consulta_Avaliacao_Estrutural avaliacao_estrutural { get; set; }
+        public bool mostrar_seccao_gravidez { get; set; }
+        public bool mostrar_seccao_outros_dados { get; set; }
+        public bool mostrar_seccao_av_estrutural { get; set; }
+        public bool selected { get; set; }
     }
 
     public class Consulta
@@ -158,13 +165,7 @@ namespace Apps.Models
         public string titulo { get; set; }
         public DateTime data { get; set; }
         public string motivo_da_consulta { get; set; }
-        public string terapeuta { get; set; }
-        public Consulta_Gravidez gravidez { get; set; }
-        public Consulta_Outros_Dados outros_dados { get; set; }
-        public Consulta_Avaliacao_Estrutural avaliacao_estrutural { get; set; }
-        public bool mostrar_seccao_gravidez { get; set; }
-        public bool mostrar_seccao_outros_dados { get; set; }
-        public bool mostrar_seccao_av_estrutural { get; set; }
+        public string terapeuta { get; set; }    
     }
 
     public class Consulta_Gravidez

@@ -69,7 +69,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
     <OptimizePNGs>true</OptimizePNGs>
-    <CodesignProvision>Automatic</CodesignProvision>
+    <CodesignProvision>add publisher</CodesignProvision>
     <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
@@ -374,9 +374,12 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\spinner3.gif" />
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadDebuggerExceptionAppsiOSHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionAppsiOSHideInfoBar="True" XamarinHotReloadGenericExceptionInfoBarAppsiOSHideInfoBar="True" TriggeredFromHotReload="False" />
+      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadGenericExceptionInfoBarAppsiOSHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionAppsiOSHideInfoBar="True" XamarinHotReloadDebuggerExceptionAppsiOSHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

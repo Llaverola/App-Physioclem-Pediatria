@@ -13,11 +13,11 @@ namespace MasterDetailPageNavigation
     public partial class ConsultasPage : ContentPage
     {
         public Bebe bebe_current { get; set; }
-        public ICommand RowTappedCommand { get; private set; }
+        //public ICommand RowTappedCommand { get; private set; }
         public ConsultasPage()
         {
             InitializeComponent();
-            RowTappedCommand = new Command<string>(RowTapped);
+            //RowTappedCommand = new Command<string>(RowTapped);
             PageTitle_Label.Text = "Consultas";
             ShowIndicator();
             bebe_current = new Bebe();
@@ -78,17 +78,15 @@ namespace MasterDetailPageNavigation
 
         #region consultas
 
-        public void RowTapped(string index)
-        {
-          
-            var tappedRow = int.Parse(index);
-            var consulta = bebe_current.consultas.Where(x => x.data >= DateTime.Now).OrderByDescending(x => x.data).ToList().ElementAt(tappedRow);
-            App.ConsultaSelected = consulta;
-            App.previousPage = this;
-            bebe_current = new Bebe();
-            App.MasterDetailPage.Detail = new NavigationPage(new ConsultaPage());
-        }
-
+        //public void RowTapped(string index)
+        //{         
+        //    var tappedRow = int.Parse(index);
+        //    var consulta = bebe_current.consultas.Where(x => x.data >= DateTime.Now).OrderByDescending(x => x.data).ToList().ElementAt(tappedRow);
+        //    App.ConsultaSelected = consulta;
+        //    App.previousPage = this;
+        //    bebe_current = new Bebe();
+        //    App.MasterDetailPage.Detail = new NavigationPage(new ConsultaPage());
+        //}
 
         private void ConsultasSet(Bebe bebe)
         {
@@ -173,12 +171,12 @@ namespace MasterDetailPageNavigation
 
                     clickableRow.Children.Add(sub_grid);
 
-                    var tapGestureRecognizer = new TapGestureRecognizer();
-                    tapGestureRecognizer.Tapped += (s, e) =>
-                    {
-                        RowTapped(i.ToString());
-                    };
-                    clickableRow.GestureRecognizers.Add(tapGestureRecognizer);
+                    //var tapGestureRecognizer = new TapGestureRecognizer();
+                    //tapGestureRecognizer.Tapped += (s, e) =>
+                    //{
+                    //    RowTapped(i.ToString());
+                    //};
+                    //clickableRow.GestureRecognizers.Add(tapGestureRecognizer);
                     grid_consultas.Children.Add(clickableRow, 0, i);
                 }
             }

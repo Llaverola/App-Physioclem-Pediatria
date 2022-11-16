@@ -1,6 +1,9 @@
 ﻿using Acr.UserDialogs;
 using Apps;
 using Apps.Models;
+using Apps.Pages;
+using Rg.Plugins.Popup.Contracts;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -20,11 +23,15 @@ namespace MasterDetailPageNavigation
             ShowIndicator();
         }
 
-        private void Submit_Button_Clicked(object sender, EventArgs e)
+        [Obsolete]
+        private async void Submit_Button_Clicked(object sender, EventArgs e)
         {
             DivSuccessMsg.IsVisible = false;
             DivErrorMsg.IsVisible = false;
             string email = Username.Text;
+            LoadingPopupPage loadingpage = new LoadingPopupPage();
+            await PopupNavigation.PushAsync(loadingpage);
+            await Task.Delay(3000);
             if (string.IsNullOrEmpty(email))
             {
                 UserDialogs.Instance.Alert(new AlertConfig() { Message = "Por favor, insira o seu email/username.", OkText = "OK", Title = "Alerta" });
@@ -34,14 +41,12 @@ namespace MasterDetailPageNavigation
                 Random r = new Random();
                 int codigo = r.Next(100000, 999999);
                 string novaPwd = codigo.ToString();
-                ShowIndicator();
-
                 Task<string> pResult = Task.Run(() => App.UtilizadoresManager.ClienteChangePwdPostAsync(new UtilizadorNovaPwd()
                 {
                     email = email.ToLower(),
                     password = novaPwd
                 }));
-
+                await PopupNavigation.RemovePageAsync(loadingpage);
                 if (pResult.Result == "1")
                 {
                     Username.Text = "";

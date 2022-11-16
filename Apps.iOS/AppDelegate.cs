@@ -1,4 +1,5 @@
 ﻿using Apps.iOS.Models;
+using FFImageLoading.Forms.Platform;
 using Foundation;
 using ImageCircle.Forms.Plugin.iOS;
 using UIKit;
@@ -9,12 +10,15 @@ namespace Apps.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        [System.Obsolete]
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
             ImageCircleRenderer.Init();
             //FacebookClientManager.Initialize(app, options);
             UNUserNotificationCenter.Current.Delegate = new iOSNotificationReceiver();
+            CachedImageRenderer.Init();
+            Rg.Plugins.Popup.Popup.Init();
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }
