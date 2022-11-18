@@ -149,7 +149,7 @@ namespace MasterDetailPageNavigation {
         private global::Xamarin.Forms.Grid grid_consultas_historial;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.StackLayout DadosClinicosTitulo;
+        private global::Xamarin.Forms.StackLayout Dados_Clinicos_No_Data_Label;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.StackLayout DadosClinicosData;
@@ -519,7 +519,7 @@ namespace MasterDetailPageNavigation {
             doc_3_button_text = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Span>(this, "doc_3_button_text");
             Ver_Todos_Documentos_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Ver_Todos_Documentos_Label");
             grid_consultas_historial = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "grid_consultas_historial");
-            DadosClinicosTitulo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "DadosClinicosTitulo");
+            Dados_Clinicos_No_Data_Label = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "Dados_Clinicos_No_Data_Label");
             DadosClinicosData = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "DadosClinicosData");
             div_gravidez = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "div_gravidez");
             gravidez_label_nada_assinalar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "gravidez_label_nada_assinalar");

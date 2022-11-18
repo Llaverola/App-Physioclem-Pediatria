@@ -440,8 +440,16 @@
                             <Grid Margin="0,15,0,30" RowSpacing="10" ColumnSpacing="10" x:Name="grid_consultas_historial"></Grid>
 
 
-                            <StackLayout Margin="0,30,0,0" x:Name="DadosClinicosTitulo" IsVisible="False">
+                            <StackLayout Margin="0,30,0,0">
                                 <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Dados Clínicos"></Label>
+                            </StackLayout>
+                            <StackLayout IsVisible="False" x:Name="Dados_Clinicos_No_Data_Label">
+                                <Label FontFamily="MyCustomFont_Medium"
+                                               Grid.Row="1"
+                                               VerticalTextAlignment="Start"
+                                               VerticalOptions="Start" Margin="0"
+                                               FontSize="11" 
+                                       TextColor="#656565" Text="Sem dados para apresentar."></Label>
                             </StackLayout>
                             <StackLayout x:Name="DadosClinicosData" IsVisible="False">
                                 <StackLayout x:Name="div_gravidez" Margin="0,10,0,0" IsVisible="False">
