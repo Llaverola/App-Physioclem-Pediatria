@@ -8,17 +8,11 @@
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Apps.Android PreferredExecutionTarget="Android.my_device" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apps/Pages/OMeuBebePage.xaml">
-    <Files>
-      <File FileName="Apps/Pages/OMeuBebePage.xaml.cs" Line="241" Column="1" />
-      <File FileName="Apps/Pages/OMeuBebePage.xaml" Line="620" Column="160" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Apps" expanded="True">
-            <Node name="Apps.iOS" selected="True" />
-          </Node>
+          <Node name="Apps" expanded="True" />
         </State>
       </Pad>
     </Pads>
