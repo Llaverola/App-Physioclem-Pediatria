@@ -454,10 +454,7 @@
                             <StackLayout x:Name="DadosClinicosData" IsVisible="False">
                                 <StackLayout x:Name="div_gravidez" Margin="0,10,0,0" IsVisible="False">
                                     <StackLayout >
-                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Gravidez"></Label>
-                                    </StackLayout>
-                                    <StackLayout >
-                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Gravidez"></Label>
+                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="18" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Gravidez"></Label>
                                     </StackLayout>
                                     <StackLayout Orientation="Vertical">
                                         <Label Padding="0" Margin="0" TextColor="#656565" FontSize="13" FontFamily="MyCustomFont_Medium" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Sem nada a assinalar" x:Name="gravidez_label_nada_assinalar" IsVisible="False"></Label>
@@ -497,7 +494,7 @@
 
                                 <StackLayout x:Name="div_outros_dados" Margin="0,20,0,0" IsVisible="False">
                                     <StackLayout>
-                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Outros Dados"></Label>
+                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="18" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Outros Dados"></Label>
                                     </StackLayout>
                                     <StackLayout Orientation="Vertical">
                                         <Grid RowSpacing="10" ColumnSpacing="10" x:Name="Consulta_Outros_Dados_Grid">
@@ -551,7 +548,7 @@
 
                                 <StackLayout x:Name="div_av_estrutural" IsVisible="False">
                                     <StackLayout Margin="0,20,0, 20">
-                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="22" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Avaliação Estrutural"></Label>
+                                        <Label Padding="0" Margin="0" TextColor="#3DBEE3" FontSize="18" FontFamily="MyCustomFont_Bold" VerticalTextAlignment="Start" VerticalOptions="Start" Text="Avaliação Estrutural"></Label>
                                     </StackLayout>
                                     <StackLayout Orientation="Vertical">
                                         <Grid RowSpacing="10" ColumnSpacing="10" x:Name="Consulta_Avaliacao_Estrutural_Grid">
@@ -620,7 +617,7 @@
                                 </StackLayout>
 
                                 <StackLayout Margin="0,20,0, 20">
-                                    <Button x:Name="btn_media" Clicked="btn_media_Clicked" Text="Imagens e Videos" HorizontalOptions="FillAndExpand" BackgroundColor="#61CFED" Margin="0,20,0,0" TextColor="#ffffff" TextTransform="None" FontFamily="MyCustomFont_Bold" FontSize="22" CornerRadius="20"/>
+                                    <Button x:Name="btn_media" Clicked="btn_media_Clicked" Text="Imagens e Videos" HorizontalOptions="Center" Padding="15,5,15,5" BackgroundColor="#61CFED" Margin="0,20,0,0" TextColor="#ffffff" TextTransform="None" FontFamily="MyCustomFont_Bold" FontSize="18" CornerRadius="20"/>
                                 </StackLayout>
                             </StackLayout>
                         </StackLayout>

@@ -170,7 +170,7 @@ namespace MasterDetailPageNavigation
                 {
                     div_gravidez.IsVisible = true;
 
-                    if (!string.IsNullOrWhiteSpace(consulta.gravidez.problemas))
+                    if (!string.IsNullOrEmpty(consulta.gravidez.problemas))
                     {
                         gravidez_problemas_label.Text = consulta.gravidez.problemas;
                     }
@@ -182,7 +182,7 @@ namespace MasterDetailPageNavigation
                         Consulta_Gravidez_Row_1.Height = 0;
                     }
 
-                    if (!string.IsNullOrWhiteSpace(consulta.gravidez.semanas))
+                    if (!string.IsNullOrEmpty(consulta.gravidez.semanas))
                     {
                         gravidez_semanas_label.Text = consulta.gravidez.semanas;
                     }
@@ -196,9 +196,21 @@ namespace MasterDetailPageNavigation
 
 
                     gravidez_parto_complicacoes_label.Text = consulta.gravidez.complicacoes_no_parto_sim_nao;
-                    if (consulta.gravidez.complicacoes_no_parto_sim_nao.ToLower().Equals("sim"))
+                    if (!string.IsNullOrEmpty(consulta.gravidez.complicacoes_no_parto_sim_nao))
                     {
-                        gravidez_parto_complicacoes_quais_label.Text = consulta.gravidez.complicacoes_no_parto;
+                        if (consulta.gravidez.complicacoes_no_parto_sim_nao.ToLower().Equals("sim"))
+                        {
+                            gravidez_parto_complicacoes_quais_label.Text = consulta.gravidez.complicacoes_no_parto;
+                        }
+                        else
+                        {
+                            gravidez_parto_complicacoes_quais_label.IsVisible = false;
+                            gravidez_parto_complicacoes_titulo.IsVisible = false;
+                            Consulta_Gravidez_Row_6.Height = 0;
+                            Consulta_Gravidez_Row_7.Height = 0;
+                            Consulta_Gravidez_Row_8.Height = 0;
+                            Consulta_Gravidez_Row_9.Height = 0;
+                        }
                     }
                     else
                     {
@@ -209,6 +221,7 @@ namespace MasterDetailPageNavigation
                         Consulta_Gravidez_Row_8.Height = 0;
                         Consulta_Gravidez_Row_9.Height = 0;
                     }
+                       
 
 
 
@@ -871,12 +884,12 @@ namespace MasterDetailPageNavigation
 
                 if (!consulta.mostrar_seccao_gravidez && !consulta.mostrar_seccao_outros_dados && !consulta.mostrar_seccao_av_estrutural)
                 {
-                    DadosClinicosTitulo.IsVisible = false;
+                    Dados_Clinicos_No_Data_Label.IsVisible = true;
                     DadosClinicosData.IsVisible = false;
                 }
                 else
                 {
-                    DadosClinicosTitulo.IsVisible = true;
+                    Dados_Clinicos_No_Data_Label.IsVisible = false;
                     DadosClinicosData.IsVisible = true;
 
 

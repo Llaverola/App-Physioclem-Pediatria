@@ -1,41 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj": {}
+    "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.iOS/Apps.iOS.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj": {
+    "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.iOS/Apps.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj",
+        "projectUniqueName": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.iOS/Apps.iOS.csproj",
         "projectName": "Apps.iOS",
-        "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\Apps.iOS.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.iOS\\obj\\",
+        "projectPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.iOS/Apps.iOS.csproj",
+        "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
+        "outputPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/ricardocoelho/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
-                "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj"
+              "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj": {
+                "projectPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj"
               }
             }
           }
@@ -67,32 +59,22 @@
         }
       }
     },
-    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
+    "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
+        "projectUniqueName": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj",
         "projectName": "Apps",
-        "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\obj\\",
+        "projectPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj",
+        "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
+        "outputPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/ricardocoelho/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -180,12 +162,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/ricardocoelho/Library/Caches/VisualStudio/17.0/MSBuild/1000_3/RuntimeIdentifierGraph.json"
         }
       }
     }
