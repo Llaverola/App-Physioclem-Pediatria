@@ -4557,42 +4557,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/ricardocoelho/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\Apps.Android.csproj",
+      "projectUniqueName": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.Android/Apps.Android.csproj",
       "projectName": "Apps.Android",
-      "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\Apps.Android.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps.Android\\obj\\",
+      "projectPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.Android/Apps.Android.csproj",
+      "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
+      "outputPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/ricardocoelho/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid13.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
-              "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj"
+            "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj": {
+              "projectPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj"
             }
           }
         }

@@ -16,7 +16,7 @@ androidsdkpath=/users/ricardocoelho/library/developer/xamarin/android-sdk-macosx
 androidndkpath=
 javasdkpath=/library/java/javavirtualmachines/microsoft-11.jdk/contents/home/
 androidsequencepointsmode=normal
-xamarinandroidversion=13.0.0-0
+xamarinandroidversion=13.1.0-1
 monosymbolarchive=true
 androiduselatestplatformsdk=false
 targetframeworkversion=v11.0
@@ -25,7 +25,7 @@ androidgeneratejnimarshalmethods=false
 os=unix
 androidincludedebugsymbols=false
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=637985801096852917
+_nugetassetstimestamp=638043871440146304
 typemapkind=mvid
 androidsupportedabis=armeabi-v7a
 x86

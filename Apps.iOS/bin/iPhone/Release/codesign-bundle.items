@@ -2,17 +2,17 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <_CodesignBundle Include="Apps.iOS.app">
-      <CodesignSigningKey>056CD04424C60BC627386802F9DE0C87A91A945D</CodesignSigningKey>
-      <CodesignEntitlements>\Users\ricardocoelho\Library\Caches\Xamarin\mtbs\builds\Apps.iOS\06cab6a54f83f186542bb8adc31e0c687cc7c6468e7d2270abe1e8b0cd64383c\obj\iPhone\Release\Entitlements.xcent</CodesignEntitlements>
+      <CodesignSigningKey>AC79B6C87C69863DC0DACBF31E9AD84871F1F852</CodesignSigningKey>
+      <CodesignEntitlements>/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.iOS/obj/iPhone/Release/Entitlements.xcent</CodesignEntitlements>
       <CodesignUseSecureTimestamp></CodesignUseSecureTimestamp>
-      <CodesignAllocate>\Applications\Xcode.app\Contents\Developer\Toolchains\XcodeDefault.xctoolchain\usr\bin\codesign_allocate</CodesignAllocate>
+      <CodesignAllocate>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate</CodesignAllocate>
       <RequireCodeSigning>true</RequireCodeSigning>
       <CodesignExtraArgs></CodesignExtraArgs>
       <CodesignResourceRules></CodesignResourceRules>
       <CodesignDisableTimestamp>false</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>E:\GitHub\App-Physioclem-Pediatria\Apps.iOS</SourceProjectPath>
+      <SourceProjectPath>/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps.iOS</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>
