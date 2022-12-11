@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v11.0": {
+    "MonoAndroid,Version=v13.0": {
       "Acr.UserDialogs/7.1.0.446": {
         "type": "package",
         "dependencies": {
@@ -4550,7 +4550,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v11.0": [
+    "MonoAndroid,Version=v13.0": [
       "Apps >= 1.0.0",
       "Xamarin.Essentials >= 1.7.3",
       "Xamarin.Forms >= 5.0.0.2515"
@@ -4582,14 +4582,14 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid11.0"
+        "monoandroid13.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "monoandroid11.0": {
+        "monoandroid13.0": {
           "projectReferences": {
             "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
               "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj"
@@ -4599,7 +4599,7 @@
       }
     },
     "frameworks": {
-      "monoandroid11.0": {
+      "monoandroid13.0": {
         "dependencies": {
           "Xamarin.Essentials": {
             "target": "Package",

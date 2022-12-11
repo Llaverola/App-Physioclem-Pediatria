@@ -871,12 +871,12 @@ namespace MasterDetailPageNavigation
 
                 if (!consulta.mostrar_seccao_gravidez && !consulta.mostrar_seccao_outros_dados && !consulta.mostrar_seccao_av_estrutural)
                 {
-                    DadosClinicosTitulo.IsVisible = false;
+                    Dados_Clinicos_No_Data_Label.IsVisible = true;
                     DadosClinicosData.IsVisible = false;
                 }
                 else
                 {
-                    DadosClinicosTitulo.IsVisible = true;
+                    Dados_Clinicos_No_Data_Label.IsVisible = false;
                     DadosClinicosData.IsVisible = true;
 
 
