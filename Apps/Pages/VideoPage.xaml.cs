@@ -33,7 +33,7 @@ namespace MasterDetailPageNavigation
             Video_Descricao.Text = App.VideoSelected.Descricao;
             Video_Footer.Text = App.VideoSelected.Footer1 + " " + App.VideoSelected.Footer2;
             Video_Nome.Text = App.VideoSelected.Titulo;
-            // webview_video_url.Source = "https://physioclempediatria.vertigma.com/video?videoid=" + App.VideoSelected.Id;
+            // webview_video_url.Source = "https://backofficepediatria.pt/video?videoid=" + App.VideoSelected.Id;
 
             GetVideoContent(App.VideoSelected.Id);
             //mediaSource.Source = new Uri(App.VideoSelected.url, UriKind.Absolute);

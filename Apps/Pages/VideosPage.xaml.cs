@@ -81,7 +81,7 @@ namespace MasterDetailPageNavigation
                         WebView webview = new WebView()
                         {
                             IsEnabled = false,
-                            Source = "https://physioclempediatria.vertigma.com/imagem?videoid=" + v.idDoVideo,
+                            Source = "https://backofficepediatria.pt/imagem?videoid=" + v.idDoVideo,
                             HorizontalOptions = LayoutOptions.FillAndExpand,
                             VerticalOptions = LayoutOptions.FillAndExpand,
                             HeightRequest = 100

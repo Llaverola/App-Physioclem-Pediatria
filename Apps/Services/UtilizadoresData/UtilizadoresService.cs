@@ -167,7 +167,7 @@ namespace Apps.SettingsData.Utilizadores
             bool retValue = false;
             try
             {
-                Uri uri = new Uri(string.Format("https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/{0}", "UtilizadorEditarDados"));
+                Uri uri = new Uri(string.Format("https://backofficepediatria.pt/umbraco/api/MobileApi/{0}", "UtilizadorEditarDados"));
                 var response = await Client.PostAsync(uri, m.AsJson()).ConfigureAwait(false);
                 retValue = response.IsSuccessStatusCode;
             }

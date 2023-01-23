@@ -13,7 +13,7 @@
 namespace MasterDetailPageNavigation {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/NotificacoesPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\NotificacoesPage.xaml")]
     public partial class NotificacoesPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

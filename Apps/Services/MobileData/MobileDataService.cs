@@ -22,7 +22,7 @@ namespace Apps.Services.NotificacoesData
             DataModel d = new DataModel();
             try
             {
-                string url = "https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/GetData?DispositivoId=" + App.DeviceIdentifier;
+                string url = "https://backofficepediatria.pt/umbraco/api/MobileApi/GetData?DispositivoId=" + App.DeviceIdentifier;
                 HttpResponseMessage response = await Client.GetAsync(url).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
@@ -46,7 +46,7 @@ namespace Apps.Services.NotificacoesData
             bool d = true;
             try
             {
-                Uri uri = new Uri("https://physioclempediatria.vertigma.com/umbraco/api/loginapi/EliminarConta");
+                Uri uri = new Uri("https://backofficepediatria.pt/umbraco/api/loginapi/EliminarConta");
                 var p = new
                 {
                     username = App.DataModel.Utilizador.Username
@@ -69,7 +69,7 @@ namespace Apps.Services.NotificacoesData
             bool retValue = false;
             try
             {
-                Uri uri = new Uri(string.Format("https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/{0}", "PedidoDeContacto"));
+                Uri uri = new Uri(string.Format("https://backofficepediatria.pt/umbraco/api/MobileApi/{0}", "PedidoDeContacto"));
                 var response = await Client.PostAsync(uri, m.AsJson()).ConfigureAwait(false);
                 retValue = response.IsSuccessStatusCode;
             }
@@ -92,7 +92,7 @@ namespace Apps.Services.NotificacoesData
                 };
                 //var parameters = new Dictionary<string, string> { { "umbracoMemberId", memberId.ToString() }, { "param2", "2" } };
                 var encodedContent = new FormUrlEncodedContent(parameters);
-                Uri uri = new Uri(string.Format("https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/{0}", "MarcarNotificacoesComoLidas"));
+                Uri uri = new Uri(string.Format("https://backofficepediatria.pt/umbraco/api/MobileApi/{0}", "MarcarNotificacoesComoLidas"));
                 var response = await Client.PostAsync(uri, encodedContent).ConfigureAwait(false);
                 retValue = response.IsSuccessStatusCode;
             }
@@ -108,7 +108,7 @@ namespace Apps.Services.NotificacoesData
             bool retValue = false;
             try
             {
-                Uri uri = new Uri(string.Format("https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/{0}", "MarcarNotificacaoComoLida"));
+                Uri uri = new Uri(string.Format("https://backofficepediatria.pt/umbraco/api/MobileApi/{0}", "MarcarNotificacaoComoLida"));
                 var m = new
                 {
                     notificacaoId,
@@ -129,7 +129,7 @@ namespace Apps.Services.NotificacoesData
             Chats c = new Chats();
             try
             {
-                Uri uri = new Uri(string.Format("https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/{0}", "NovaMensagem"));
+                Uri uri = new Uri(string.Format("https://backofficepediatria.pt/umbraco/api/MobileApi/{0}", "NovaMensagem"));
                 var response = await Client.PostAsync(uri, m.AsJson()).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
@@ -149,7 +149,7 @@ namespace Apps.Services.NotificacoesData
             bool sucesso = false;
             try
             {
-                Uri uri = new Uri(string.Format("https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/{0}", "AlterarNotificacoes"));
+                Uri uri = new Uri(string.Format("https://backofficepediatria.pt/umbraco/api/MobileApi/{0}", "AlterarNotificacoes"));
                 var m = new
                 {
                     memberId = App.DataModel.Utilizador.UmbracoMemberId,
@@ -170,7 +170,7 @@ namespace Apps.Services.NotificacoesData
             Notificacoes d = new Notificacoes();
             try
             {
-                string url = "https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/NotificacoesGet?DispositivoId=" + App.DeviceIdentifier;
+                string url = "https://backofficepediatria.pt/umbraco/api/MobileApi/NotificacoesGet?DispositivoId=" + App.DeviceIdentifier;
                 HttpResponseMessage response = await Client.GetAsync(url).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
@@ -190,7 +190,7 @@ namespace Apps.Services.NotificacoesData
             Chats c = new Chats();
             try
             {
-                Uri uri = new Uri(string.Format("https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/ChatsGet?dispositivoId={0}", App.DeviceIdentifier));
+                Uri uri = new Uri(string.Format("https://backofficepediatria.pt/umbraco/api/MobileApi/ChatsGet?dispositivoId={0}", App.DeviceIdentifier));
                 var response = await Client.GetAsync(uri).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
@@ -210,7 +210,7 @@ namespace Apps.Services.NotificacoesData
             List<NotificacaoControlo> d = new List<NotificacaoControlo>();
             try
             {
-                string url = "https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/NotificacaoControloGet?memberId=" + memberId.ToString();
+                string url = "https://backofficepediatria.pt/umbraco/api/MobileApi/NotificacaoControloGet?memberId=" + memberId.ToString();
                 HttpResponseMessage response = await Client.GetAsync(url).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
@@ -230,7 +230,7 @@ namespace Apps.Services.NotificacoesData
             List<NotificacaoControlo> d = new List<NotificacaoControlo>();
             try
             {
-                string url = "https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/NotificacaoControloPost";
+                string url = "https://backofficepediatria.pt/umbraco/api/MobileApi/NotificacaoControloPost";
                 HttpResponseMessage response = await Client.PostAsync(url, m.AsJson()).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
@@ -250,7 +250,7 @@ namespace Apps.Services.NotificacoesData
             List<MensagemControlo> d = new List<MensagemControlo>();
             try
             {
-                string url = "https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/MensagemControloGet?memberId=" + memberId.ToString();
+                string url = "https://backofficepediatria.pt/umbraco/api/MobileApi/MensagemControloGet?memberId=" + memberId.ToString();
                 HttpResponseMessage response = await Client.GetAsync(url).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {
@@ -270,7 +270,7 @@ namespace Apps.Services.NotificacoesData
             List<MensagemControlo> d = new List<MensagemControlo>();
             try
             {
-                string url = "https://physioclempediatria.vertigma.com/umbraco/api/MobileApi/MensagemControloPost";
+                string url = "https://backofficepediatria.pt/umbraco/api/MobileApi/MensagemControloPost";
                 HttpResponseMessage response = await Client.PostAsync(url, m.AsJson()).ConfigureAwait(false);
                 if (response.IsSuccessStatusCode)
                 {

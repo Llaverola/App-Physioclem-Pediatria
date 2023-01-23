@@ -1,25 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj": {}
+    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {}
   },
   "projects": {
-    "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj": {
+    "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj",
+        "projectUniqueName": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
         "projectName": "Apps",
-        "projectPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/Apps.csproj",
-        "packagesPath": "/Users/ricardocoelho/.nuget/packages/",
-        "outputPath": "/Users/ricardocoelho/Desktop/App-Physioclem-Pediatria/Apps/obj/",
+        "projectPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\Apps.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\App-Physioclem-Pediatria\\Apps\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/ricardocoelho/.config/NuGet/NuGet.Config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -107,11 +117,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/Users/ricardocoelho/Library/Caches/VisualStudio/17.0/MSBuild/629_3/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

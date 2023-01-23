@@ -123,7 +123,7 @@ namespace MasterDetailPageNavigation
 
         //private async void btn_media_Clicked(object sender, EventArgs e)
         //{
-        //    await Launcher.OpenAsync(new Uri("https://physioclempediatria.vertigma.com/consulta-media?i=" + NodeId.ToString()));
+        //    await Launcher.OpenAsync(new Uri("https://backofficepediatria.pt/consulta-media?i=" + NodeId.ToString()));
         //}
     }
 }

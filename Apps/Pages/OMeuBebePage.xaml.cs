@@ -1236,7 +1236,7 @@ namespace MasterDetailPageNavigation
                 "a1728c8b-9600-409e-b3aa-82a580882411",
                 "3226f9bb-cc42-491f-8a83-0454c853e833"
             };
-            await Launcher.OpenAsync(new Uri("https://physioclempediatria.vertigma.com/consulta-media?i=" + General.Encrypt(App.Bebe_Selected.id.ToString())) + "&t=" + tokens.OrderBy(x => Guid.NewGuid()).First());
+            await Launcher.OpenAsync(new Uri("https://backofficepediatria.pt/consulta-media?i=" + General.Encrypt(App.Bebe_Selected.id.ToString())) + "&t=" + tokens.OrderBy(x => Guid.NewGuid()).First());
         }
     }
 
