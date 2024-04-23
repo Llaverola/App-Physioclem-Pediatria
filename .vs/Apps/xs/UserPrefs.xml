@@ -1,22 +1,35 @@
 ﻿<Properties StartupConfiguration="{EF374397-DA94-483C-A1E8-22FC1CA0C2C7}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Apps.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC53B066-A196-4603-9A96-B5484D17047B" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Apps.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2A8A10EC-98E5-47B8-BE03-A5B750E4BA04" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Apps/Models/General.cs">
+    <Files>
+      <File FileName="Apps/App.xaml.cs" Line="100" Column="15" />
+      <File FileName="Apps/Services/MobileData/MobileDataService.cs" Line="54" Column="80" />
+      <File FileName="Apps/Models/General.cs" Line="229" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Apps" expanded="True">
-            <Node name="Apps.iOS" selected="True" />
+            <Node name="Apps">
+              <Node name="Models" expanded="True">
+                <Node name="General.cs" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="MobileData" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Apps.Android PreferredExecutionTarget="Android.my_device" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
 </Properties>
